@@ -1,0 +1,35 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '9.0'
+
+target 'THJG' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Network
+  pod 'Alamofire', '4.8.0'
+
+  # Data Parser
+  pod 'SwiftyJSON', '4.2.0'
+
+  # Toast
+  pod 'Toast-Swift', '4.0.1'
+
+  # Constraint
+  pod 'SnapKit', '4.2.0'
+  
+  # Image
+  pod 'Kingfisher', '4.10.1'
+
+  # refresh
+  pod 'MJRefresh', '3.1.15.7'
+  
+  # EZOPENSDK
+  pod 'EZUIKit'
+
+  # BaiduMap
+  pod 'BaiduMapKit'
+
+  # Push
+  pod 'JPush', '3.1.2'
+
+end

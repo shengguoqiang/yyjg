@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="THJGProgressView" customModule="THJG" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="230" height="60"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DxF-xO-dV0">
+                    <rect key="frame" x="15" y="37" width="200" height="8"/>
+                    <color key="backgroundColor" red="0.90197294950485229" green="0.90193897485733032" blue="0.90196198225021362" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="8" id="wAc-HF-xY5"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerR">
+                            <real key="value" value="4"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Qj-AE-oGF">
+                    <rect key="frame" x="15" y="37" width="30" height="8"/>
+                    <color key="backgroundColor" red="0.69019607839999997" green="0.1176470588" blue="0.19215686269999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="30" id="b3v-7r-5Nh"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerR">
+                            <real key="value" value="4"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <button hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ENZ-7q-M2o">
+                    <rect key="frame" x="35" y="10" width="44.5" height="22.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" backgroundImage="common_progress_tip_1">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="5Qj-AE-oGF" firstAttribute="leading" secondItem="DxF-xO-dV0" secondAttribute="leading" id="8Xt-EH-7HP"/>
+                <constraint firstItem="5Qj-AE-oGF" firstAttribute="centerY" secondItem="DxF-xO-dV0" secondAttribute="centerY" id="G9z-hg-7b0"/>
+                <constraint firstItem="ENZ-7q-M2o" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="10" id="Ocp-8j-a2f"/>
+                <constraint firstItem="5Qj-AE-oGF" firstAttribute="height" secondItem="DxF-xO-dV0" secondAttribute="height" id="Ub5-74-WlV"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="DxF-xO-dV0" secondAttribute="bottom" constant="15" id="c5K-Dr-kBr"/>
+                <constraint firstItem="ENZ-7q-M2o" firstAttribute="leading" secondItem="5Qj-AE-oGF" secondAttribute="trailing" constant="-10" id="jgB-uq-Php"/>
+                <constraint firstItem="DxF-xO-dV0" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="15" id="rET-QE-ZRI"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="DxF-xO-dV0" secondAttribute="trailing" constant="15" id="vVX-we-qdX"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="bgView" destination="DxF-xO-dV0" id="CPV-FA-ogU"/>
+                <outlet property="curProgressView" destination="5Qj-AE-oGF" id="WoE-H9-Uoq"/>
+                <outlet property="curProgressViewWidth" destination="b3v-7r-5Nh" id="sHQ-ju-FRg"/>
+                <outlet property="tipBtn" destination="ENZ-7q-M2o" id="zu7-Ni-WZV"/>
+            </connections>
+            <point key="canvasLocation" x="64" y="52.173913043478265"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="common_progress_tip_1" width="44.5" height="22.5"/>
+    </resources>
+</document>

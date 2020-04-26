@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="THJGVersionUpdateView" customModule="THJG" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MLK-jw-5ay">
+                    <rect key="frame" x="35" y="155" width="305" height="325"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="common_version_update" translatesAutoresizingMaskIntoConstraints="NO" id="WBj-ow-4aU">
+                            <rect key="frame" x="110.5" y="20" width="84" height="84"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="发现新版本" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nhD-ly-UvQ">
+                            <rect key="frame" x="106.5" y="119" width="92" height="22"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <color key="textColor" red="0.69019607839999997" green="0.1176470588" blue="0.19215686269999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dGL-11-TyN">
+                            <rect key="frame" x="25" y="161" width="255" height="65"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="65" id="6do-pR-Anv"/>
+                            </constraints>
+                        </webView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="onF-6p-pfz">
+                            <rect key="frame" x="25" y="255" width="120" height="45"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="HiA-go-TdD"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <state key="normal" title="忽略本次">
+                                <color key="titleColor" red="0.69019607839999997" green="0.1176470588" blue="0.19215686269999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderC">
+                                    <color key="value" red="0.69019607839999997" green="0.1176470588" blue="0.19215686269999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderW">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerR">
+                                    <real key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="ignoreBtnDidClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="bIM-L7-8mD"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vs2-zh-CwE">
+                            <rect key="frame" x="160" y="255" width="120" height="45"/>
+                            <color key="backgroundColor" red="0.69019607839999997" green="0.1176470588" blue="0.19215686269999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <state key="normal" title="立即更新">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderC">
+                                    <color key="value" red="0.69019607839999997" green="0.1176470588" blue="0.19215686269999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderW">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerR">
+                                    <real key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="updateBtnDidClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="bw6-cj-4XW"/>
+                            </connections>
+                        </button>
+                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aro-88-UtH">
+                            <rect key="frame" x="92.5" y="255" width="120" height="45"/>
+                            <color key="backgroundColor" red="0.69019607839999997" green="0.1176470588" blue="0.19215686269999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="I1P-Wf-JaY"/>
+                                <constraint firstAttribute="width" constant="120" id="Xvt-fe-sS7"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <state key="normal" title="立即更新">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderC">
+                                    <color key="value" red="0.69019607839999997" green="0.1176470588" blue="0.19215686269999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderW">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerR">
+                                    <real key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="updateBtnDidClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="wKD-O7-F6d"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="dGL-11-TyN" secondAttribute="trailing" constant="25" id="3vK-XJ-RIO"/>
+                        <constraint firstItem="aro-88-UtH" firstAttribute="centerX" secondItem="dGL-11-TyN" secondAttribute="centerX" id="4Tc-Ps-6vI"/>
+                        <constraint firstItem="dGL-11-TyN" firstAttribute="top" secondItem="nhD-ly-UvQ" secondAttribute="bottom" constant="20" id="FE5-Xs-VLG"/>
+                        <constraint firstItem="WBj-ow-4aU" firstAttribute="centerX" secondItem="MLK-jw-5ay" secondAttribute="centerX" id="GK3-nv-Vbo"/>
+                        <constraint firstItem="nhD-ly-UvQ" firstAttribute="top" secondItem="WBj-ow-4aU" secondAttribute="bottom" constant="15" id="JPd-UU-V9V"/>
+                        <constraint firstItem="WBj-ow-4aU" firstAttribute="top" secondItem="MLK-jw-5ay" secondAttribute="top" constant="20" id="Nfr-3D-oA0"/>
+                        <constraint firstItem="vs2-zh-CwE" firstAttribute="width" secondItem="onF-6p-pfz" secondAttribute="width" id="Qjq-tB-zzu"/>
+                        <constraint firstItem="dGL-11-TyN" firstAttribute="leading" secondItem="MLK-jw-5ay" secondAttribute="leading" constant="25" id="StX-cS-Q2o"/>
+                        <constraint firstItem="onF-6p-pfz" firstAttribute="leading" secondItem="dGL-11-TyN" secondAttribute="leading" id="Xpj-nu-Naj"/>
+                        <constraint firstItem="vs2-zh-CwE" firstAttribute="leading" secondItem="onF-6p-pfz" secondAttribute="trailing" constant="15" id="hfm-HD-yIX"/>
+                        <constraint firstItem="nhD-ly-UvQ" firstAttribute="centerX" secondItem="WBj-ow-4aU" secondAttribute="centerX" id="jUA-Oh-f35"/>
+                        <constraint firstAttribute="bottom" secondItem="onF-6p-pfz" secondAttribute="bottom" constant="25" id="mn6-g4-0Rw"/>
+                        <constraint firstAttribute="height" constant="325" id="o47-MD-DB2"/>
+                        <constraint firstItem="vs2-zh-CwE" firstAttribute="trailing" secondItem="dGL-11-TyN" secondAttribute="trailing" id="orh-Ul-a2A"/>
+                        <constraint firstAttribute="bottom" secondItem="aro-88-UtH" secondAttribute="bottom" constant="25" id="qVt-dV-QAZ"/>
+                        <constraint firstItem="vs2-zh-CwE" firstAttribute="height" secondItem="onF-6p-pfz" secondAttribute="height" id="vbB-Ck-V3q"/>
+                        <constraint firstItem="vs2-zh-CwE" firstAttribute="centerY" secondItem="onF-6p-pfz" secondAttribute="centerY" id="xLI-3I-nkU"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerR">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.1294141114" green="0.1294075549" blue="0.12941199540000001" alpha="0.5" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstItem="MLK-jw-5ay" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="135" id="h2N-Xi-FXx"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="MLK-jw-5ay" secondAttribute="trailing" constant="35" id="jVM-57-zaX"/>
+                <constraint firstItem="MLK-jw-5ay" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="35" id="xSd-Nd-wEB"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="forceUpdateBtn" destination="aro-88-UtH" id="u0Z-vq-e8q"/>
+                <outlet property="ignoreBtn" destination="onF-6p-pfz" id="Clk-oa-hPw"/>
+                <outlet property="updateBtn" destination="vs2-zh-CwE" id="dDE-wP-GMh"/>
+                <outlet property="versionLabel" destination="nhD-ly-UvQ" id="DFX-dR-zSR"/>
+                <outlet property="webView" destination="dGL-11-TyN" id="Z2n-bu-Kf1"/>
+            </connections>
+            <point key="canvasLocation" x="25" y="53"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="common_version_update" width="84.5" height="84.5"/>
+    </resources>
+</document>

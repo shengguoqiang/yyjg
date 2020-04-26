@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="THJGProCompetionController" customModule="THJG" customModuleProvider="target">
+            <connections>
+                <outlet property="competeView" destination="1zz-Au-obR" id="87q-Qk-Buc"/>
+                <outlet property="projectNameLabel" destination="k3i-DM-faa" id="eHY-mC-0m0"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ERx-jD-RvM">
+                    <rect key="frame" x="0.0" y="20" width="375" height="45"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k3i-DM-faa">
+                            <rect key="frame" x="15" y="22.5" width="345" height="0.0"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.94906347989999995" green="0.94891256089999998" blue="0.952943027" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstItem="k3i-DM-faa" firstAttribute="leading" secondItem="ERx-jD-RvM" secondAttribute="leading" constant="15" id="OxP-Sl-BLj"/>
+                        <constraint firstItem="k3i-DM-faa" firstAttribute="centerY" secondItem="ERx-jD-RvM" secondAttribute="centerY" id="WrW-cP-g5M"/>
+                        <constraint firstAttribute="trailing" secondItem="k3i-DM-faa" secondAttribute="trailing" constant="15" id="b3k-JL-WpY"/>
+                        <constraint firstAttribute="height" constant="45" id="rIw-2L-VcT"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1zz-Au-obR" customClass="THJGProSellInfoCompeteView" customModule="THJG" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="65" width="375" height="602"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c8W-p9-SW4" customClass="THJGProjectCompetionDetailView" customModule="THJG" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="602"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PCl-F3-7NA">
+                                    <rect key="frame" x="280" y="40" width="60" height="60"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="60" id="7Ub-t0-Z6V"/>
+                                        <constraint firstAttribute="width" constant="60" id="tJt-Ec-AHk"/>
+                                    </constraints>
+                                    <state key="normal" image="common_cancel"/>
+                                    <connections>
+                                        <action selector="hideDetailView" destination="1zz-Au-obR" eventType="touchUpInside" id="p7C-F3-vsL"/>
+                                    </connections>
+                                </button>
+                                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Jji-Jv-Ggd">
+                                    <rect key="frame" x="45" y="100" width="285" height="402"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerR">
+                                            <real key="value" value="5"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <outlet property="dataSource" destination="c8W-p9-SW4" id="Osk-p1-n9X"/>
+                                        <outlet property="delegate" destination="c8W-p9-SW4" id="OWB-gE-ocf"/>
+                                    </connections>
+                                </tableView>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="Jji-Jv-Ggd" firstAttribute="leading" secondItem="c8W-p9-SW4" secondAttribute="leading" constant="45" id="0Gi-4Z-tIT"/>
+                                <constraint firstItem="Jji-Jv-Ggd" firstAttribute="top" secondItem="PCl-F3-7NA" secondAttribute="bottom" id="FR9-bE-fu8"/>
+                                <constraint firstAttribute="trailing" secondItem="Jji-Jv-Ggd" secondAttribute="trailing" constant="45" id="HnN-d3-8Qh"/>
+                                <constraint firstAttribute="bottom" secondItem="Jji-Jv-Ggd" secondAttribute="bottom" constant="100" id="IcG-EF-aXO"/>
+                                <constraint firstItem="Jji-Jv-Ggd" firstAttribute="top" secondItem="c8W-p9-SW4" secondAttribute="top" constant="100" id="Vnj-wr-ySR"/>
+                                <constraint firstItem="PCl-F3-7NA" firstAttribute="trailing" secondItem="Jji-Jv-Ggd" secondAttribute="trailing" constant="10" id="Vxs-zg-e7C"/>
+                            </constraints>
+                            <connections>
+                                <outlet property="tableView" destination="Jji-Jv-Ggd" id="vUT-5B-CXJ"/>
+                            </connections>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="c8W-p9-SW4" firstAttribute="top" secondItem="1zz-Au-obR" secondAttribute="top" id="LYo-my-d8z"/>
+                        <constraint firstAttribute="bottom" secondItem="c8W-p9-SW4" secondAttribute="bottom" id="Peo-Om-w4r"/>
+                        <constraint firstItem="c8W-p9-SW4" firstAttribute="leading" secondItem="1zz-Au-obR" secondAttribute="leading" id="tAf-3E-a5y"/>
+                        <constraint firstAttribute="trailing" secondItem="c8W-p9-SW4" secondAttribute="trailing" id="xNi-xl-w3P"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="containerView" destination="c8W-p9-SW4" id="Gdp-wO-1tI"/>
+                    </connections>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="1zz-Au-obR" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="1Hw-YS-Gru"/>
+                <constraint firstItem="ERx-jD-RvM" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="1up-D2-wNE"/>
+                <constraint firstItem="ERx-jD-RvM" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Js0-3z-cDo"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="1zz-Au-obR" secondAttribute="trailing" id="KfP-dx-HoP"/>
+                <constraint firstItem="ERx-jD-RvM" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="XS4-ia-rfb"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="1zz-Au-obR" secondAttribute="bottom" id="iya-sf-L0G"/>
+                <constraint firstItem="1zz-Au-obR" firstAttribute="top" secondItem="ERx-jD-RvM" secondAttribute="bottom" id="sxS-PS-0vc"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="common_cancel" width="16" height="16"/>
+    </resources>
+</document>

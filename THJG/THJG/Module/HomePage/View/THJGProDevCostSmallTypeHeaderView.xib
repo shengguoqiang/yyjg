@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="THJGProDevCostSmallTypeHeaderView" customModule="THJG" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FV5-sb-ltB">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <action selector="headerBtnDidClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="D0J-GZ-yRF"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="小类标题" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jgr-sv-7FB">
+                    <rect key="frame" x="15" y="11.5" width="94.5" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.58823529409999997" green="0.58823529409999997" blue="0.58823529409999997" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="小类计划金额" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uj6-d1-Zb2">
+                    <rect key="frame" x="124.5" y="11.5" width="86" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="小类实际金额" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3N1-69-jbF">
+                    <rect key="frame" x="234" y="11.5" width="86" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="14V-yL-OS3">
+                    <rect key="frame" x="353" y="9" width="7" height="22"/>
+                    <state key="normal" image="project_cost_right_arrow"/>
+                    <state key="selected" image="project_cost_down_arrow"/>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lf1-pN-Txt" userLabel="seperator">
+                    <rect key="frame" x="15" y="39" width="345" height="1"/>
+                    <color key="backgroundColor" red="0.94906347989999995" green="0.94891256089999998" blue="0.952943027" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="O9l-w9-MlS"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="FV5-sb-ltB" secondAttribute="bottom" id="5rg-71-rqM"/>
+                <constraint firstItem="jgr-sv-7FB" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="61d-fr-ObZ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="lf1-pN-Txt" secondAttribute="trailing" constant="15" id="6or-z3-efk"/>
+                <constraint firstItem="Uj6-d1-Zb2" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" constant="-20" id="BlG-EI-m78"/>
+                <constraint firstItem="3N1-69-jbF" firstAttribute="centerY" secondItem="Uj6-d1-Zb2" secondAttribute="centerY" id="D6g-Pc-oPm"/>
+                <constraint firstItem="FV5-sb-ltB" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="OfA-cE-u0I"/>
+                <constraint firstItem="jgr-sv-7FB" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="15" id="RWw-CT-Oar"/>
+                <constraint firstItem="Uj6-d1-Zb2" firstAttribute="leading" secondItem="jgr-sv-7FB" secondAttribute="trailing" constant="15" id="VmK-Yj-vX1"/>
+                <constraint firstItem="lf1-pN-Txt" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="15" id="Xyo-Se-ekL"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="FV5-sb-ltB" secondAttribute="trailing" id="bi8-XE-2sB"/>
+                <constraint firstItem="FV5-sb-ltB" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="dD4-ho-xrD"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="3N1-69-jbF" secondAttribute="trailing" constant="55" id="dNO-Dn-9dL"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="14V-yL-OS3" secondAttribute="trailing" constant="15" id="vNa-yk-zM9"/>
+                <constraint firstAttribute="bottom" secondItem="lf1-pN-Txt" secondAttribute="bottom" id="ws5-5q-0ys"/>
+                <constraint firstItem="Uj6-d1-Zb2" firstAttribute="centerY" secondItem="jgr-sv-7FB" secondAttribute="centerY" id="yPP-S2-m5e"/>
+                <constraint firstItem="14V-yL-OS3" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="zgn-w9-SyS"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="arrowBtn" destination="14V-yL-OS3" id="bGM-d0-5g1"/>
+                <outlet property="smallTypeActualAmountLabel" destination="3N1-69-jbF" id="lpB-M9-RVY"/>
+                <outlet property="smallTypeNameLabel" destination="jgr-sv-7FB" id="Slm-w5-mpH"/>
+                <outlet property="smallTypePlanAmountLabel" destination="Uj6-d1-Zb2" id="qeD-wx-PBO"/>
+            </connections>
+            <point key="canvasLocation" x="52" y="50.374812593703155"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="project_cost_down_arrow" width="12" height="7"/>
+        <image name="project_cost_right_arrow" width="7" height="12"/>
+    </resources>
+</document>

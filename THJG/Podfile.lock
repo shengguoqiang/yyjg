@@ -1,0 +1,56 @@
+PODS:
+  - Alamofire (4.8.0)
+  - BaiduMapKit (4.2.1)
+  - EZOpenSDK (4.8.3)
+  - EZUIKit (2.0):
+    - EZOpenSDK (= 4.8.3)
+  - JCore (1.2.6)
+  - JPush (3.1.2):
+    - JCore (~> 1.2.6)
+  - Kingfisher (4.10.1)
+  - MJRefresh (3.1.15.7)
+  - SnapKit (4.2.0)
+  - SwiftyJSON (4.2.0)
+  - Toast-Swift (4.0.1)
+
+DEPENDENCIES:
+  - Alamofire (= 4.8.0)
+  - BaiduMapKit
+  - EZUIKit
+  - JPush (= 3.1.2)
+  - Kingfisher (= 4.10.1)
+  - MJRefresh (= 3.1.15.7)
+  - SnapKit (= 4.2.0)
+  - SwiftyJSON (= 4.2.0)
+  - Toast-Swift (= 4.0.1)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - BaiduMapKit
+    - EZOpenSDK
+    - EZUIKit
+    - JCore
+    - JPush
+    - Kingfisher
+    - MJRefresh
+    - SnapKit
+    - SwiftyJSON
+    - Toast-Swift
+
+SPEC CHECKSUMS:
+  Alamofire: 3ec537f71edc9804815215393ae2b1a8ea33a844
+  BaiduMapKit: b7430823de488bb6d082e4e1d356dadf09d3edb2
+  EZOpenSDK: 355c8ae8e9660a52bbd877898cf46e1f67dc7d8f
+  EZUIKit: 45134cb675f154a62a5b2a7e0d78014672bfc328
+  JCore: cae516dd2bf1a73b578ce6e1065abd49e709e0f7
+  JPush: d0cead70ba223a6a3b52749899ebda830dfbc49a
+  Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
+  MJRefresh: 697f8ec75ebdbe9207767bb682cf0f51b0d8a41f
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+  SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
+  Toast-Swift: e42a638589a2f95036b4bb7626cfbdde7daf0393
+
+PODFILE CHECKSUM: 2158786daf8889fe34b446443c3e35a5666a04a7
+
+COCOAPODS: 1.9.1

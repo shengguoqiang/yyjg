@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="THJGNewsCellIdentifier" id="KGk-i7-Jjw" customClass="THJGNewsCell" customModule="THJG" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="199.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="                  资讯标题资讯标题资讯标题资讯标题资讯标题资讯标题资讯标题" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="97g-Vw-PA0">
+                        <rect key="frame" x="15" y="20" width="210" height="36"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yGD-ey-obM">
+                        <rect key="frame" x="15" y="20" width="60" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="HHM-Fo-Cbt"/>
+                            <constraint firstAttribute="height" constant="20" id="hpv-7e-rL5"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <state key="normal" title="资讯类型" backgroundImage="news_type_bg"/>
+                    </button>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="news_date" translatesAutoresizingMaskIntoConstraints="NO" id="BHP-DS-wM0">
+                        <rect key="frame" x="15" y="90" width="11" height="11"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="资讯时间" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IuW-gg-FlA">
+                        <rect key="frame" x="31" y="88.5" width="49.5" height="14"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.58823529411764708" green="0.58823529411764708" blue="0.58823529411764708" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0ns-AL-woB">
+                        <rect key="frame" x="240" y="20" width="120" height="80"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="0ns-AL-woB" secondAttribute="height" multiplier="240:160" id="qdS-Oj-lao"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="资讯内容资讯内容资讯内容资讯内容资讯内容资讯内容资讯内容资讯内容资讯内容资讯内容资讯内容资讯内容资讯内容资讯内容资讯内容" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xIX-mZ-YZf">
+                        <rect key="frame" x="15" y="126" width="345" height="33.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.38039767742156982" green="0.380382239818573" blue="0.38039267063140869" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hjt-Pt-c2q" userLabel="seperator">
+                        <rect key="frame" x="0.0" y="189.5" width="375" height="10"/>
+                        <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.95294117647058818" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="10" id="y0N-Gd-Vff"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="97g-Vw-PA0" secondAttribute="trailing" constant="150" id="0GV-5z-QaV"/>
+                    <constraint firstItem="IuW-gg-FlA" firstAttribute="leading" secondItem="BHP-DS-wM0" secondAttribute="trailing" constant="5" id="AEq-8b-cMU"/>
+                    <constraint firstAttribute="trailing" secondItem="hjt-Pt-c2q" secondAttribute="trailing" id="DmX-41-W4I"/>
+                    <constraint firstAttribute="trailing" secondItem="xIX-mZ-YZf" secondAttribute="trailing" constant="15" id="Fco-o8-vgU"/>
+                    <constraint firstItem="hjt-Pt-c2q" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="J6S-tX-0iE"/>
+                    <constraint firstItem="0ns-AL-woB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="LEK-6i-Efq"/>
+                    <constraint firstItem="97g-Vw-PA0" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="Viw-6E-sUx"/>
+                    <constraint firstItem="yGD-ey-obM" firstAttribute="leading" secondItem="97g-Vw-PA0" secondAttribute="leading" id="dtr-P8-ZGX"/>
+                    <constraint firstItem="xIX-mZ-YZf" firstAttribute="leading" secondItem="BHP-DS-wM0" secondAttribute="leading" id="eqT-yV-QPh"/>
+                    <constraint firstAttribute="bottom" secondItem="hjt-Pt-c2q" secondAttribute="bottom" id="lmY-du-dzB"/>
+                    <constraint firstItem="IuW-gg-FlA" firstAttribute="centerY" secondItem="BHP-DS-wM0" secondAttribute="centerY" id="oKj-5U-1O5"/>
+                    <constraint firstItem="xIX-mZ-YZf" firstAttribute="top" secondItem="BHP-DS-wM0" secondAttribute="bottom" constant="25" id="pp2-2i-dAI"/>
+                    <constraint firstItem="0ns-AL-woB" firstAttribute="leading" secondItem="97g-Vw-PA0" secondAttribute="trailing" constant="15" id="suU-Td-aJ7"/>
+                    <constraint firstItem="BHP-DS-wM0" firstAttribute="leading" secondItem="97g-Vw-PA0" secondAttribute="leading" id="vZw-5a-0xm"/>
+                    <constraint firstItem="BHP-DS-wM0" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="90" id="vmJ-fv-avB"/>
+                    <constraint firstItem="97g-Vw-PA0" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="wgl-Ri-7Cj"/>
+                    <constraint firstAttribute="trailing" secondItem="0ns-AL-woB" secondAttribute="trailing" constant="15" id="wkg-5t-YKu"/>
+                    <constraint firstItem="yGD-ey-obM" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="ybn-h0-iOq"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="newsAbstractLabel" destination="xIX-mZ-YZf" id="vav-zp-tTy"/>
+                <outlet property="newsDateLabel" destination="IuW-gg-FlA" id="Kh4-pc-rxo"/>
+                <outlet property="newsImageView" destination="0ns-AL-woB" id="IcM-zn-YmQ"/>
+                <outlet property="newsTitleLabel" destination="97g-Vw-PA0" id="Ipq-GM-E0W"/>
+                <outlet property="newsTypeBtn" destination="yGD-ey-obM" id="zfT-HV-WiI"/>
+            </connections>
+            <point key="canvasLocation" x="35.507246376811594" y="34.821428571428569"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="news_date" width="11" height="11"/>
+        <image name="news_type_bg" width="55" height="17"/>
+    </resources>
+</document>

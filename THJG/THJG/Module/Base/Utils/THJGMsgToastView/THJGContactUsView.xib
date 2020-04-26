@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="THJGContactUsView" customModule="THJG" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wL9-Bk-UXP">
+                    <rect key="frame" x="0.0" y="517" width="375" height="150"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="咨询服务：400-850-3099" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9tb-U4-ttN">
+                            <rect key="frame" x="90.5" y="25" width="194.5" height="19.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(工作日 9:00-17:30)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yg4-ec-Zh5">
+                            <rect key="frame" x="123" y="54.5" width="129" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B8d-fd-7s0">
+                            <rect key="frame" x="105" y="90" width="165" height="35"/>
+                            <color key="backgroundColor" red="0.69019607839999997" green="0.1176470588" blue="0.19215686269999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="35" id="XY8-fM-xgl"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <state key="normal" title="立即拨打"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerR">
+                                    <real key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="callBtnDidClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="Mfp-UD-ijG"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="B8d-fd-7s0" secondAttribute="trailing" constant="105" id="9uR-er-fdP"/>
+                        <constraint firstAttribute="bottom" secondItem="B8d-fd-7s0" secondAttribute="bottom" constant="25" id="Fgs-KP-ezX"/>
+                        <constraint firstItem="9tb-U4-ttN" firstAttribute="centerX" secondItem="wL9-Bk-UXP" secondAttribute="centerX" id="Fh5-rl-XzW"/>
+                        <constraint firstItem="9tb-U4-ttN" firstAttribute="top" secondItem="wL9-Bk-UXP" secondAttribute="top" constant="25" id="VL8-V4-8eo"/>
+                        <constraint firstItem="B8d-fd-7s0" firstAttribute="leading" secondItem="wL9-Bk-UXP" secondAttribute="leading" constant="105" id="VWn-UF-t77"/>
+                        <constraint firstAttribute="height" constant="150" id="cyv-8u-vob"/>
+                        <constraint firstItem="yg4-ec-Zh5" firstAttribute="centerX" secondItem="9tb-U4-ttN" secondAttribute="centerX" id="gzB-xw-7oN"/>
+                        <constraint firstItem="yg4-ec-Zh5" firstAttribute="top" secondItem="9tb-U4-ttN" secondAttribute="bottom" constant="10" id="yJa-x6-9FL"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6hP-8V-50a">
+                    <rect key="frame" x="315" y="457" width="60" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="EOa-U8-v20"/>
+                        <constraint firstAttribute="width" constant="60" id="Jbh-Kv-3s0"/>
+                    </constraints>
+                    <state key="normal" image="common_cancel"/>
+                    <connections>
+                        <action selector="cancleBtnDidClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="Jwb-Tu-Gvg"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.50037457191780821" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="wL9-Bk-UXP" secondAttribute="trailing" id="3yK-3a-WBd"/>
+                <constraint firstItem="wL9-Bk-UXP" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Lm3-fe-dn4"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="6hP-8V-50a" secondAttribute="trailing" id="YGa-0j-UOP"/>
+                <constraint firstItem="wL9-Bk-UXP" firstAttribute="top" secondItem="6hP-8V-50a" secondAttribute="bottom" id="owK-IH-NbI"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="wL9-Bk-UXP" secondAttribute="bottom" id="xDk-6u-ocB"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="common_cancel" width="16" height="16"/>
+    </resources>
+</document>

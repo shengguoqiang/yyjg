@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="THJGModifyGuesturePwdController" customModule="THJG" customModuleProvider="target">
+            <connections>
+                <outlet property="guestureView" destination="gAH-RA-TAP" id="zcJ-RN-fOR"/>
+                <outlet property="guestureViewY" destination="Cr3-ZB-g1i" id="bVC-5N-6Za"/>
+                <outlet property="reDrawBtn" destination="0Mb-6m-f0i" id="Tgz-F1-fze"/>
+                <outlet property="tipLabel" destination="xE7-VK-q4J" id="haj-IH-Gh9"/>
+                <outlet property="tipView" destination="VIe-1B-e1v" id="dr9-lx-IFd"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VIe-1B-e1v" customClass="DQSGuestureTipView" customModule="THJG" customModuleProvider="target">
+                    <rect key="frame" x="162.5" y="78" width="50" height="50"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="jMK-qj-50n"/>
+                        <constraint firstAttribute="width" constant="50" id="nGy-XQ-at1"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请绘制手势密码图案" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xE7-VK-q4J">
+                    <rect key="frame" x="123" y="153" width="129" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.58823529409999997" green="0.58823529409999997" blue="0.58823529409999997" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gAH-RA-TAP" customClass="DQSGuestureView" customModule="THJG" customModuleProvider="target">
+                    <rect key="frame" x="45" y="220" width="285" height="280"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="280" id="CpI-Nj-3CU"/>
+                    </constraints>
+                </view>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Mb-6m-f0i">
+                    <rect key="frame" x="144.5" y="525" width="86" height="29"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="重新绘制图案">
+                        <color key="titleColor" red="0.58823529409999997" green="0.58823529409999997" blue="0.58823529409999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </state>
+                    <connections>
+                        <action selector="reDrawBtnDidClicked:" destination="-1" eventType="touchUpInside" id="iw0-YZ-aAi"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="xE7-VK-q4J" firstAttribute="top" secondItem="VIe-1B-e1v" secondAttribute="bottom" constant="25" id="2Un-ba-y6m"/>
+                <constraint firstItem="gAH-RA-TAP" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="45" id="4Pn-Lx-yiB"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="gAH-RA-TAP" secondAttribute="trailing" constant="45" id="9ZX-TO-VkX"/>
+                <constraint firstItem="xE7-VK-q4J" firstAttribute="centerX" secondItem="gAH-RA-TAP" secondAttribute="centerX" id="B0R-QG-eIL"/>
+                <constraint firstItem="gAH-RA-TAP" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="C7N-o8-bgF"/>
+                <constraint firstItem="gAH-RA-TAP" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="200" id="Cr3-ZB-g1i"/>
+                <constraint firstItem="gAH-RA-TAP" firstAttribute="top" secondItem="xE7-VK-q4J" secondAttribute="bottom" constant="50" id="Ku5-Lp-Wtn"/>
+                <constraint firstItem="VIe-1B-e1v" firstAttribute="centerX" secondItem="xE7-VK-q4J" secondAttribute="centerX" id="MAX-R9-7Ql"/>
+                <constraint firstItem="0Mb-6m-f0i" firstAttribute="top" secondItem="gAH-RA-TAP" secondAttribute="bottom" constant="25" id="lZ7-nw-HHZ"/>
+                <constraint firstItem="0Mb-6m-f0i" firstAttribute="centerX" secondItem="gAH-RA-TAP" secondAttribute="centerX" id="uyo-qF-LSN"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+</document>

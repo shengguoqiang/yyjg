@@ -1,0 +1,1893 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4908A9CD22549E3200F775A2 /* THJGGuideController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4908A9CB22549E3200F775A2 /* THJGGuideController.swift */; };
+		4908A9CE22549E3200F775A2 /* THJGGuideController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4908A9CC22549E3200F775A2 /* THJGGuideController.xib */; };
+		490FF3E2224104A4004D42B2 /* THJGVideoFullScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490FF3E1224104A4004D42B2 /* THJGVideoFullScreenView.swift */; };
+		490FF3E4224104B3004D42B2 /* THJGVideoFullScreenView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 490FF3E3224104B3004D42B2 /* THJGVideoFullScreenView.xib */; };
+		4911E2F42240C30800D4678B /* THJGVideoRecView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4911E2F32240C30800D4678B /* THJGVideoRecView.swift */; };
+		4911E2F62240C32B00D4678B /* THJGVideoRecView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4911E2F52240C32B00D4678B /* THJGVideoRecView.xib */; };
+		49121F56222F9EC800D45EC1 /* THJGInnerMsgController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49121F54222F9EC800D45EC1 /* THJGInnerMsgController.swift */; };
+		49121F57222F9EC800D45EC1 /* THJGInnerMsgController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49121F55222F9EC800D45EC1 /* THJGInnerMsgController.xib */; };
+		49121F5A222F9F9E00D45EC1 /* THJGInnerMsgCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49121F58222F9F9E00D45EC1 /* THJGInnerMsgCell.swift */; };
+		49121F5B222F9F9E00D45EC1 /* THJGInnerMsgCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49121F59222F9F9E00D45EC1 /* THJGInnerMsgCell.xib */; };
+		49121F5D222FA0CD00D45EC1 /* THJGInnerMsgViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49121F5C222FA0CD00D45EC1 /* THJGInnerMsgViewModel.swift */; };
+		49121F5F222FA16000D45EC1 /* THJGInnerMsgBean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49121F5E222FA16000D45EC1 /* THJGInnerMsgBean.swift */; };
+		49121F62222FAF5000D45EC1 /* THJGInnerMsgDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49121F60222FAF5000D45EC1 /* THJGInnerMsgDetailController.swift */; };
+		49121F63222FAF5000D45EC1 /* THJGInnerMsgDetailController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49121F61222FAF5000D45EC1 /* THJGInnerMsgDetailController.xib */; };
+		49121F65222FB01700D45EC1 /* THJGInnerMsgDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49121F64222FB01700D45EC1 /* THJGInnerMsgDetailViewModel.swift */; };
+		491227DA221684380064E1AD /* THJGForgetPwdController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491227D8221684380064E1AD /* THJGForgetPwdController.swift */; };
+		491227DB221684380064E1AD /* THJGForgetPwdController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 491227D9221684380064E1AD /* THJGForgetPwdController.xib */; };
+		491227E322168A300064E1AD /* THJGForgetPwdViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491227E222168A300064E1AD /* THJGForgetPwdViewModel.swift */; };
+		491227E522168AD80064E1AD /* THJGBaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491227E422168AD80064E1AD /* THJGBaseViewModel.swift */; };
+		4912924722F9106B004FEC55 /* THJGBigImgShowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4912924622F9106B004FEC55 /* THJGBigImgShowView.swift */; };
+		4912924922F910BC004FEC55 /* THJGBigImgShowView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4912924822F910BC004FEC55 /* THJGBigImgShowView.xib */; };
+		49148DAF2212B218003F4368 /* DQSDataZipHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 49148DA02212B218003F4368 /* DQSDataZipHelper.m */; };
+		49148DB12212B218003F4368 /* RSA.m in Sources */ = {isa = PBXBuildFile; fileRef = 49148DA52212B218003F4368 /* RSA.m */; };
+		49148DB22212B218003F4368 /* NSData+KKSignVerify.m in Sources */ = {isa = PBXBuildFile; fileRef = 49148DA62212B218003F4368 /* NSData+KKSignVerify.m */; };
+		49148DB32212B218003F4368 /* DQSRSAHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 49148DA92212B218003F4368 /* DQSRSAHelper.m */; };
+		49148DB42212B218003F4368 /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 49148DAC2212B218003F4368 /* GTMBase64.m */; };
+		49148DB52212B218003F4368 /* NSData+KKHASH.m in Sources */ = {isa = PBXBuildFile; fileRef = 49148DAD2212B218003F4368 /* NSData+KKHASH.m */; };
+		49148DBB2212B3C2003F4368 /* rsa_public_key.der in Resources */ = {isa = PBXBuildFile; fileRef = 49148DBA2212B3C2003F4368 /* rsa_public_key.der */; };
+		49148DBE2212B445003F4368 /* DQSNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49148DBD2212B445003F4368 /* DQSNetworkManager.swift */; };
+		49148DC22212C65E003F4368 /* THJGConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49148DC12212C65E003F4368 /* THJGConstants.swift */; };
+		4915CE872241CCAC00CD0B2C /* THJGLocalVideoFullScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4915CE862241CCAC00CD0B2C /* THJGLocalVideoFullScreenView.swift */; };
+		4915CE892241CCBA00CD0B2C /* THJGLocalVideoFullScreenView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4915CE882241CCBA00CD0B2C /* THJGLocalVideoFullScreenView.xib */; };
+		491F703122388FE800190419 /* THJGProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491F703022388FE800190419 /* THJGProgressView.swift */; };
+		491F70332238903300190419 /* THJGProgressView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 491F70322238903300190419 /* THJGProgressView.xib */; };
+		4922EEDC22262924001EB050 /* THJGProjectFundCheckCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4922EEDA22262924001EB050 /* THJGProjectFundCheckCell.swift */; };
+		4922EEDD22262924001EB050 /* THJGProjectFundCheckCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4922EEDB22262924001EB050 /* THJGProjectFundCheckCell.xib */; };
+		4923A3E522268B26007FBECC /* THJGProjectContractHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4923A3E422268B26007FBECC /* THJGProjectContractHeaderView.swift */; };
+		4923A3E722268B58007FBECC /* THJGProjectContractHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4923A3E622268B58007FBECC /* THJGProjectContractHeaderView.xib */; };
+		49259B0022F27E2200212D19 /* THJGDatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49259AFE22F27E2200212D19 /* THJGDatePickerView.swift */; };
+		49259B0122F27E2200212D19 /* THJGDatePickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49259AFF22F27E2200212D19 /* THJGDatePickerView.xib */; };
+		49259B0322F27E3F00212D19 /* THJGProjectFeeTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49259B0222F27E3F00212D19 /* THJGProjectFeeTypeView.swift */; };
+		49259B0522F27E4900212D19 /* THJGProjectFeeTypeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49259B0422F27E4900212D19 /* THJGProjectFeeTypeView.xib */; };
+		49259B0822F2814100212D19 /* THJGTProjectFeeTypeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49259B0622F2814100212D19 /* THJGTProjectFeeTypeCell.swift */; };
+		49259B0922F2814100212D19 /* THJGTProjectFeeTypeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49259B0722F2814100212D19 /* THJGTProjectFeeTypeCell.xib */; };
+		4927B5F2221AE5FB002897E3 /* THJGProjectDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4927B5F0221AE5FB002897E3 /* THJGProjectDetailController.swift */; };
+		4927B5F3221AE5FB002897E3 /* THJGProjectDetailController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4927B5F1221AE5FB002897E3 /* THJGProjectDetailController.xib */; };
+		4927B5F5221AE62D002897E3 /* THJGProjectDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4927B5F4221AE62D002897E3 /* THJGProjectDetailViewModel.swift */; };
+		4928605522240F730053DDE8 /* THJGProjectFundCheckBean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4928605422240F730053DDE8 /* THJGProjectFundCheckBean.swift */; };
+		492CC8E0229CD44D00DD2E7E /* UINavigationController+FDFullscreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 492CC8DF229CD44D00DD2E7E /* UINavigationController+FDFullscreenPopGesture.m */; };
+		492F4006221FBC3400497153 /* THJGProDevCostBigTypeHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 492F4005221FBC3400497153 /* THJGProDevCostBigTypeHeaderView.xib */; };
+		492F4008221FBE7900497153 /* THJGProDevCostSmallTypeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492F4007221FBE7900497153 /* THJGProDevCostSmallTypeHeaderView.swift */; };
+		492F400A221FBECE00497153 /* THJGProDevCostSmallTypeHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 492F4009221FBECE00497153 /* THJGProDevCostSmallTypeHeaderView.xib */; };
+		493D586F221B9D5200ED62A8 /* THJGProVideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493D586D221B9D5200ED62A8 /* THJGProVideoCell.swift */; };
+		493D5870221B9D5200ED62A8 /* THJGProVideoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 493D586E221B9D5200ED62A8 /* THJGProVideoCell.xib */; };
+		493D5877221BA09700ED62A8 /* THJGProDetialImgCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493D5875221BA09700ED62A8 /* THJGProDetialImgCell.swift */; };
+		493D5878221BA09700ED62A8 /* THJGProDetialImgCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 493D5876221BA09700ED62A8 /* THJGProDetialImgCell.xib */; };
+		4941C3112294E88900B1571E /* THJGVerticalButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4941C3102294E88900B1571E /* THJGVerticalButton.swift */; };
+		4942EBF52231F84E00E0FDE3 /* THJGBaiduMapManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4942EBF42231F84E00E0FDE3 /* THJGBaiduMapManager.swift */; };
+		4947EA812213BE4F008D93C5 /* THJGUserBean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4947EA802213BE4F008D93C5 /* THJGUserBean.swift */; };
+		4947EA8C2213C123008D93C5 /* THJGLoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4947EA8A2213C123008D93C5 /* THJGLoginController.swift */; };
+		4947EA8D2213C123008D93C5 /* THJGLoginController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4947EA8B2213C123008D93C5 /* THJGLoginController.xib */; };
+		4949EFDF221A909A0031FFEF /* THJGEZOPENManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4949EFDE221A909A0031FFEF /* THJGEZOPENManager.swift */; };
+		4949EFE2221A97520031FFEF /* THJGEZPlayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4949EFE0221A97520031FFEF /* THJGEZPlayerController.swift */; };
+		494A756F22373B6A00649516 /* THJGBriefImgShowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494A756E22373B6A00649516 /* THJGBriefImgShowView.swift */; };
+		494A757122373B9600649516 /* THJGBriefImgShowView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 494A757022373B9600649516 /* THJGBriefImgShowView.xib */; };
+		494A75742237401C00649516 /* THJGBriefImgShowCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494A75722237401C00649516 /* THJGBriefImgShowCell.swift */; };
+		494A75752237401C00649516 /* THJGBriefImgShowCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 494A75732237401C00649516 /* THJGBriefImgShowCell.xib */; };
+		494AC9AF2230B0AF00F988F7 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 494AC9AD2230B0AF00F988F7 /* libssl.a */; };
+		494AC9B02230B0AF00F988F7 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 494AC9AE2230B0AF00F988F7 /* libcrypto.a */; };
+		494AC9B62230E11D00F988F7 /* THJGProjectCompetionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494AC9B52230E11D00F988F7 /* THJGProjectCompetionView.swift */; };
+		494BB5362243B01000FC0B7D /* DQSGuestureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494BB5352243B01000FC0B7D /* DQSGuestureView.swift */; };
+		494BB5382243B35A00FC0B7D /* DQSGuestureButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494BB5372243B35A00FC0B7D /* DQSGuestureButton.swift */; };
+		494C0BA2221D035F00F56A17 /* THJGProPlanCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494C0BA0221D035F00F56A17 /* THJGProPlanCell.swift */; };
+		494C0BA3221D035F00F56A17 /* THJGProPlanCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 494C0BA1221D035F00F56A17 /* THJGProPlanCell.xib */; };
+		494C0BA5221D070800F56A17 /* THJGProjectPlanViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494C0BA4221D070800F56A17 /* THJGProjectPlanViewModel.swift */; };
+		495022282249EDF600A2F15D /* THJGPushMsgView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495022272249EDF600A2F15D /* THJGPushMsgView.swift */; };
+		4950222A2249EE0D00A2F15D /* THJGPushMsgView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 495022292249EE0D00A2F15D /* THJGPushMsgView.xib */; };
+		4950222C224A3C3500A2F15D /* THJGPushViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4950222B224A3C3500A2F15D /* THJGPushViewModel.swift */; };
+		49550AC2222E6026000C6847 /* THJGModifyPhoneController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49550AC0222E6026000C6847 /* THJGModifyPhoneController.swift */; };
+		49550AC3222E6026000C6847 /* THJGModifyPhoneController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49550AC1222E6026000C6847 /* THJGModifyPhoneController.xib */; };
+		49550AC6222E60C9000C6847 /* THJGModifyPhoneViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49550AC5222E60C9000C6847 /* THJGModifyPhoneViewModel.swift */; };
+		49550AC9222E6C74000C6847 /* THJGModifyLoginPwdController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49550AC7222E6C74000C6847 /* THJGModifyLoginPwdController.swift */; };
+		49550ACA222E6C74000C6847 /* THJGModifyLoginPwdController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49550AC8222E6C74000C6847 /* THJGModifyLoginPwdController.xib */; };
+		49550ACC222E6FB8000C6847 /* THJGModifyLoginPwdViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49550ACB222E6FB8000C6847 /* THJGModifyLoginPwdViewModel.swift */; };
+		49554CCF2239FAC700BAD726 /* THJGPointAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49554CCE2239FAC700BAD726 /* THJGPointAnnotation.swift */; };
+		495E99A4221FCDAC00095C17 /* THJGProDevCostTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495E99A3221FCDAC00095C17 /* THJGProDevCostTopView.swift */; };
+		4965C262222510B600DFD9A8 /* THJGProjectContractBean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4965C261222510B600DFD9A8 /* THJGProjectContractBean.swift */; };
+		4965C26422252E8600DFD9A8 /* THJGFundInfoAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4965C26322252E8600DFD9A8 /* THJGFundInfoAccountView.swift */; };
+		4965C26622252F8C00DFD9A8 /* THJGFundInfoCheckView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4965C26522252F8C00DFD9A8 /* THJGFundInfoCheckView.swift */; };
+		4965C2682225303E00DFD9A8 /* THJGFundInfoContractView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4965C2672225303E00DFD9A8 /* THJGFundInfoContractView.swift */; };
+		4965C26B222536AB00DFD9A8 /* THJGFundInfoAccountCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4965C269222536AB00DFD9A8 /* THJGFundInfoAccountCell.swift */; };
+		4965C26C222536AB00DFD9A8 /* THJGFundInfoAccountCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4965C26A222536AB00DFD9A8 /* THJGFundInfoAccountCell.xib */; };
+		496910CD221B8EA200DC7040 /* THJGProjectDetailBean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496910CC221B8EA200DC7040 /* THJGProjectDetailBean.swift */; };
+		496A1A1622377DAB0048454B /* THJGEZOpenVideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496A1A1422377DAB0048454B /* THJGEZOpenVideoCell.swift */; };
+		496A1A1722377DAB0048454B /* THJGEZOpenVideoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 496A1A1522377DAB0048454B /* THJGEZOpenVideoCell.xib */; };
+		496B4843223C9C080097E52E /* THJGMyCenterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496B4841223C9C080097E52E /* THJGMyCenterCell.swift */; };
+		496B4844223C9C080097E52E /* THJGMyCenterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 496B4842223C9C080097E52E /* THJGMyCenterCell.xib */; };
+		496B4847223CE4390097E52E /* THJGSettingPwdController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496B4845223CE4390097E52E /* THJGSettingPwdController.swift */; };
+		496B4848223CE4390097E52E /* THJGSettingPwdController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 496B4846223CE4390097E52E /* THJGSettingPwdController.xib */; };
+		496B484B223CE7310097E52E /* THJGPwdSettingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496B4849223CE7310097E52E /* THJGPwdSettingCell.swift */; };
+		496B484C223CE7310097E52E /* THJGPwdSettingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 496B484A223CE7310097E52E /* THJGPwdSettingCell.xib */; };
+		496C2FB3221CDB5400C9B7B0 /* THJGProjectPlanController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496C2FB1221CDB5400C9B7B0 /* THJGProjectPlanController.swift */; };
+		496C2FB4221CDB5400C9B7B0 /* THJGProjectPlanController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 496C2FB2221CDB5400C9B7B0 /* THJGProjectPlanController.xib */; };
+		497196D9223B88E80057FEAE /* THJGProjectContractDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497196D7223B88E80057FEAE /* THJGProjectContractDetailController.swift */; };
+		497196DA223B88E80057FEAE /* THJGProjectContractDetailController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 497196D8223B88E80057FEAE /* THJGProjectContractDetailController.xib */; };
+		497196DC223B8C400057FEAE /* THJGProjectContractDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497196DB223B8C400057FEAE /* THJGProjectContractDetailViewModel.swift */; };
+		497196DF223BA27C0057FEAE /* THJGConDetailAppointInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497196DD223BA27C0057FEAE /* THJGConDetailAppointInfoCell.swift */; };
+		497196E0223BA27C0057FEAE /* THJGConDetailAppointInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 497196DE223BA27C0057FEAE /* THJGConDetailAppointInfoCell.xib */; };
+		497196E3223BA4480057FEAE /* THJGConDetailActualInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497196E1223BA4480057FEAE /* THJGConDetailActualInfoCell.swift */; };
+		497196E4223BA4480057FEAE /* THJGConDetailActualInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 497196E2223BA4480057FEAE /* THJGConDetailActualInfoCell.xib */; };
+		4971EDA5229663AB008717EB /* THJGProCompetionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4971EDA3229663AB008717EB /* THJGProCompetionController.swift */; };
+		4971EDA6229663AB008717EB /* THJGProCompetionController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4971EDA4229663AB008717EB /* THJGProCompetionController.xib */; };
+		4971EDA92296785C008717EB /* THJGProMarketInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4971EDA72296785C008717EB /* THJGProMarketInfoController.swift */; };
+		4971EDAA2296785C008717EB /* THJGProMarketInfoController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4971EDA82296785C008717EB /* THJGProMarketInfoController.xib */; };
+		4971EDAC22967911008717EB /* THJGProMarketInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4971EDAB22967911008717EB /* THJGProMarketInfoViewModel.swift */; };
+		4971EDAE229679D3008717EB /* THJGProMarketInfoBean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4971EDAD229679D3008717EB /* THJGProMarketInfoBean.swift */; };
+		4971EDB122967E93008717EB /* THJGProMarketInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4971EDAF22967E93008717EB /* THJGProMarketInfoCell.swift */; };
+		4971EDB222967E93008717EB /* THJGProMarketInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4971EDB022967E93008717EB /* THJGProMarketInfoCell.xib */; };
+		4971EDB522968281008717EB /* THJGProCompanyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4971EDB322968281008717EB /* THJGProCompanyCell.swift */; };
+		4971EDB622968281008717EB /* THJGProCompanyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4971EDB422968281008717EB /* THJGProCompanyCell.xib */; };
+		4971EDB922969065008717EB /* THJGProDZYCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4971EDB722969065008717EB /* THJGProDZYCell.swift */; };
+		4971EDBA22969065008717EB /* THJGProDZYCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4971EDB822969065008717EB /* THJGProDZYCell.xib */; };
+		4971EDBD2296967B008717EB /* THJGProOperatorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4971EDBB2296967B008717EB /* THJGProOperatorCell.swift */; };
+		4971EDBE2296967B008717EB /* THJGProOperatorCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4971EDBC2296967B008717EB /* THJGProOperatorCell.xib */; };
+		49831CB1222F610000240BD0 /* THJGMonitorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49831CB0222F610000240BD0 /* THJGMonitorViewModel.swift */; };
+		49831CB3222F632700240BD0 /* THJGMonitorBean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49831CB2222F632700240BD0 /* THJGMonitorBean.swift */; };
+		49831CB6222F6C4A00240BD0 /* THJGMonitorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49831CB4222F6C4A00240BD0 /* THJGMonitorCell.swift */; };
+		49831CB7222F6C4A00240BD0 /* THJGMonitorCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49831CB5222F6C4A00240BD0 /* THJGMonitorCell.xib */; };
+		4984405B222D506D00C21B82 /* THJGProjectCachetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4984405A222D506D00C21B82 /* THJGProjectCachetViewModel.swift */; };
+		4984405E222D50CE00C21B82 /* THJGProjectCachetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4984405C222D50CE00C21B82 /* THJGProjectCachetController.swift */; };
+		4984405F222D50CE00C21B82 /* THJGProjectCachetController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4984405D222D50CE00C21B82 /* THJGProjectCachetController.xib */; };
+		49844061222D530500C21B82 /* THJGProjectCachetBean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49844060222D530500C21B82 /* THJGProjectCachetBean.swift */; };
+		49844064222D5C5800C21B82 /* THJGProjectCachetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49844062222D5C5800C21B82 /* THJGProjectCachetCell.swift */; };
+		49844065222D5C5800C21B82 /* THJGProjectCachetCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49844063222D5C5800C21B82 /* THJGProjectCachetCell.xib */; };
+		49867FA6222CB4F9000E049E /* THJGProjectSellPlanBean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49867FA5222CB4F9000E049E /* THJGProjectSellPlanBean.swift */; };
+		49867FA9222CBEE4000E049E /* THJGProjectSellPlanCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49867FA7222CBEE4000E049E /* THJGProjectSellPlanCell.swift */; };
+		49867FAA222CBEE4000E049E /* THJGProjectSellPlanCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49867FA8222CBEE4000E049E /* THJGProjectSellPlanCell.xib */; };
+		498B5785228D08D5005F9867 /* THJGNewsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498B5783228D08D5005F9867 /* THJGNewsController.swift */; };
+		498B5786228D08D5005F9867 /* THJGNewsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 498B5784228D08D5005F9867 /* THJGNewsController.xib */; };
+		498D4D3D2228BFCA00793A81 /* THJGProjectSellDetailBean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498D4D3C2228BFCA00793A81 /* THJGProjectSellDetailBean.swift */; };
+		498D4D3F2228D95300793A81 /* THJGProSellInfoDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498D4D3E2228D95300793A81 /* THJGProSellInfoDetailView.swift */; };
+		498D4D412228D98D00793A81 /* THJGProSellInfoPlanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498D4D402228D98D00793A81 /* THJGProSellInfoPlanView.swift */; };
+		498D4D432228D9B700793A81 /* THJGProSellInfoCompeteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498D4D422228D9B700793A81 /* THJGProSellInfoCompeteView.swift */; };
+		498D4D452228E0C900793A81 /* THJGProSellInfoDetailHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498D4D442228E0C900793A81 /* THJGProSellInfoDetailHeaderView.swift */; };
+		498E09E122B249CD00EDAFD3 /* THJGProDaylyManageVideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498E09DF22B249CD00EDAFD3 /* THJGProDaylyManageVideoCell.swift */; };
+		498E09E222B249CD00EDAFD3 /* THJGProDaylyManageVideoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 498E09E022B249CD00EDAFD3 /* THJGProDaylyManageVideoCell.xib */; };
+		498FCE0A228D37FC0010C29B /* THJGNewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498FCE09228D37FC0010C29B /* THJGNewsViewModel.swift */; };
+		498FCE0C228D39250010C29B /* THJGNewsInfoBean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498FCE0B228D39250010C29B /* THJGNewsInfoBean.swift */; };
+		498FCE0F228D3B260010C29B /* THJGNewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498FCE0D228D3B260010C29B /* THJGNewsCell.swift */; };
+		498FCE10228D3B260010C29B /* THJGNewsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 498FCE0E228D3B260010C29B /* THJGNewsCell.xib */; };
+		49900791222E804A0077CC95 /* THJGMyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49900790222E804A0077CC95 /* THJGMyViewModel.swift */; };
+		49A1D6BE2217EBF8009DB272 /* THJGHomePageBean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A1D6BD2217EBF8009DB272 /* THJGHomePageBean.swift */; };
+		49A1D6C42217F343009DB272 /* TZBTimeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 49A1D6C02217F342009DB272 /* TZBTimeButton.m */; };
+		49A1D6C52217F343009DB272 /* NSTimer+TZBTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 49A1D6C12217F342009DB272 /* NSTimer+TZBTimer.m */; };
+		49A1D6C92217F356009DB272 /* FTDCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A1D6C72217F356009DB272 /* FTDCollectionViewCell.swift */; };
+		49A1D6CA2217F356009DB272 /* FTDLoopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A1D6C82217F356009DB272 /* FTDLoopView.swift */; };
+		49A1D6CD2218039F009DB272 /* THJGProjectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A1D6CB2218039F009DB272 /* THJGProjectCell.swift */; };
+		49A1D6CE2218039F009DB272 /* THJGProjectCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49A1D6CC2218039F009DB272 /* THJGProjectCell.xib */; };
+		49A1D6D1221807EC009DB272 /* THJGHomePageBannerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A1D6CF221807EC009DB272 /* THJGHomePageBannerCell.swift */; };
+		49A1D6D2221807EC009DB272 /* THJGHomePageBannerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49A1D6D0221807EC009DB272 /* THJGHomePageBannerCell.xib */; };
+		49A1D6D52218089F009DB272 /* THJGHomePageBullteinCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A1D6D32218089F009DB272 /* THJGHomePageBullteinCell.swift */; };
+		49A1D6D62218089F009DB272 /* THJGHomePageBullteinCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49A1D6D42218089F009DB272 /* THJGHomePageBullteinCell.xib */; };
+		49A33AEB223F6F1100FBD509 /* DQSUtils_OC.m in Sources */ = {isa = PBXBuildFile; fileRef = 49A33AEA223F6F1100FBD509 /* DQSUtils_OC.m */; };
+		49A4F09922489FD0004448AB /* THJGValidateModifyGuestureViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A4F09822489FD0004448AB /* THJGValidateModifyGuestureViewModel.swift */; };
+		49A4F09B2248CC4A004448AB /* THJGWebController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A4F09A2248CC4A004448AB /* THJGWebController.swift */; };
+		49A71E53221D26A5007CC7CD /* THJGProjectPlanBean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A71E52221D26A5007CC7CD /* THJGProjectPlanBean.swift */; };
+		49B2AA902213EB5C00C47780 /* THJGLoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B2AA8F2213EB5C00C47780 /* THJGLoginViewModel.swift */; };
+		49B2AA922213EB8100C47780 /* THJGBaseBean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B2AA912213EB8100C47780 /* THJGBaseBean.swift */; };
+		49B2AA952213EDB700C47780 /* DQSUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B2AA942213EDB700C47780 /* DQSUtils.swift */; };
+		49B2AA982214173900C47780 /* DQSStorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B2AA972214173900C47780 /* DQSStorageManager.swift */; };
+		49B2AA9A2214197B00C47780 /* THJGStorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B2AA992214197B00C47780 /* THJGStorageManager.swift */; };
+		49B2AA9C2214238900C47780 /* DQSArchivable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B2AA9B2214238900C47780 /* DQSArchivable.swift */; };
+		49B2AA9F22142A0800C47780 /* KeychainWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B2AA9E22142A0800C47780 /* KeychainWrapper.m */; };
+		49B3D34F22446CA500ED29DE /* THJGSettingGuesurePwdController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B3D34D22446CA500ED29DE /* THJGSettingGuesurePwdController.swift */; };
+		49B3D35022446CA500ED29DE /* THJGSettingGuesurePwdController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49B3D34E22446CA500ED29DE /* THJGSettingGuesurePwdController.xib */; };
+		49B3D3522244A82700ED29DE /* DQSGuestureTipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B3D3512244A82700ED29DE /* DQSGuestureTipView.swift */; };
+		49B3D3552244CA0900ED29DE /* THJGModifyGuesturePwdController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B3D3532244CA0900ED29DE /* THJGModifyGuesturePwdController.swift */; };
+		49B3D3562244CA0900ED29DE /* THJGModifyGuesturePwdController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49B3D3542244CA0900ED29DE /* THJGModifyGuesturePwdController.xib */; };
+		49B3D3592244CCE900ED29DE /* THJGValidateGuestureController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B3D3572244CCE900ED29DE /* THJGValidateGuestureController.swift */; };
+		49B3D35A2244CCE900ED29DE /* THJGValidateGuestureController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49B3D3582244CCE900ED29DE /* THJGValidateGuestureController.xib */; };
+		49B3D35D2244E1F100ED29DE /* THJGValidateModifyGuestueController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B3D35B2244E1F100ED29DE /* THJGValidateModifyGuestueController.swift */; };
+		49B3D35E2244E1F100ED29DE /* THJGValidateModifyGuestueController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49B3D35C2244E1F100ED29DE /* THJGValidateModifyGuestueController.xib */; };
+		49BA8DFB223673ED0014E97A /* THJGImageShowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BA8DFA223673ED0014E97A /* THJGImageShowView.swift */; };
+		49BA8DFD223673FE0014E97A /* THJGImageShowView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49BA8DFC223673FE0014E97A /* THJGImageShowView.xib */; };
+		49BA8E012236780C0014E97A /* THJGImgShowCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BA8DFF2236780C0014E97A /* THJGImgShowCell.swift */; };
+		49BA8E022236780C0014E97A /* THJGImgShowCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49BA8E002236780C0014E97A /* THJGImgShowCell.xib */; };
+		49C086B422129B9000E13C99 /* THJGAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C086B322129B9000E13C99 /* THJGAppDelegate.swift */; };
+		49C086BE22129B9100E13C99 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49C086BC22129B9100E13C99 /* LaunchScreen.storyboard */; };
+		49C086CC2212A26C00E13C99 /* THJGTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C086CB2212A26C00E13C99 /* THJGTabBarController.swift */; };
+		49C086CE2212A28500E13C99 /* THJGNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C086CD2212A28500E13C99 /* THJGNavigationController.swift */; };
+		49C086D02212A29500E13C99 /* THJGBaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C086CF2212A29500E13C99 /* THJGBaseController.swift */; };
+		49C086DD2212A33100E13C99 /* THJGMyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C086DB2212A33100E13C99 /* THJGMyController.swift */; };
+		49C086DE2212A33100E13C99 /* THJGMyController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49C086DC2212A33100E13C99 /* THJGMyController.xib */; };
+		49C8A4C82228FB3500B949B4 /* THJGProjectSellInfoDetailSectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C8A4C72228FB3500B949B4 /* THJGProjectSellInfoDetailSectionHeaderView.swift */; };
+		49C8A4CA2228FCA900B949B4 /* THJGProjectSellInfoDetailSectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49C8A4C92228FCA900B949B4 /* THJGProjectSellInfoDetailSectionHeaderView.xib */; };
+		49C8A4CD22290D0600B949B4 /* THJGProjectSellDetailBlockCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C8A4CB22290D0600B949B4 /* THJGProjectSellDetailBlockCell.swift */; };
+		49C8A4CE22290D0600B949B4 /* THJGProjectSellDetailBlockCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49C8A4CC22290D0600B949B4 /* THJGProjectSellDetailBlockCell.xib */; };
+		49C8A4D52229148D00B949B4 /* THJGProjectRoomSellDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C8A4D32229148D00B949B4 /* THJGProjectRoomSellDetailController.swift */; };
+		49C8A4D62229148D00B949B4 /* THJGProjectRoomSellDetailController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49C8A4D42229148D00B949B4 /* THJGProjectRoomSellDetailController.xib */; };
+		49C8A4D92229169F00B949B4 /* THJGProjectRoomDetailTypeOneCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C8A4D72229169F00B949B4 /* THJGProjectRoomDetailTypeOneCell.swift */; };
+		49C8A4DA2229169F00B949B4 /* THJGProjectRoomDetailTypeOneCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49C8A4D82229169F00B949B4 /* THJGProjectRoomDetailTypeOneCell.xib */; };
+		49C8A4DD2229185A00B949B4 /* THJGProjectRoomDetailTypeTwoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C8A4DB2229185A00B949B4 /* THJGProjectRoomDetailTypeTwoCell.swift */; };
+		49C8A4DE2229185A00B949B4 /* THJGProjectRoomDetailTypeTwoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49C8A4DC2229185A00B949B4 /* THJGProjectRoomDetailTypeTwoCell.xib */; };
+		49C9A266221F84830012B439 /* THJGProDevCostBigTypeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C9A265221F84830012B439 /* THJGProDevCostBigTypeHeaderView.swift */; };
+		49C9A26B221F8E900012B439 /* THJGProjectDevCostDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C9A269221F8E900012B439 /* THJGProjectDevCostDetailCell.swift */; };
+		49C9A26C221F8E900012B439 /* THJGProjectDevCostDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49C9A26A221F8E900012B439 /* THJGProjectDevCostDetailCell.xib */; };
+		49CA56112297849D005CAEAA /* THJGProCompanyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CA560F2297849D005CAEAA /* THJGProCompanyController.swift */; };
+		49CA56122297849D005CAEAA /* THJGProCompanyController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49CA56102297849D005CAEAA /* THJGProCompanyController.xib */; };
+		49CA56142297864B005CAEAA /* THJGProCompanyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CA56132297864B005CAEAA /* THJGProCompanyViewModel.swift */; };
+		49CA5616229786CA005CAEAA /* THJGProCompanyBean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CA5615229786CA005CAEAA /* THJGProCompanyBean.swift */; };
+		49CA56182297B59C005CAEAA /* THJGProCompanyBaseInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CA56172297B59C005CAEAA /* THJGProCompanyBaseInfoView.swift */; };
+		49CA561B2297C089005CAEAA /* THJGProCompanyPdfCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CA56192297C089005CAEAA /* THJGProCompanyPdfCell.swift */; };
+		49CA561C2297C089005CAEAA /* THJGProCompanyPdfCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49CA561A2297C089005CAEAA /* THJGProCompanyPdfCell.xib */; };
+		49CA561E2297C76C005CAEAA /* THJGProCompanyRiskInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CA561D2297C76C005CAEAA /* THJGProCompanyRiskInfoView.swift */; };
+		49CA56212297CD09005CAEAA /* THJGProCompanyPdfBigCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CA561F2297CD09005CAEAA /* THJGProCompanyPdfBigCell.swift */; };
+		49CA56222297CD09005CAEAA /* THJGProCompanyPdfBigCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49CA56202297CD09005CAEAA /* THJGProCompanyPdfBigCell.xib */; };
+		49CA56242297CF05005CAEAA /* THJGProCompanyFinanceInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CA56232297CF05005CAEAA /* THJGProCompanyFinanceInfoView.swift */; };
+		49CA56272297D08B005CAEAA /* THJGProCompanyFinanceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CA56252297D08B005CAEAA /* THJGProCompanyFinanceCell.swift */; };
+		49CA56282297D08B005CAEAA /* THJGProCompanyFinanceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49CA56262297D08B005CAEAA /* THJGProCompanyFinanceCell.xib */; };
+		49CA562B2297E442005CAEAA /* THJGProDZYController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CA56292297E442005CAEAA /* THJGProDZYController.swift */; };
+		49CA562C2297E442005CAEAA /* THJGProDZYController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49CA562A2297E442005CAEAA /* THJGProDZYController.xib */; };
+		49CA56302297E9A8005CAEAA /* THJGAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49CA562F2297E9A8005CAEAA /* THJGAssets.xcassets */; };
+		49CF19FC2216697C008A0CBC /* DQSTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CF19FB2216697C008A0CBC /* DQSTextField.swift */; };
+		49CF86642249A9930014BAAA /* THJGVersionUpdateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CF86632249A9930014BAAA /* THJGVersionUpdateView.swift */; };
+		49CF86662249A9B20014BAAA /* THJGVersionUpdateView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49CF86652249A9B20014BAAA /* THJGVersionUpdateView.xib */; };
+		49CF86682249BFC40014BAAA /* THJGEmergentMsgView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CF86672249BFC40014BAAA /* THJGEmergentMsgView.swift */; };
+		49CF866A2249BFDE0014BAAA /* THJGEmergentMsgView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49CF86692249BFDE0014BAAA /* THJGEmergentMsgView.xib */; };
+		49CF866C2249C5A40014BAAA /* THJGTouchIDToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CF866B2249C5A40014BAAA /* THJGTouchIDToastView.swift */; };
+		49CF866E2249C5C70014BAAA /* THJGTouchIDToastView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49CF866D2249C5C70014BAAA /* THJGTouchIDToastView.xib */; };
+		49CF86702249CC5F0014BAAA /* THJGContactUsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CF866F2249CC5F0014BAAA /* THJGContactUsView.swift */; };
+		49CF86722249CC860014BAAA /* THJGContactUsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49CF86712249CC860014BAAA /* THJGContactUsView.xib */; };
+		49D07995222CF795009F7B9B /* THJGProjectSellCompetionBean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D07994222CF795009F7B9B /* THJGProjectSellCompetionBean.swift */; };
+		49D136CC2296390800330E91 /* THJGProDetailTapButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D136CB2296390800330E91 /* THJGProDetailTapButton.swift */; };
+		49D136CF22963A0700330E91 /* THJGProMonitorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D136CD22963A0700330E91 /* THJGProMonitorCell.swift */; };
+		49D136D022963A0700330E91 /* THJGProMonitorCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49D136CE22963A0700330E91 /* THJGProMonitorCell.xib */; };
+		49D136D322964D1400330E91 /* THJGProSellMarketCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D136D122964D1400330E91 /* THJGProSellMarketCell.swift */; };
+		49D136D422964D1400330E91 /* THJGProSellMarketCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49D136D222964D1400330E91 /* THJGProSellMarketCell.xib */; };
+		49D13B5322325429001911B4 /* THJGJPushRegister.m in Sources */ = {isa = PBXBuildFile; fileRef = 49D13B5222325429001911B4 /* THJGJPushRegister.m */; };
+		49D3C85B228E61D0003D654F /* THJGNewsDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D3C859228E61D0003D654F /* THJGNewsDetailController.swift */; };
+		49D3C85C228E61D0003D654F /* THJGNewsDetailController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49D3C85A228E61D0003D654F /* THJGNewsDetailController.xib */; };
+		49D3C85E228E64DB003D654F /* THJGNewsDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D3C85D228E64DB003D654F /* THJGNewsDetailViewModel.swift */; };
+		49D3C860228E66A7003D654F /* THJGNewsDetailBean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D3C85F228E66A7003D654F /* THJGNewsDetailBean.swift */; };
+		49D420B522954B42005FC79B /* THJGProSituationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D420B322954B42005FC79B /* THJGProSituationCell.swift */; };
+		49D420B622954B42005FC79B /* THJGProSituationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49D420B422954B42005FC79B /* THJGProSituationCell.xib */; };
+		49D42A152231005D0043C999 /* THJGTipAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D42A142231005D0043C999 /* THJGTipAnnotation.swift */; };
+		49D42A1722313BAF0043C999 /* THJGProjectCompetionDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D42A1622313BAF0043C999 /* THJGProjectCompetionDetailView.swift */; };
+		49D42A1A22313DFD0043C999 /* THJGProjectCompetionDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D42A1822313DFD0043C999 /* THJGProjectCompetionDetailCell.swift */; };
+		49D42A1B22313DFD0043C999 /* THJGProjectCompetionDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49D42A1922313DFD0043C999 /* THJGProjectCompetionDetailCell.xib */; };
+		49D5B89C2221329000CD9CCE /* THJGProjectFundInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D5B89A2221329000CD9CCE /* THJGProjectFundInfoController.swift */; };
+		49D5B89D2221329000CD9CCE /* THJGProjectFundInfoController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49D5B89B2221329000CD9CCE /* THJGProjectFundInfoController.xib */; };
+		49D5B89F2221335800CD9CCE /* THJGProjectFundInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D5B89E2221335800CD9CCE /* THJGProjectFundInfoViewModel.swift */; };
+		49D5B8A122213BB100CD9CCE /* THJGProjectFundAccountBean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D5B8A022213BB100CD9CCE /* THJGProjectFundAccountBean.swift */; };
+		49E2CF7D222FBC7200735718 /* THJGPlatformNoticeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E2CF7B222FBC7200735718 /* THJGPlatformNoticeController.swift */; };
+		49E2CF7E222FBC7200735718 /* THJGPlatformNoticeController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49E2CF7C222FBC7200735718 /* THJGPlatformNoticeController.xib */; };
+		49E2CF81222FC8C400735718 /* THJGPlatformNoticeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E2CF7F222FC8C400735718 /* THJGPlatformNoticeCell.swift */; };
+		49E2CF82222FC8C400735718 /* THJGPlatformNoticeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49E2CF80222FC8C400735718 /* THJGPlatformNoticeCell.xib */; };
+		49E2CF84222FCA7000735718 /* THJGPlatformNoticeBean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E2CF83222FCA7000735718 /* THJGPlatformNoticeBean.swift */; };
+		49E2CF86222FCC5100735718 /* THJGPlatformNoticeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E2CF85222FCC5100735718 /* THJGPlatformNoticeViewModel.swift */; };
+		49E2CF88222FCD0700735718 /* THJGPlatformNoticeDetailBean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E2CF87222FCD0700735718 /* THJGPlatformNoticeDetailBean.swift */; };
+		49E2CF8B222FDB5500735718 /* THJGPlatformNoticeDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E2CF89222FDB5500735718 /* THJGPlatformNoticeDetailController.swift */; };
+		49E2CF8C222FDB5500735718 /* THJGPlatformNoticeDetailController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49E2CF8A222FDB5500735718 /* THJGPlatformNoticeDetailController.xib */; };
+		49E2CF8E222FDBC500735718 /* THJGPlatformNoticeDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E2CF8D222FDBC500735718 /* THJGPlatformNoticeDetailViewModel.swift */; };
+		49E2CF90222FF01100735718 /* THJGMyCenterBean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E2CF8F222FF01100735718 /* THJGMyCenterBean.swift */; };
+		49E2CF92222FF69800735718 /* THJGEZOpenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E2CF91222FF69800735718 /* THJGEZOpenViewModel.swift */; };
+		49E33E8C221E90B400178DE7 /* THJGProjectDevCostController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E33E8A221E90B400178DE7 /* THJGProjectDevCostController.swift */; };
+		49E33E8D221E90B400178DE7 /* THJGProjectDevCostController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49E33E8B221E90B400178DE7 /* THJGProjectDevCostController.xib */; };
+		49E33E8F221E90F400178DE7 /* THJGProjectDevCostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E33E8E221E90F400178DE7 /* THJGProjectDevCostViewModel.swift */; };
+		49E33E91221EC37900178DE7 /* THJGProjectDevCostBean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E33E90221EC37900178DE7 /* THJGProjectDevCostBean.swift */; };
+		49E85215221D537A008FF1DA /* THJGProjectTimesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E85213221D537A008FF1DA /* THJGProjectTimesController.swift */; };
+		49E85216221D537A008FF1DA /* THJGProjectTimesController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49E85214221D537A008FF1DA /* THJGProjectTimesController.xib */; };
+		49E85218221D5461008FF1DA /* THJGProjectTimesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E85217221D5461008FF1DA /* THJGProjectTimesViewModel.swift */; };
+		49E8521A221D5571008FF1DA /* THJGProjectTimesBean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E85219221D5571008FF1DA /* THJGProjectTimesBean.swift */; };
+		49E8521D221D7324008FF1DA /* THJGProjectTimesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E8521B221D7324008FF1DA /* THJGProjectTimesCell.swift */; };
+		49E8521E221D7324008FF1DA /* THJGProjectTimesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49E8521C221D7324008FF1DA /* THJGProjectTimesCell.xib */; };
+		49EBE90B2217E7580012FE39 /* THJGHomePageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EBE9052217E7580012FE39 /* THJGHomePageViewModel.swift */; };
+		49EBE90C2217E7580012FE39 /* THJGHomePageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EBE9072217E7580012FE39 /* THJGHomePageController.swift */; };
+		49EBE90D2217E7580012FE39 /* THJGHomePageController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49EBE9082217E7580012FE39 /* THJGHomePageController.xib */; };
+		49F4513F22280D960069B8B7 /* THJGProjectSellInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F4513D22280D960069B8B7 /* THJGProjectSellInfoController.swift */; };
+		49F4514022280D960069B8B7 /* THJGProjectSellInfoController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49F4513E22280D960069B8B7 /* THJGProjectSellInfoController.xib */; };
+		49F4514222280DEF0069B8B7 /* THJGProjectSellInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F4514122280DEF0069B8B7 /* THJGProjectSellInfoViewModel.swift */; };
+		6F9D9A9DE8A240ABCAFB364C /* Pods_THJG.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C203E424AC68E16D245155E /* Pods_THJG.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4908A9CB22549E3200F775A2 /* THJGGuideController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGGuideController.swift; sourceTree = "<group>"; };
+		4908A9CC22549E3200F775A2 /* THJGGuideController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = THJGGuideController.xib; sourceTree = "<group>"; };
+		490FF3E1224104A4004D42B2 /* THJGVideoFullScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGVideoFullScreenView.swift; sourceTree = "<group>"; };
+		490FF3E3224104B3004D42B2 /* THJGVideoFullScreenView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = THJGVideoFullScreenView.xib; sourceTree = "<group>"; };
+		4911E2F32240C30800D4678B /* THJGVideoRecView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGVideoRecView.swift; sourceTree = "<group>"; };
+		4911E2F52240C32B00D4678B /* THJGVideoRecView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = THJGVideoRecView.xib; sourceTree = "<group>"; };
+		49121F54222F9EC800D45EC1 /* THJGInnerMsgController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGInnerMsgController.swift; sourceTree = "<group>"; };
+		49121F55222F9EC800D45EC1 /* THJGInnerMsgController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = THJGInnerMsgController.xib; sourceTree = "<group>"; };
+		49121F58222F9F9E00D45EC1 /* THJGInnerMsgCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGInnerMsgCell.swift; sourceTree = "<group>"; };
+		49121F59222F9F9E00D45EC1 /* THJGInnerMsgCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = THJGInnerMsgCell.xib; sourceTree = "<group>"; };
+		49121F5C222FA0CD00D45EC1 /* THJGInnerMsgViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGInnerMsgViewModel.swift; sourceTree = "<group>"; };
+		49121F5E222FA16000D45EC1 /* THJGInnerMsgBean.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGInnerMsgBean.swift; sourceTree = "<group>"; };
+		49121F60222FAF5000D45EC1 /* THJGInnerMsgDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGInnerMsgDetailController.swift; sourceTree = "<group>"; };
+		49121F61222FAF5000D45EC1 /* THJGInnerMsgDetailController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = THJGInnerMsgDetailController.xib; sourceTree = "<group>"; };
+		49121F64222FB01700D45EC1 /* THJGInnerMsgDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGInnerMsgDetailViewModel.swift; sourceTree = "<group>"; };
+		491227D8221684380064E1AD /* THJGForgetPwdController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGForgetPwdController.swift; sourceTree = "<group>"; };
+		491227D9221684380064E1AD /* THJGForgetPwdController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = THJGForgetPwdController.xib; sourceTree = "<group>"; };
+		491227E222168A300064E1AD /* THJGForgetPwdViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGForgetPwdViewModel.swift; sourceTree = "<group>"; };
+		491227E422168AD80064E1AD /* THJGBaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGBaseViewModel.swift; sourceTree = "<group>"; };
+		4912924622F9106B004FEC55 /* THJGBigImgShowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGBigImgShowView.swift; sourceTree = "<group>"; };
+		4912924822F910BC004FEC55 /* THJGBigImgShowView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = THJGBigImgShowView.xib; sourceTree = "<group>"; };
+		49148DA02212B218003F4368 /* DQSDataZipHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DQSDataZipHelper.m; sourceTree = "<group>"; };
+		49148DA12212B218003F4368 /* DQSRSAHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DQSRSAHelper.h; sourceTree = "<group>"; };
+		49148DA32212B218003F4368 /* NSData+KKHASH.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+KKHASH.h"; sourceTree = "<group>"; };
+		49148DA42212B218003F4368 /* GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMBase64.h; sourceTree = "<group>"; };
+		49148DA52212B218003F4368 /* RSA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSA.m; sourceTree = "<group>"; };
+		49148DA62212B218003F4368 /* NSData+KKSignVerify.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+KKSignVerify.m"; sourceTree = "<group>"; };
+		49148DA72212B218003F4368 /* DQSDataZipHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DQSDataZipHelper.h; sourceTree = "<group>"; };
+		49148DA92212B218003F4368 /* DQSRSAHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DQSRSAHelper.m; sourceTree = "<group>"; };
+		49148DAA2212B218003F4368 /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
+		49148DAB2212B218003F4368 /* RSA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSA.h; sourceTree = "<group>"; };
+		49148DAC2212B218003F4368 /* GTMBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMBase64.m; sourceTree = "<group>"; };
+		49148DAD2212B218003F4368 /* NSData+KKHASH.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+KKHASH.m"; sourceTree = "<group>"; };
+		49148DAE2212B218003F4368 /* NSData+KKSignVerify.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+KKSignVerify.h"; sourceTree = "<group>"; };
+		49148DB92212B2D9003F4368 /* THJG-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "THJG-Bridging-Header.h"; sourceTree = "<group>"; };
+		49148DBA2212B3C2003F4368 /* rsa_public_key.der */ = {isa = PBXFileReference; lastKnownFileType = file; path = rsa_public_key.der; sourceTree = "<group>"; };
+		49148DBD2212B445003F4368 /* DQSNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DQSNetworkManager.swift; sourceTree = "<group>"; };
+		49148DC12212C65E003F4368 /* THJGConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGConstants.swift; sourceTree = "<group>"; };
+		4915CE862241CCAC00CD0B2C /* THJGLocalVideoFullScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGLocalVideoFullScreenView.swift; sourceTree = "<group>"; };
+		4915CE882241CCBA00CD0B2C /* THJGLocalVideoFullScreenView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = THJGLocalVideoFullScreenView.xib; sourceTree = "<group>"; };
+		491F703022388FE800190419 /* THJGProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGProgressView.swift; sourceTree = "<group>"; };
+		491F70322238903300190419 /* THJGProgressView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = THJGProgressView.xib; sourceTree = "<group>"; };
+		4922EEDA22262924001EB050 /* THJGProjectFundCheckCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGProjectFundCheckCell.swift; sourceTree = "<group>"; };
+		4922EEDB22262924001EB050 /* THJGProjectFundCheckCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = THJGProjectFundCheckCell.xib; sourceTree = "<group>"; };
+		4923A3E422268B26007FBECC /* THJGProjectContractHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGProjectContractHeaderView.swift; sourceTree = "<group>"; };
+		4923A3E622268B58007FBECC /* THJGProjectContractHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = THJGProjectContractHeaderView.xib; sourceTree = "<group>"; };
+		49259AFE22F27E2200212D19 /* THJGDatePickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = THJGDatePickerView.swift; sourceTree = "<group>"; };
+		49259AFF22F27E2200212D19 /* THJGDatePickerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = THJGDatePickerView.xib; sourceTree = "<group>"; };
+		49259B0222F27E3F00212D19 /* THJGProjectFeeTypeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGProjectFeeTypeView.swift; sourceTree = "<group>"; };
+		49259B0422F27E4900212D19 /* THJGProjectFeeTypeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = THJGProjectFeeTypeView.xib; sourceTree = "<group>"; };
+		49259B0622F2814100212D19 /* THJGTProjectFeeTypeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGTProjectFeeTypeCell.swift; sourceTree = "<group>"; };
+		49259B0722F2814100212D19 /* THJGTProjectFeeTypeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = THJGTProjectFeeTypeCell.xib; sourceTree = "<group>"; };
+		4927B5F0221AE5FB002897E3 /* THJGProjectDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGProjectDetailController.swift; sourceTree = "<group>"; };
+		4927B5F1221AE5FB002897E3 /* THJGProjectDetailController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = THJGProjectDetailController.xib; sourceTree = "<group>"; };
+		4927B5F4221AE62D002897E3 /* THJGProjectDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGProjectDetailViewModel.swift; sourceTree = "<group>"; };
+		4928605422240F730053DDE8 /* THJGProjectFundCheckBean.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGProjectFundCheckBean.swift; sourceTree = "<group>"; };
+		492CC8DE229CD44D00DD2E7E /* UINavigationController+FDFullscreenPopGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+FDFullscreenPopGesture.h"; sourceTree = "<group>"; };
+		492CC8DF229CD44D00DD2E7E /* UINavigationController+FDFullscreenPopGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+FDFullscreenPopGesture.m"; sourceTree = "<group>"; };
+		492F4005221FBC3400497153 /* THJGProDevCostBigTypeHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = THJGProDevCostBigTypeHeaderView.xib; sourceTree = "<group>"; };
+		492F4007221FBE7900497153 /* THJGProDevCostSmallTypeHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGProDevCostSmallTypeHeaderView.swift; sourceTree = "<group>"; };
+		492F4009221FBECE00497153 /* THJGProDevCostSmallTypeHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = THJGProDevCostSmallTypeHeaderView.xib; sourceTree = "<group>"; };
+		493D586D221B9D5200ED62A8 /* THJGProVideoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGProVideoCell.swift; sourceTree = "<group>"; };
+		493D586E221B9D5200ED62A8 /* THJGProVideoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = THJGProVideoCell.xib; sourceTree = "<group>"; };
+		493D5875221BA09700ED62A8 /* THJGProDetialImgCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGProDetialImgCell.swift; sourceTree = "<group>"; };
+		493D5876221BA09700ED62A8 /* THJGProDetialImgCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = THJGProDetialImgCell.xib; sourceTree = "<group>"; };
+		4941C3102294E88900B1571E /* THJGVerticalButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGVerticalButton.swift; sourceTree = "<group>"; };
+		4942EBF42231F84E00E0FDE3 /* THJGBaiduMapManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGBaiduMapManager.swift; sourceTree = "<group>"; };
+		4947EA802213BE4F008D93C5 /* THJGUserBean.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGUserBean.swift; sourceTree = "<group>"; };
+		4947EA8A2213C123008D93C5 /* THJGLoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGLoginController.swift; sourceTree = "<group>"; };
+		4947EA8B2213C123008D93C5 /* THJGLoginController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = THJGLoginController.xib; sourceTree = "<group>"; };
+		4949EFDE221A909A0031FFEF /* THJGEZOPENManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGEZOPENManager.swift; sourceTree = "<group>"; };
+		4949EFE0221A97520031FFEF /* THJGEZPlayerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGEZPlayerController.swift; sourceTree = "<group>"; };
+		494A756E22373B6A00649516 /* THJGBriefImgShowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGBriefImgShowView.swift; sourceTree = "<group>"; };
+		494A757022373B9600649516 /* THJGBriefImgShowView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = THJGBriefImgShowView.xib; sourceTree = "<group>"; };
+		494A75722237401C00649516 /* THJGBriefImgShowCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGBriefImgShowCell.swift; sourceTree = "<group>"; };
+		494A75732237401C00649516 /* THJGBriefImgShowCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = THJGBriefImgShowCell.xib; sourceTree = "<group>"; };
+		494AC9AD2230B0AF00F988F7 /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl.a; path = Pods/BaiduMapKit/BaiduMapKit/thirdlibs/libssl.a; sourceTree = "<group>"; };
+		494AC9AE2230B0AF00F988F7 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = Pods/BaiduMapKit/BaiduMapKit/thirdlibs/libcrypto.a; sourceTree = "<group>"; };
+		494AC9B52230E11D00F988F7 /* THJGProjectCompetionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGProjectCompetionView.swift; sourceTree = "<group>"; };
+		494BB5352243B01000FC0B7D /* DQSGuestureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DQSGuestureView.swift; sourceTree = "<group>"; };
+		494BB5372243B35A00FC0B7D /* DQSGuestureButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DQSGuestureButton.swift; sourceTree = "<group>"; };
+		494C0BA0221D035F00F56A17 /* THJGProPlanCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGProPlanCell.swift; sourceTree = "<group>"; };
+		494C0BA1221D035F00F56A17 /* THJGProPlanCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = THJGProPlanCell.xib; sourceTree = "<group>"; };
+		494C0BA4221D070800F56A17 /* THJGProjectPlanViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGProjectPlanViewModel.swift; sourceTree = "<group>"; };
+		495022272249EDF600A2F15D /* THJGPushMsgView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGPushMsgView.swift; sourceTree = "<group>"; };
+		495022292249EE0D00A2F15D /* THJGPushMsgView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = THJGPushMsgView.xib; sourceTree = "<group>"; };
+		4950222B224A3C3500A2F15D /* THJGPushViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGPushViewModel.swift; sourceTree = "<group>"; };
+		49550AC0222E6026000C6847 /* THJGModifyPhoneController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGModifyPhoneController.swift; sourceTree = "<group>"; };
+		49550AC1222E6026000C6847 /* THJGModifyPhoneController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = THJGModifyPhoneController.xib; sourceTree = "<group>"; };
+		49550AC5222E60C9000C6847 /* THJGModifyPhoneViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGModifyPhoneViewModel.swift; sourceTree = "<group>"; };
+		49550AC7222E6C74000C6847 /* THJGModifyLoginPwdController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGModifyLoginPwdController.swift; sourceTree = "<group>"; };
+		49550AC8222E6C74000C6847 /* THJGModifyLoginPwdController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = THJGModifyLoginPwdController.xib; sourceTree = "<group>"; };
+		49550ACB222E6FB8000C6847 /* THJGModifyLoginPwdViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGModifyLoginPwdViewModel.swift; sourceTree = "<group>"; };
+		49554CCE2239FAC700BAD726 /* THJGPointAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGPointAnnotation.swift; sourceTree = "<group>"; };
+		495E99A3221FCDAC00095C17 /* THJGProDevCostTopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGProDevCostTopView.swift; sourceTree = "<group>"; };
+		4965C261222510B600DFD9A8 /* THJGProjectContractBean.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGProjectContractBean.swift; sourceTree = "<group>"; };
+		4965C26322252E8600DFD9A8 /* THJGFundInfoAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGFundInfoAccountView.swift; sourceTree = "<group>"; };
+		4965C26522252F8C00DFD9A8 /* THJGFundInfoCheckView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGFundInfoCheckView.swift; sourceTree = "<group>"; };
+		4965C2672225303E00DFD9A8 /* THJGFundInfoContractView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGFundInfoContractView.swift; sourceTree = "<group>"; };
+		4965C269222536AB00DFD9A8 /* THJGFundInfoAccountCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGFundInfoAccountCell.swift; sourceTree = "<group>"; };
+		4965C26A222536AB00DFD9A8 /* THJGFundInfoAccountCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = THJGFundInfoAccountCell.xib; sourceTree = "<group>"; };
+		496910CC221B8EA200DC7040 /* THJGProjectDetailBean.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGProjectDetailBean.swift; sourceTree = "<group>"; };
+		496A1A1422377DAB0048454B /* THJGEZOpenVideoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGEZOpenVideoCell.swift; sourceTree = "<group>"; };
+		496A1A1522377DAB0048454B /* THJGEZOpenVideoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = THJGEZOpenVideoCell.xib; sourceTree = "<group>"; };
+		496B4841223C9C080097E52E /* THJGMyCenterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGMyCenterCell.swift; sourceTree = "<group>"; };
+		496B4842223C9C080097E52E /* THJGMyCenterCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = THJGMyCenterCell.xib; sourceTree = "<group>"; };
+		496B4845223CE4390097E52E /* THJGSettingPwdController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGSettingPwdController.swift; sourceTree = "<group>"; };
+		496B4846223CE4390097E52E /* THJGSettingPwdController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = THJGSettingPwdController.xib; sourceTree = "<group>"; };
+		496B4849223CE7310097E52E /* THJGPwdSettingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGPwdSettingCell.swift; sourceTree = "<group>"; };
+		496B484A223CE7310097E52E /* THJGPwdSettingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = THJGPwdSettingCell.xib; sourceTree = "<group>"; };
+		496C2FB1221CDB5400C9B7B0 /* THJGProjectPlanController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGProjectPlanController.swift; sourceTree = "<group>"; };
+		496C2FB2221CDB5400C9B7B0 /* THJGProjectPlanController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = THJGProjectPlanController.xib; sourceTree = "<group>"; };
+		497196D7223B88E80057FEAE /* THJGProjectContractDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGProjectContractDetailController.swift; sourceTree = "<group>"; };
+		497196D8223B88E80057FEAE /* THJGProjectContractDetailController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = THJGProjectContractDetailController.xib; sourceTree = "<group>"; };
+		497196DB223B8C400057FEAE /* THJGProjectContractDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGProjectContractDetailViewModel.swift; sourceTree = "<group>"; };
+		497196DD223BA27C0057FEAE /* THJGConDetailAppointInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGConDetailAppointInfoCell.swift; sourceTree = "<group>"; };
+		497196DE223BA27C0057FEAE /* THJGConDetailAppointInfoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = THJGConDetailAppointInfoCell.xib; sourceTree = "<group>"; };
+		497196E1223BA4480057FEAE /* THJGConDetailActualInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGConDetailActualInfoCell.swift; sourceTree = "<group>"; };
+		497196E2223BA4480057FEAE /* THJGConDetailActualInfoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = THJGConDetailActualInfoCell.xib; sourceTree = "<group>"; };
+		4971EDA3229663AB008717EB /* THJGProCompetionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGProCompetionController.swift; sourceTree = "<group>"; };
+		4971EDA4229663AB008717EB /* THJGProCompetionController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = THJGProCompetionController.xib; sourceTree = "<group>"; };
+		4971EDA72296785C008717EB /* THJGProMarketInfoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGProMarketInfoController.swift; sourceTree = "<group>"; };
+		4971EDA82296785C008717EB /* THJGProMarketInfoController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = THJGProMarketInfoController.xib; sourceTree = "<group>"; };
+		4971EDAB22967911008717EB /* THJGProMarketInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGProMarketInfoViewModel.swift; sourceTree = "<group>"; };
+		4971EDAD229679D3008717EB /* THJGProMarketInfoBean.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGProMarketInfoBean.swift; sourceTree = "<group>"; };
+		4971EDAF22967E93008717EB /* THJGProMarketInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGProMarketInfoCell.swift; sourceTree = "<group>"; };
+		4971EDB022967E93008717EB /* THJGProMarketInfoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = THJGProMarketInfoCell.xib; sourceTree = "<group>"; };
+		4971EDB322968281008717EB /* THJGProCompanyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGProCompanyCell.swift; sourceTree = "<group>"; };
+		4971EDB422968281008717EB /* THJGProCompanyCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = THJGProCompanyCell.xib; sourceTree = "<group>"; };
+		4971EDB722969065008717EB /* THJGProDZYCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGProDZYCell.swift; sourceTree = "<group>"; };
+		4971EDB822969065008717EB /* THJGProDZYCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = THJGProDZYCell.xib; sourceTree = "<group>"; };
+		4971EDBB2296967B008717EB /* THJGProOperatorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGProOperatorCell.swift; sourceTree = "<group>"; };
+		4971EDBC2296967B008717EB /* THJGProOperatorCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = THJGProOperatorCell.xib; sourceTree = "<group>"; };
+		49831CB0222F610000240BD0 /* THJGMonitorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGMonitorViewModel.swift; sourceTree = "<group>"; };
+		49831CB2222F632700240BD0 /* THJGMonitorBean.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGMonitorBean.swift; sourceTree = "<group>"; };
+		49831CB4222F6C4A00240BD0 /* THJGMonitorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGMonitorCell.swift; sourceTree = "<group>"; };
+		49831CB5222F6C4A00240BD0 /* THJGMonitorCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = THJGMonitorCell.xib; sourceTree = "<group>"; };
+		4984405A222D506D00C21B82 /* THJGProjectCachetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGProjectCachetViewModel.swift; sourceTree = "<group>"; };
+		4984405C222D50CE00C21B82 /* THJGProjectCachetController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGProjectCachetController.swift; sourceTree = "<group>"; };
+		4984405D222D50CE00C21B82 /* THJGProjectCachetController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = THJGProjectCachetController.xib; sourceTree = "<group>"; };
+		49844060222D530500C21B82 /* THJGProjectCachetBean.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGProjectCachetBean.swift; sourceTree = "<group>"; };
+		49844062222D5C5800C21B82 /* THJGProjectCachetCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGProjectCachetCell.swift; sourceTree = "<group>"; };
+		49844063222D5C5800C21B82 /* THJGProjectCachetCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = THJGProjectCachetCell.xib; sourceTree = "<group>"; };
+		49867FA5222CB4F9000E049E /* THJGProjectSellPlanBean.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGProjectSellPlanBean.swift; sourceTree = "<group>"; };
+		49867FA7222CBEE4000E049E /* THJGProjectSellPlanCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGProjectSellPlanCell.swift; sourceTree = "<group>"; };
+		49867FA8222CBEE4000E049E /* THJGProjectSellPlanCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = THJGProjectSellPlanCell.xib; sourceTree = "<group>"; };
+		498B5783228D08D5005F9867 /* THJGNewsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGNewsController.swift; sourceTree = "<group>"; };
+		498B5784228D08D5005F9867 /* THJGNewsController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = THJGNewsController.xib; sourceTree = "<group>"; };
+		498D4D3C2228BFCA00793A81 /* THJGProjectSellDetailBean.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGProjectSellDetailBean.swift; sourceTree = "<group>"; };
+		498D4D3E2228D95300793A81 /* THJGProSellInfoDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGProSellInfoDetailView.swift; sourceTree = "<group>"; };
+		498D4D402228D98D00793A81 /* THJGProSellInfoPlanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGProSellInfoPlanView.swift; sourceTree = "<group>"; };
+		498D4D422228D9B700793A81 /* THJGProSellInfoCompeteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGProSellInfoCompeteView.swift; sourceTree = "<group>"; };
+		498D4D442228E0C900793A81 /* THJGProSellInfoDetailHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGProSellInfoDetailHeaderView.swift; sourceTree = "<group>"; };
+		498E09DF22B249CD00EDAFD3 /* THJGProDaylyManageVideoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGProDaylyManageVideoCell.swift; sourceTree = "<group>"; };
+		498E09E022B249CD00EDAFD3 /* THJGProDaylyManageVideoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = THJGProDaylyManageVideoCell.xib; sourceTree = "<group>"; };
+		498FCE09228D37FC0010C29B /* THJGNewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGNewsViewModel.swift; sourceTree = "<group>"; };
+		498FCE0B228D39250010C29B /* THJGNewsInfoBean.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGNewsInfoBean.swift; sourceTree = "<group>"; };
+		498FCE0D228D3B260010C29B /* THJGNewsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGNewsCell.swift; sourceTree = "<group>"; };
+		498FCE0E228D3B260010C29B /* THJGNewsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = THJGNewsCell.xib; sourceTree = "<group>"; };
+		49900790222E804A0077CC95 /* THJGMyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGMyViewModel.swift; sourceTree = "<group>"; };
+		49A1D6BD2217EBF8009DB272 /* THJGHomePageBean.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGHomePageBean.swift; sourceTree = "<group>"; };
+		49A1D6C02217F342009DB272 /* TZBTimeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZBTimeButton.m; sourceTree = "<group>"; };
+		49A1D6C12217F342009DB272 /* NSTimer+TZBTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+TZBTimer.m"; sourceTree = "<group>"; };
+		49A1D6C22217F342009DB272 /* TZBTimeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZBTimeButton.h; sourceTree = "<group>"; };
+		49A1D6C32217F342009DB272 /* NSTimer+TZBTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+TZBTimer.h"; sourceTree = "<group>"; };
+		49A1D6C72217F356009DB272 /* FTDCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FTDCollectionViewCell.swift; sourceTree = "<group>"; };
+		49A1D6C82217F356009DB272 /* FTDLoopView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FTDLoopView.swift; sourceTree = "<group>"; };
+		49A1D6CB2218039F009DB272 /* THJGProjectCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGProjectCell.swift; sourceTree = "<group>"; };
+		49A1D6CC2218039F009DB272 /* THJGProjectCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = THJGProjectCell.xib; sourceTree = "<group>"; };
+		49A1D6CF221807EC009DB272 /* THJGHomePageBannerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGHomePageBannerCell.swift; sourceTree = "<group>"; };
+		49A1D6D0221807EC009DB272 /* THJGHomePageBannerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = THJGHomePageBannerCell.xib; sourceTree = "<group>"; };
+		49A1D6D32218089F009DB272 /* THJGHomePageBullteinCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGHomePageBullteinCell.swift; sourceTree = "<group>"; };
+		49A1D6D42218089F009DB272 /* THJGHomePageBullteinCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = THJGHomePageBullteinCell.xib; sourceTree = "<group>"; };
+		49A33AE9223F6F1100FBD509 /* DQSUtils_OC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DQSUtils_OC.h; sourceTree = "<group>"; };
+		49A33AEA223F6F1100FBD509 /* DQSUtils_OC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DQSUtils_OC.m; sourceTree = "<group>"; };
+		49A4F09822489FD0004448AB /* THJGValidateModifyGuestureViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGValidateModifyGuestureViewModel.swift; sourceTree = "<group>"; };
+		49A4F09A2248CC4A004448AB /* THJGWebController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGWebController.swift; sourceTree = "<group>"; };
+		49A71E52221D26A5007CC7CD /* THJGProjectPlanBean.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGProjectPlanBean.swift; sourceTree = "<group>"; };
+		49B2AA8F2213EB5C00C47780 /* THJGLoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGLoginViewModel.swift; sourceTree = "<group>"; };
+		49B2AA912213EB8100C47780 /* THJGBaseBean.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGBaseBean.swift; sourceTree = "<group>"; };
+		49B2AA942213EDB700C47780 /* DQSUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DQSUtils.swift; sourceTree = "<group>"; };
+		49B2AA972214173900C47780 /* DQSStorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DQSStorageManager.swift; sourceTree = "<group>"; };
+		49B2AA992214197B00C47780 /* THJGStorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGStorageManager.swift; sourceTree = "<group>"; };
+		49B2AA9B2214238900C47780 /* DQSArchivable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DQSArchivable.swift; sourceTree = "<group>"; };
+		49B2AA9D22142A0800C47780 /* KeychainWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainWrapper.h; sourceTree = "<group>"; };
+		49B2AA9E22142A0800C47780 /* KeychainWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainWrapper.m; sourceTree = "<group>"; };
+		49B3D34D22446CA500ED29DE /* THJGSettingGuesurePwdController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGSettingGuesurePwdController.swift; sourceTree = "<group>"; };
+		49B3D34E22446CA500ED29DE /* THJGSettingGuesurePwdController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = THJGSettingGuesurePwdController.xib; sourceTree = "<group>"; };
+		49B3D3512244A82700ED29DE /* DQSGuestureTipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DQSGuestureTipView.swift; sourceTree = "<group>"; };
+		49B3D3532244CA0900ED29DE /* THJGModifyGuesturePwdController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGModifyGuesturePwdController.swift; sourceTree = "<group>"; };
+		49B3D3542244CA0900ED29DE /* THJGModifyGuesturePwdController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = THJGModifyGuesturePwdController.xib; sourceTree = "<group>"; };
+		49B3D3572244CCE900ED29DE /* THJGValidateGuestureController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGValidateGuestureController.swift; sourceTree = "<group>"; };
+		49B3D3582244CCE900ED29DE /* THJGValidateGuestureController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = THJGValidateGuestureController.xib; sourceTree = "<group>"; };
+		49B3D35B2244E1F100ED29DE /* THJGValidateModifyGuestueController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGValidateModifyGuestueController.swift; sourceTree = "<group>"; };
+		49B3D35C2244E1F100ED29DE /* THJGValidateModifyGuestueController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = THJGValidateModifyGuestueController.xib; sourceTree = "<group>"; };
+		49BA8DFA223673ED0014E97A /* THJGImageShowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGImageShowView.swift; sourceTree = "<group>"; };
+		49BA8DFC223673FE0014E97A /* THJGImageShowView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = THJGImageShowView.xib; sourceTree = "<group>"; };
+		49BA8DFF2236780C0014E97A /* THJGImgShowCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGImgShowCell.swift; sourceTree = "<group>"; };
+		49BA8E002236780C0014E97A /* THJGImgShowCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = THJGImgShowCell.xib; sourceTree = "<group>"; };
+		49C086B022129B9000E13C99 /* THJG.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = THJG.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		49C086B322129B9000E13C99 /* THJGAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGAppDelegate.swift; sourceTree = "<group>"; };
+		49C086BD22129B9100E13C99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		49C086BF22129B9100E13C99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49C086CB2212A26C00E13C99 /* THJGTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGTabBarController.swift; sourceTree = "<group>"; };
+		49C086CD2212A28500E13C99 /* THJGNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGNavigationController.swift; sourceTree = "<group>"; };
+		49C086CF2212A29500E13C99 /* THJGBaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGBaseController.swift; sourceTree = "<group>"; };
+		49C086DB2212A33100E13C99 /* THJGMyController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGMyController.swift; sourceTree = "<group>"; };
+		49C086DC2212A33100E13C99 /* THJGMyController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = THJGMyController.xib; sourceTree = "<group>"; };
+		49C8A4C72228FB3500B949B4 /* THJGProjectSellInfoDetailSectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGProjectSellInfoDetailSectionHeaderView.swift; sourceTree = "<group>"; };
+		49C8A4C92228FCA900B949B4 /* THJGProjectSellInfoDetailSectionHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = THJGProjectSellInfoDetailSectionHeaderView.xib; sourceTree = "<group>"; };
+		49C8A4CB22290D0600B949B4 /* THJGProjectSellDetailBlockCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGProjectSellDetailBlockCell.swift; sourceTree = "<group>"; };
+		49C8A4CC22290D0600B949B4 /* THJGProjectSellDetailBlockCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = THJGProjectSellDetailBlockCell.xib; sourceTree = "<group>"; };
+		49C8A4D32229148D00B949B4 /* THJGProjectRoomSellDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGProjectRoomSellDetailController.swift; sourceTree = "<group>"; };
+		49C8A4D42229148D00B949B4 /* THJGProjectRoomSellDetailController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = THJGProjectRoomSellDetailController.xib; sourceTree = "<group>"; };
+		49C8A4D72229169F00B949B4 /* THJGProjectRoomDetailTypeOneCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGProjectRoomDetailTypeOneCell.swift; sourceTree = "<group>"; };
+		49C8A4D82229169F00B949B4 /* THJGProjectRoomDetailTypeOneCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = THJGProjectRoomDetailTypeOneCell.xib; sourceTree = "<group>"; };
+		49C8A4DB2229185A00B949B4 /* THJGProjectRoomDetailTypeTwoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGProjectRoomDetailTypeTwoCell.swift; sourceTree = "<group>"; };
+		49C8A4DC2229185A00B949B4 /* THJGProjectRoomDetailTypeTwoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = THJGProjectRoomDetailTypeTwoCell.xib; sourceTree = "<group>"; };
+		49C9A265221F84830012B439 /* THJGProDevCostBigTypeHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGProDevCostBigTypeHeaderView.swift; sourceTree = "<group>"; };
+		49C9A269221F8E900012B439 /* THJGProjectDevCostDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGProjectDevCostDetailCell.swift; sourceTree = "<group>"; };
+		49C9A26A221F8E900012B439 /* THJGProjectDevCostDetailCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = THJGProjectDevCostDetailCell.xib; sourceTree = "<group>"; };
+		49CA560F2297849D005CAEAA /* THJGProCompanyController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGProCompanyController.swift; sourceTree = "<group>"; };
+		49CA56102297849D005CAEAA /* THJGProCompanyController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = THJGProCompanyController.xib; sourceTree = "<group>"; };
+		49CA56132297864B005CAEAA /* THJGProCompanyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGProCompanyViewModel.swift; sourceTree = "<group>"; };
+		49CA5615229786CA005CAEAA /* THJGProCompanyBean.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGProCompanyBean.swift; sourceTree = "<group>"; };
+		49CA56172297B59C005CAEAA /* THJGProCompanyBaseInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGProCompanyBaseInfoView.swift; sourceTree = "<group>"; };
+		49CA56192297C089005CAEAA /* THJGProCompanyPdfCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGProCompanyPdfCell.swift; sourceTree = "<group>"; };
+		49CA561A2297C089005CAEAA /* THJGProCompanyPdfCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = THJGProCompanyPdfCell.xib; sourceTree = "<group>"; };
+		49CA561D2297C76C005CAEAA /* THJGProCompanyRiskInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGProCompanyRiskInfoView.swift; sourceTree = "<group>"; };
+		49CA561F2297CD09005CAEAA /* THJGProCompanyPdfBigCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGProCompanyPdfBigCell.swift; sourceTree = "<group>"; };
+		49CA56202297CD09005CAEAA /* THJGProCompanyPdfBigCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = THJGProCompanyPdfBigCell.xib; sourceTree = "<group>"; };
+		49CA56232297CF05005CAEAA /* THJGProCompanyFinanceInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGProCompanyFinanceInfoView.swift; sourceTree = "<group>"; };
+		49CA56252297D08B005CAEAA /* THJGProCompanyFinanceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGProCompanyFinanceCell.swift; sourceTree = "<group>"; };
+		49CA56262297D08B005CAEAA /* THJGProCompanyFinanceCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = THJGProCompanyFinanceCell.xib; sourceTree = "<group>"; };
+		49CA56292297E442005CAEAA /* THJGProDZYController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGProDZYController.swift; sourceTree = "<group>"; };
+		49CA562A2297E442005CAEAA /* THJGProDZYController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = THJGProDZYController.xib; sourceTree = "<group>"; };
+		49CA562F2297E9A8005CAEAA /* THJGAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = THJGAssets.xcassets; sourceTree = "<group>"; };
+		49CF19FB2216697C008A0CBC /* DQSTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DQSTextField.swift; sourceTree = "<group>"; };
+		49CF86632249A9930014BAAA /* THJGVersionUpdateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGVersionUpdateView.swift; sourceTree = "<group>"; };
+		49CF86652249A9B20014BAAA /* THJGVersionUpdateView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = THJGVersionUpdateView.xib; sourceTree = "<group>"; };
+		49CF86672249BFC40014BAAA /* THJGEmergentMsgView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGEmergentMsgView.swift; sourceTree = "<group>"; };
+		49CF86692249BFDE0014BAAA /* THJGEmergentMsgView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = THJGEmergentMsgView.xib; sourceTree = "<group>"; };
+		49CF866B2249C5A40014BAAA /* THJGTouchIDToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGTouchIDToastView.swift; sourceTree = "<group>"; };
+		49CF866D2249C5C70014BAAA /* THJGTouchIDToastView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = THJGTouchIDToastView.xib; sourceTree = "<group>"; };
+		49CF866F2249CC5F0014BAAA /* THJGContactUsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGContactUsView.swift; sourceTree = "<group>"; };
+		49CF86712249CC860014BAAA /* THJGContactUsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = THJGContactUsView.xib; sourceTree = "<group>"; };
+		49D07994222CF795009F7B9B /* THJGProjectSellCompetionBean.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGProjectSellCompetionBean.swift; sourceTree = "<group>"; };
+		49D136CB2296390800330E91 /* THJGProDetailTapButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGProDetailTapButton.swift; sourceTree = "<group>"; };
+		49D136CD22963A0700330E91 /* THJGProMonitorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGProMonitorCell.swift; sourceTree = "<group>"; };
+		49D136CE22963A0700330E91 /* THJGProMonitorCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = THJGProMonitorCell.xib; sourceTree = "<group>"; };
+		49D136D122964D1400330E91 /* THJGProSellMarketCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGProSellMarketCell.swift; sourceTree = "<group>"; };
+		49D136D222964D1400330E91 /* THJGProSellMarketCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = THJGProSellMarketCell.xib; sourceTree = "<group>"; };
+		49D13B5022324CA8001911B4 /* THJG.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = THJG.entitlements; sourceTree = "<group>"; };
+		49D13B5122325429001911B4 /* THJGJPushRegister.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = THJGJPushRegister.h; sourceTree = "<group>"; };
+		49D13B5222325429001911B4 /* THJGJPushRegister.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = THJGJPushRegister.m; sourceTree = "<group>"; };
+		49D3C859228E61D0003D654F /* THJGNewsDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGNewsDetailController.swift; sourceTree = "<group>"; };
+		49D3C85A228E61D0003D654F /* THJGNewsDetailController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = THJGNewsDetailController.xib; sourceTree = "<group>"; };
+		49D3C85D228E64DB003D654F /* THJGNewsDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGNewsDetailViewModel.swift; sourceTree = "<group>"; };
+		49D3C85F228E66A7003D654F /* THJGNewsDetailBean.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGNewsDetailBean.swift; sourceTree = "<group>"; };
+		49D420B322954B42005FC79B /* THJGProSituationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGProSituationCell.swift; sourceTree = "<group>"; };
+		49D420B422954B42005FC79B /* THJGProSituationCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = THJGProSituationCell.xib; sourceTree = "<group>"; };
+		49D42A142231005D0043C999 /* THJGTipAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGTipAnnotation.swift; sourceTree = "<group>"; };
+		49D42A1622313BAF0043C999 /* THJGProjectCompetionDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGProjectCompetionDetailView.swift; sourceTree = "<group>"; };
+		49D42A1822313DFD0043C999 /* THJGProjectCompetionDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGProjectCompetionDetailCell.swift; sourceTree = "<group>"; };
+		49D42A1922313DFD0043C999 /* THJGProjectCompetionDetailCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = THJGProjectCompetionDetailCell.xib; sourceTree = "<group>"; };
+		49D5B89A2221329000CD9CCE /* THJGProjectFundInfoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGProjectFundInfoController.swift; sourceTree = "<group>"; };
+		49D5B89B2221329000CD9CCE /* THJGProjectFundInfoController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = THJGProjectFundInfoController.xib; sourceTree = "<group>"; };
+		49D5B89E2221335800CD9CCE /* THJGProjectFundInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGProjectFundInfoViewModel.swift; sourceTree = "<group>"; };
+		49D5B8A022213BB100CD9CCE /* THJGProjectFundAccountBean.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGProjectFundAccountBean.swift; sourceTree = "<group>"; };
+		49E2CF7B222FBC7200735718 /* THJGPlatformNoticeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGPlatformNoticeController.swift; sourceTree = "<group>"; };
+		49E2CF7C222FBC7200735718 /* THJGPlatformNoticeController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = THJGPlatformNoticeController.xib; sourceTree = "<group>"; };
+		49E2CF7F222FC8C400735718 /* THJGPlatformNoticeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGPlatformNoticeCell.swift; sourceTree = "<group>"; };
+		49E2CF80222FC8C400735718 /* THJGPlatformNoticeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = THJGPlatformNoticeCell.xib; sourceTree = "<group>"; };
+		49E2CF83222FCA7000735718 /* THJGPlatformNoticeBean.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGPlatformNoticeBean.swift; sourceTree = "<group>"; };
+		49E2CF85222FCC5100735718 /* THJGPlatformNoticeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGPlatformNoticeViewModel.swift; sourceTree = "<group>"; };
+		49E2CF87222FCD0700735718 /* THJGPlatformNoticeDetailBean.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGPlatformNoticeDetailBean.swift; sourceTree = "<group>"; };
+		49E2CF89222FDB5500735718 /* THJGPlatformNoticeDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGPlatformNoticeDetailController.swift; sourceTree = "<group>"; };
+		49E2CF8A222FDB5500735718 /* THJGPlatformNoticeDetailController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = THJGPlatformNoticeDetailController.xib; sourceTree = "<group>"; };
+		49E2CF8D222FDBC500735718 /* THJGPlatformNoticeDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGPlatformNoticeDetailViewModel.swift; sourceTree = "<group>"; };
+		49E2CF8F222FF01100735718 /* THJGMyCenterBean.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGMyCenterBean.swift; sourceTree = "<group>"; };
+		49E2CF91222FF69800735718 /* THJGEZOpenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGEZOpenViewModel.swift; sourceTree = "<group>"; };
+		49E33E8A221E90B400178DE7 /* THJGProjectDevCostController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGProjectDevCostController.swift; sourceTree = "<group>"; };
+		49E33E8B221E90B400178DE7 /* THJGProjectDevCostController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = THJGProjectDevCostController.xib; sourceTree = "<group>"; };
+		49E33E8E221E90F400178DE7 /* THJGProjectDevCostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGProjectDevCostViewModel.swift; sourceTree = "<group>"; };
+		49E33E90221EC37900178DE7 /* THJGProjectDevCostBean.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGProjectDevCostBean.swift; sourceTree = "<group>"; };
+		49E85213221D537A008FF1DA /* THJGProjectTimesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGProjectTimesController.swift; sourceTree = "<group>"; };
+		49E85214221D537A008FF1DA /* THJGProjectTimesController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = THJGProjectTimesController.xib; sourceTree = "<group>"; };
+		49E85217221D5461008FF1DA /* THJGProjectTimesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGProjectTimesViewModel.swift; sourceTree = "<group>"; };
+		49E85219221D5571008FF1DA /* THJGProjectTimesBean.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGProjectTimesBean.swift; sourceTree = "<group>"; };
+		49E8521B221D7324008FF1DA /* THJGProjectTimesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGProjectTimesCell.swift; sourceTree = "<group>"; };
+		49E8521C221D7324008FF1DA /* THJGProjectTimesCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = THJGProjectTimesCell.xib; sourceTree = "<group>"; };
+		49EBE9052217E7580012FE39 /* THJGHomePageViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = THJGHomePageViewModel.swift; sourceTree = "<group>"; };
+		49EBE9072217E7580012FE39 /* THJGHomePageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = THJGHomePageController.swift; sourceTree = "<group>"; };
+		49EBE9082217E7580012FE39 /* THJGHomePageController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = THJGHomePageController.xib; sourceTree = "<group>"; };
+		49F4513D22280D960069B8B7 /* THJGProjectSellInfoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGProjectSellInfoController.swift; sourceTree = "<group>"; };
+		49F4513E22280D960069B8B7 /* THJGProjectSellInfoController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = THJGProjectSellInfoController.xib; sourceTree = "<group>"; };
+		49F4514122280DEF0069B8B7 /* THJGProjectSellInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGProjectSellInfoViewModel.swift; sourceTree = "<group>"; };
+		5E5F86E53BEBB13B3B029FB6 /* Pods-THJG.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-THJG.release.xcconfig"; path = "Pods/Target Support Files/Pods-THJG/Pods-THJG.release.xcconfig"; sourceTree = "<group>"; };
+		9C203E424AC68E16D245155E /* Pods_THJG.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_THJG.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE411A92E853C07D08ABE892 /* Pods-THJG.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-THJG.debug.xcconfig"; path = "Pods/Target Support Files/Pods-THJG/Pods-THJG.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		49C086AD22129B9000E13C99 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				494AC9AF2230B0AF00F988F7 /* libssl.a in Frameworks */,
+				494AC9B02230B0AF00F988F7 /* libcrypto.a in Frameworks */,
+				6F9D9A9DE8A240ABCAFB364C /* Pods_THJG.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4908A9CA22549DEE00F775A2 /* Guide */ = {
+			isa = PBXGroup;
+			children = (
+				4908A9CB22549E3200F775A2 /* THJGGuideController.swift */,
+				4908A9CC22549E3200F775A2 /* THJGGuideController.xib */,
+			);
+			path = Guide;
+			sourceTree = "<group>";
+		};
+		49148D9F2212B218003F4368 /* Security */ = {
+			isa = PBXGroup;
+			children = (
+				49B2AA9D22142A0800C47780 /* KeychainWrapper.h */,
+				49B2AA9E22142A0800C47780 /* KeychainWrapper.m */,
+				49148DA12212B218003F4368 /* DQSRSAHelper.h */,
+				49148DA92212B218003F4368 /* DQSRSAHelper.m */,
+				49148DA72212B218003F4368 /* DQSDataZipHelper.h */,
+				49148DA02212B218003F4368 /* DQSDataZipHelper.m */,
+				49148DA32212B218003F4368 /* NSData+KKHASH.h */,
+				49148DAD2212B218003F4368 /* NSData+KKHASH.m */,
+				49148DAE2212B218003F4368 /* NSData+KKSignVerify.h */,
+				49148DA62212B218003F4368 /* NSData+KKSignVerify.m */,
+				49148DAA2212B218003F4368 /* GTMDefines.h */,
+				49148DA42212B218003F4368 /* GTMBase64.h */,
+				49148DAC2212B218003F4368 /* GTMBase64.m */,
+				49148DAB2212B218003F4368 /* RSA.h */,
+				49148DA52212B218003F4368 /* RSA.m */,
+			);
+			path = Security;
+			sourceTree = "<group>";
+		};
+		49148DBC2212B428003F4368 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				49148DBD2212B445003F4368 /* DQSNetworkManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		491F702F22388FDC00190419 /* THJGProgressView */ = {
+			isa = PBXGroup;
+			children = (
+				491F703022388FE800190419 /* THJGProgressView.swift */,
+				491F70322238903300190419 /* THJGProgressView.xib */,
+			);
+			path = THJGProgressView;
+			sourceTree = "<group>";
+		};
+		49259AFD22F27E2200212D19 /* THJGSearchView */ = {
+			isa = PBXGroup;
+			children = (
+				49259AFE22F27E2200212D19 /* THJGDatePickerView.swift */,
+				49259AFF22F27E2200212D19 /* THJGDatePickerView.xib */,
+				49259B0222F27E3F00212D19 /* THJGProjectFeeTypeView.swift */,
+				49259B0422F27E4900212D19 /* THJGProjectFeeTypeView.xib */,
+				49259B0622F2814100212D19 /* THJGTProjectFeeTypeCell.swift */,
+				49259B0722F2814100212D19 /* THJGTProjectFeeTypeCell.xib */,
+			);
+			path = THJGSearchView;
+			sourceTree = "<group>";
+		};
+		492CC8DD229CD40600DD2E7E /* DQSFullScreenPop */ = {
+			isa = PBXGroup;
+			children = (
+				492CC8DE229CD44D00DD2E7E /* UINavigationController+FDFullscreenPopGesture.h */,
+				492CC8DF229CD44D00DD2E7E /* UINavigationController+FDFullscreenPopGesture.m */,
+			);
+			path = DQSFullScreenPop;
+			sourceTree = "<group>";
+		};
+		4947EA822213C0F5008D93C5 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				4947EA832213C0F5008D93C5 /* Controller */,
+				4947EA842213C0F5008D93C5 /* Model */,
+				4947EA852213C0F5008D93C5 /* View */,
+				49B2AA8E2213EB4E00C47780 /* ViewModel */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		4947EA832213C0F5008D93C5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4947EA8A2213C123008D93C5 /* THJGLoginController.swift */,
+				4947EA8B2213C123008D93C5 /* THJGLoginController.xib */,
+				491227D8221684380064E1AD /* THJGForgetPwdController.swift */,
+				491227D9221684380064E1AD /* THJGForgetPwdController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4947EA842213C0F5008D93C5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4947EA802213BE4F008D93C5 /* THJGUserBean.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4947EA852213C0F5008D93C5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4949EFDD221A905F0031FFEF /* EZOPEN */ = {
+			isa = PBXGroup;
+			children = (
+				4949EFDE221A909A0031FFEF /* THJGEZOPENManager.swift */,
+				4949EFE0221A97520031FFEF /* THJGEZPlayerController.swift */,
+				49E2CF91222FF69800735718 /* THJGEZOpenViewModel.swift */,
+			);
+			path = EZOPEN;
+			sourceTree = "<group>";
+		};
+		494BB5342243AFCE00FC0B7D /* GuesturePwd */ = {
+			isa = PBXGroup;
+			children = (
+				494BB5372243B35A00FC0B7D /* DQSGuestureButton.swift */,
+				494BB5352243B01000FC0B7D /* DQSGuestureView.swift */,
+				49B3D3512244A82700ED29DE /* DQSGuestureTipView.swift */,
+			);
+			path = GuesturePwd;
+			sourceTree = "<group>";
+		};
+		49550AC4222E609F000C6847 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				49900790222E804A0077CC95 /* THJGMyViewModel.swift */,
+				49550AC5222E60C9000C6847 /* THJGModifyPhoneViewModel.swift */,
+				49550ACB222E6FB8000C6847 /* THJGModifyLoginPwdViewModel.swift */,
+				49121F5C222FA0CD00D45EC1 /* THJGInnerMsgViewModel.swift */,
+				49121F64222FB01700D45EC1 /* THJGInnerMsgDetailViewModel.swift */,
+				49E2CF85222FCC5100735718 /* THJGPlatformNoticeViewModel.swift */,
+				49E2CF8D222FDBC500735718 /* THJGPlatformNoticeDetailViewModel.swift */,
+				49A4F09822489FD0004448AB /* THJGValidateModifyGuestureViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		498B577E228D088A005F9867 /* News */ = {
+			isa = PBXGroup;
+			children = (
+				498B577F228D08BC005F9867 /* Controller */,
+				498B5782228D08BD005F9867 /* Model */,
+				498B5780228D08BC005F9867 /* View */,
+				498B5781228D08BC005F9867 /* ViewModel */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
+		498B577F228D08BC005F9867 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				498B5783228D08D5005F9867 /* THJGNewsController.swift */,
+				498B5784228D08D5005F9867 /* THJGNewsController.xib */,
+				49D3C859228E61D0003D654F /* THJGNewsDetailController.swift */,
+				49D3C85A228E61D0003D654F /* THJGNewsDetailController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		498B5780228D08BC005F9867 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				498FCE0D228D3B260010C29B /* THJGNewsCell.swift */,
+				498FCE0E228D3B260010C29B /* THJGNewsCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		498B5781228D08BC005F9867 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				498FCE09228D37FC0010C29B /* THJGNewsViewModel.swift */,
+				49D3C85D228E64DB003D654F /* THJGNewsDetailViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		498B5782228D08BD005F9867 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				498FCE0B228D39250010C29B /* THJGNewsInfoBean.swift */,
+				49D3C85F228E66A7003D654F /* THJGNewsDetailBean.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		49A1D6BF2217F342009DB272 /* TimerButton */ = {
+			isa = PBXGroup;
+			children = (
+				49A1D6C22217F342009DB272 /* TZBTimeButton.h */,
+				49A1D6C02217F342009DB272 /* TZBTimeButton.m */,
+				49A1D6C32217F342009DB272 /* NSTimer+TZBTimer.h */,
+				49A1D6C12217F342009DB272 /* NSTimer+TZBTimer.m */,
+			);
+			path = TimerButton;
+			sourceTree = "<group>";
+		};
+		49A1D6C62217F356009DB272 /* FTDScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				49A1D6C82217F356009DB272 /* FTDLoopView.swift */,
+				49A1D6C72217F356009DB272 /* FTDCollectionViewCell.swift */,
+			);
+			path = FTDScrollView;
+			sourceTree = "<group>";
+		};
+		49B2AA8E2213EB4E00C47780 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				49B2AA8F2213EB5C00C47780 /* THJGLoginViewModel.swift */,
+				491227E222168A300064E1AD /* THJGForgetPwdViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		49B2AA932213EDA000C47780 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				49259AFD22F27E2200212D19 /* THJGSearchView */,
+				492CC8DD229CD40600DD2E7E /* DQSFullScreenPop */,
+				49CF86622249A9610014BAAA /* THJGMsgToastView */,
+				491F702F22388FDC00190419 /* THJGProgressView */,
+				49BA8DFE223677DF0014E97A /* THJGImgShowView */,
+				49A1D6C62217F356009DB272 /* FTDScrollView */,
+				49A1D6BF2217F342009DB272 /* TimerButton */,
+				49B2AA942213EDB700C47780 /* DQSUtils.swift */,
+				49CF19FB2216697C008A0CBC /* DQSTextField.swift */,
+				49A33AE9223F6F1100FBD509 /* DQSUtils_OC.h */,
+				49A33AEA223F6F1100FBD509 /* DQSUtils_OC.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		49B2AA962214171800C47780 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				49B2AA972214173900C47780 /* DQSStorageManager.swift */,
+				49B2AA9B2214238900C47780 /* DQSArchivable.swift */,
+				49B2AA992214197B00C47780 /* THJGStorageManager.swift */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		49BA8DFE223677DF0014E97A /* THJGImgShowView */ = {
+			isa = PBXGroup;
+			children = (
+				49BA8DFA223673ED0014E97A /* THJGImageShowView.swift */,
+				49BA8DFC223673FE0014E97A /* THJGImageShowView.xib */,
+				49BA8DFF2236780C0014E97A /* THJGImgShowCell.swift */,
+				49BA8E002236780C0014E97A /* THJGImgShowCell.xib */,
+				494A756E22373B6A00649516 /* THJGBriefImgShowView.swift */,
+				494A757022373B9600649516 /* THJGBriefImgShowView.xib */,
+				494A75722237401C00649516 /* THJGBriefImgShowCell.swift */,
+				494A75732237401C00649516 /* THJGBriefImgShowCell.xib */,
+				496A1A1422377DAB0048454B /* THJGEZOpenVideoCell.swift */,
+				496A1A1522377DAB0048454B /* THJGEZOpenVideoCell.xib */,
+				4911E2F32240C30800D4678B /* THJGVideoRecView.swift */,
+				4911E2F52240C32B00D4678B /* THJGVideoRecView.xib */,
+				490FF3E1224104A4004D42B2 /* THJGVideoFullScreenView.swift */,
+				490FF3E3224104B3004D42B2 /* THJGVideoFullScreenView.xib */,
+				4915CE862241CCAC00CD0B2C /* THJGLocalVideoFullScreenView.swift */,
+				4915CE882241CCBA00CD0B2C /* THJGLocalVideoFullScreenView.xib */,
+				4912924622F9106B004FEC55 /* THJGBigImgShowView.swift */,
+				4912924822F910BC004FEC55 /* THJGBigImgShowView.xib */,
+			);
+			path = THJGImgShowView;
+			sourceTree = "<group>";
+		};
+		49C086A722129B9000E13C99 = {
+			isa = PBXGroup;
+			children = (
+				49C086B222129B9000E13C99 /* THJG */,
+				49C086B122129B9000E13C99 /* Products */,
+				A391B2F9916AD47089207EC4 /* Pods */,
+				D2D501BE68576BB4A1D3A185 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		49C086B122129B9000E13C99 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				49C086B022129B9000E13C99 /* THJG.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		49C086B222129B9000E13C99 /* THJG */ = {
+			isa = PBXGroup;
+			children = (
+				49D13B5022324CA8001911B4 /* THJG.entitlements */,
+				49C086C62212A22100E13C99 /* Module */,
+				49C086C522129C6900E13C99 /* Resource */,
+			);
+			path = THJG;
+			sourceTree = "<group>";
+		};
+		49C086C522129C6900E13C99 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				49CA562F2297E9A8005CAEAA /* THJGAssets.xcassets */,
+				49148DB92212B2D9003F4368 /* THJG-Bridging-Header.h */,
+				49148DBA2212B3C2003F4368 /* rsa_public_key.der */,
+				49C086B322129B9000E13C99 /* THJGAppDelegate.swift */,
+				49C086BC22129B9100E13C99 /* LaunchScreen.storyboard */,
+				49C086BF22129B9100E13C99 /* Info.plist */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		49C086C62212A22100E13C99 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				4908A9CA22549DEE00F775A2 /* Guide */,
+				4947EA822213C0F5008D93C5 /* Login */,
+				49EBE9032217E7580012FE39 /* HomePage */,
+				498B577E228D088A005F9867 /* News */,
+				49C086C82212A22100E13C99 /* My */,
+				49C086C92212A22100E13C99 /* Base */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		49C086C82212A22100E13C99 /* My */ = {
+			isa = PBXGroup;
+			children = (
+				49C086D52212A30000E13C99 /* Controller */,
+				49C086D42212A30000E13C99 /* Model */,
+				49C086D62212A30000E13C99 /* View */,
+				49550AC4222E609F000C6847 /* ViewModel */,
+			);
+			path = My;
+			sourceTree = "<group>";
+		};
+		49C086C92212A22100E13C99 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				49148DC12212C65E003F4368 /* THJGConstants.swift */,
+				494BB5342243AFCE00FC0B7D /* GuesturePwd */,
+				49D13B4F22324C73001911B4 /* JPush */,
+				49D42A132231004A0043C999 /* BaiduMap */,
+				49B2AA932213EDA000C47780 /* Utils */,
+				49B2AA962214171800C47780 /* Storage */,
+				49148DBC2212B428003F4368 /* Network */,
+				49148D9F2212B218003F4368 /* Security */,
+				4949EFDD221A905F0031FFEF /* EZOPEN */,
+				49C086CA2212A23F00E13C99 /* Super */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		49C086CA2212A23F00E13C99 /* Super */ = {
+			isa = PBXGroup;
+			children = (
+				49C086CB2212A26C00E13C99 /* THJGTabBarController.swift */,
+				49C086CD2212A28500E13C99 /* THJGNavigationController.swift */,
+				49C086CF2212A29500E13C99 /* THJGBaseController.swift */,
+				49B2AA912213EB8100C47780 /* THJGBaseBean.swift */,
+				491227E422168AD80064E1AD /* THJGBaseViewModel.swift */,
+				49A4F09A2248CC4A004448AB /* THJGWebController.swift */,
+			);
+			path = Super;
+			sourceTree = "<group>";
+		};
+		49C086D42212A30000E13C99 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				49E2CF8F222FF01100735718 /* THJGMyCenterBean.swift */,
+				49121F5E222FA16000D45EC1 /* THJGInnerMsgBean.swift */,
+				49E2CF83222FCA7000735718 /* THJGPlatformNoticeBean.swift */,
+				49E2CF87222FCD0700735718 /* THJGPlatformNoticeDetailBean.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		49C086D52212A30000E13C99 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				49C086DB2212A33100E13C99 /* THJGMyController.swift */,
+				49C086DC2212A33100E13C99 /* THJGMyController.xib */,
+				49550AC0222E6026000C6847 /* THJGModifyPhoneController.swift */,
+				49550AC1222E6026000C6847 /* THJGModifyPhoneController.xib */,
+				49550AC7222E6C74000C6847 /* THJGModifyLoginPwdController.swift */,
+				49550AC8222E6C74000C6847 /* THJGModifyLoginPwdController.xib */,
+				49121F54222F9EC800D45EC1 /* THJGInnerMsgController.swift */,
+				49121F55222F9EC800D45EC1 /* THJGInnerMsgController.xib */,
+				49121F60222FAF5000D45EC1 /* THJGInnerMsgDetailController.swift */,
+				49121F61222FAF5000D45EC1 /* THJGInnerMsgDetailController.xib */,
+				49E2CF7B222FBC7200735718 /* THJGPlatformNoticeController.swift */,
+				49E2CF7C222FBC7200735718 /* THJGPlatformNoticeController.xib */,
+				49E2CF89222FDB5500735718 /* THJGPlatformNoticeDetailController.swift */,
+				49E2CF8A222FDB5500735718 /* THJGPlatformNoticeDetailController.xib */,
+				496B4845223CE4390097E52E /* THJGSettingPwdController.swift */,
+				496B4846223CE4390097E52E /* THJGSettingPwdController.xib */,
+				49B3D34D22446CA500ED29DE /* THJGSettingGuesurePwdController.swift */,
+				49B3D34E22446CA500ED29DE /* THJGSettingGuesurePwdController.xib */,
+				49B3D3532244CA0900ED29DE /* THJGModifyGuesturePwdController.swift */,
+				49B3D3542244CA0900ED29DE /* THJGModifyGuesturePwdController.xib */,
+				49B3D3572244CCE900ED29DE /* THJGValidateGuestureController.swift */,
+				49B3D3582244CCE900ED29DE /* THJGValidateGuestureController.xib */,
+				49B3D35B2244E1F100ED29DE /* THJGValidateModifyGuestueController.swift */,
+				49B3D35C2244E1F100ED29DE /* THJGValidateModifyGuestueController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		49C086D62212A30000E13C99 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				496B4841223C9C080097E52E /* THJGMyCenterCell.swift */,
+				496B4842223C9C080097E52E /* THJGMyCenterCell.xib */,
+				49121F58222F9F9E00D45EC1 /* THJGInnerMsgCell.swift */,
+				49121F59222F9F9E00D45EC1 /* THJGInnerMsgCell.xib */,
+				49E2CF7F222FC8C400735718 /* THJGPlatformNoticeCell.swift */,
+				49E2CF80222FC8C400735718 /* THJGPlatformNoticeCell.xib */,
+				496B4849223CE7310097E52E /* THJGPwdSettingCell.swift */,
+				496B484A223CE7310097E52E /* THJGPwdSettingCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		49CF86622249A9610014BAAA /* THJGMsgToastView */ = {
+			isa = PBXGroup;
+			children = (
+				49CF86632249A9930014BAAA /* THJGVersionUpdateView.swift */,
+				49CF86652249A9B20014BAAA /* THJGVersionUpdateView.xib */,
+				49CF86672249BFC40014BAAA /* THJGEmergentMsgView.swift */,
+				49CF86692249BFDE0014BAAA /* THJGEmergentMsgView.xib */,
+				49CF866B2249C5A40014BAAA /* THJGTouchIDToastView.swift */,
+				49CF866D2249C5C70014BAAA /* THJGTouchIDToastView.xib */,
+				49CF866F2249CC5F0014BAAA /* THJGContactUsView.swift */,
+				49CF86712249CC860014BAAA /* THJGContactUsView.xib */,
+				495022272249EDF600A2F15D /* THJGPushMsgView.swift */,
+				495022292249EE0D00A2F15D /* THJGPushMsgView.xib */,
+			);
+			path = THJGMsgToastView;
+			sourceTree = "<group>";
+		};
+		49D13B4F22324C73001911B4 /* JPush */ = {
+			isa = PBXGroup;
+			children = (
+				49D13B5122325429001911B4 /* THJGJPushRegister.h */,
+				49D13B5222325429001911B4 /* THJGJPushRegister.m */,
+				4950222B224A3C3500A2F15D /* THJGPushViewModel.swift */,
+			);
+			path = JPush;
+			sourceTree = "<group>";
+		};
+		49D42A132231004A0043C999 /* BaiduMap */ = {
+			isa = PBXGroup;
+			children = (
+				4942EBF42231F84E00E0FDE3 /* THJGBaiduMapManager.swift */,
+				49D42A142231005D0043C999 /* THJGTipAnnotation.swift */,
+				49554CCE2239FAC700BAD726 /* THJGPointAnnotation.swift */,
+			);
+			path = BaiduMap;
+			sourceTree = "<group>";
+		};
+		49EBE9032217E7580012FE39 /* HomePage */ = {
+			isa = PBXGroup;
+			children = (
+				49EBE9062217E7580012FE39 /* Controller */,
+				49EBE9092217E7580012FE39 /* Model */,
+				49EBE90A2217E7580012FE39 /* View */,
+				49EBE9042217E7580012FE39 /* ViewModel */,
+			);
+			path = HomePage;
+			sourceTree = "<group>";
+		};
+		49EBE9042217E7580012FE39 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				49EBE9052217E7580012FE39 /* THJGHomePageViewModel.swift */,
+				4927B5F4221AE62D002897E3 /* THJGProjectDetailViewModel.swift */,
+				49831CB0222F610000240BD0 /* THJGMonitorViewModel.swift */,
+				494C0BA4221D070800F56A17 /* THJGProjectPlanViewModel.swift */,
+				49E85217221D5461008FF1DA /* THJGProjectTimesViewModel.swift */,
+				49E33E8E221E90F400178DE7 /* THJGProjectDevCostViewModel.swift */,
+				49D5B89E2221335800CD9CCE /* THJGProjectFundInfoViewModel.swift */,
+				497196DB223B8C400057FEAE /* THJGProjectContractDetailViewModel.swift */,
+				49F4514122280DEF0069B8B7 /* THJGProjectSellInfoViewModel.swift */,
+				4984405A222D506D00C21B82 /* THJGProjectCachetViewModel.swift */,
+				4971EDAB22967911008717EB /* THJGProMarketInfoViewModel.swift */,
+				49CA56132297864B005CAEAA /* THJGProCompanyViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		49EBE9062217E7580012FE39 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				49EBE9072217E7580012FE39 /* THJGHomePageController.swift */,
+				49EBE9082217E7580012FE39 /* THJGHomePageController.xib */,
+				4927B5F0221AE5FB002897E3 /* THJGProjectDetailController.swift */,
+				4927B5F1221AE5FB002897E3 /* THJGProjectDetailController.xib */,
+				496C2FB1221CDB5400C9B7B0 /* THJGProjectPlanController.swift */,
+				496C2FB2221CDB5400C9B7B0 /* THJGProjectPlanController.xib */,
+				49E85213221D537A008FF1DA /* THJGProjectTimesController.swift */,
+				49E85214221D537A008FF1DA /* THJGProjectTimesController.xib */,
+				49E33E8A221E90B400178DE7 /* THJGProjectDevCostController.swift */,
+				49E33E8B221E90B400178DE7 /* THJGProjectDevCostController.xib */,
+				49D5B89A2221329000CD9CCE /* THJGProjectFundInfoController.swift */,
+				49D5B89B2221329000CD9CCE /* THJGProjectFundInfoController.xib */,
+				497196D7223B88E80057FEAE /* THJGProjectContractDetailController.swift */,
+				497196D8223B88E80057FEAE /* THJGProjectContractDetailController.xib */,
+				49F4513D22280D960069B8B7 /* THJGProjectSellInfoController.swift */,
+				49F4513E22280D960069B8B7 /* THJGProjectSellInfoController.xib */,
+				4971EDA3229663AB008717EB /* THJGProCompetionController.swift */,
+				4971EDA4229663AB008717EB /* THJGProCompetionController.xib */,
+				4971EDA72296785C008717EB /* THJGProMarketInfoController.swift */,
+				4971EDA82296785C008717EB /* THJGProMarketInfoController.xib */,
+				49C8A4D32229148D00B949B4 /* THJGProjectRoomSellDetailController.swift */,
+				49C8A4D42229148D00B949B4 /* THJGProjectRoomSellDetailController.xib */,
+				4984405C222D50CE00C21B82 /* THJGProjectCachetController.swift */,
+				4984405D222D50CE00C21B82 /* THJGProjectCachetController.xib */,
+				49CA560F2297849D005CAEAA /* THJGProCompanyController.swift */,
+				49CA56102297849D005CAEAA /* THJGProCompanyController.xib */,
+				49CA56292297E442005CAEAA /* THJGProDZYController.swift */,
+				49CA562A2297E442005CAEAA /* THJGProDZYController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		49EBE9092217E7580012FE39 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				49A1D6BD2217EBF8009DB272 /* THJGHomePageBean.swift */,
+				496910CC221B8EA200DC7040 /* THJGProjectDetailBean.swift */,
+				49831CB2222F632700240BD0 /* THJGMonitorBean.swift */,
+				49A71E52221D26A5007CC7CD /* THJGProjectPlanBean.swift */,
+				49E85219221D5571008FF1DA /* THJGProjectTimesBean.swift */,
+				49E33E90221EC37900178DE7 /* THJGProjectDevCostBean.swift */,
+				49D5B8A022213BB100CD9CCE /* THJGProjectFundAccountBean.swift */,
+				4928605422240F730053DDE8 /* THJGProjectFundCheckBean.swift */,
+				4965C261222510B600DFD9A8 /* THJGProjectContractBean.swift */,
+				498D4D3C2228BFCA00793A81 /* THJGProjectSellDetailBean.swift */,
+				49867FA5222CB4F9000E049E /* THJGProjectSellPlanBean.swift */,
+				49D07994222CF795009F7B9B /* THJGProjectSellCompetionBean.swift */,
+				49844060222D530500C21B82 /* THJGProjectCachetBean.swift */,
+				4971EDAD229679D3008717EB /* THJGProMarketInfoBean.swift */,
+				49CA5615229786CA005CAEAA /* THJGProCompanyBean.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		49EBE90A2217E7580012FE39 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				49A1D6CB2218039F009DB272 /* THJGProjectCell.swift */,
+				49A1D6CC2218039F009DB272 /* THJGProjectCell.xib */,
+				49A1D6CF221807EC009DB272 /* THJGHomePageBannerCell.swift */,
+				49A1D6D0221807EC009DB272 /* THJGHomePageBannerCell.xib */,
+				49A1D6D32218089F009DB272 /* THJGHomePageBullteinCell.swift */,
+				49A1D6D42218089F009DB272 /* THJGHomePageBullteinCell.xib */,
+				4941C3102294E88900B1571E /* THJGVerticalButton.swift */,
+				49D136CB2296390800330E91 /* THJGProDetailTapButton.swift */,
+				493D586D221B9D5200ED62A8 /* THJGProVideoCell.swift */,
+				493D586E221B9D5200ED62A8 /* THJGProVideoCell.xib */,
+				498E09DF22B249CD00EDAFD3 /* THJGProDaylyManageVideoCell.swift */,
+				498E09E022B249CD00EDAFD3 /* THJGProDaylyManageVideoCell.xib */,
+				49D420B322954B42005FC79B /* THJGProSituationCell.swift */,
+				49D420B422954B42005FC79B /* THJGProSituationCell.xib */,
+				49D136CD22963A0700330E91 /* THJGProMonitorCell.swift */,
+				49D136CE22963A0700330E91 /* THJGProMonitorCell.xib */,
+				49D136D122964D1400330E91 /* THJGProSellMarketCell.swift */,
+				49D136D222964D1400330E91 /* THJGProSellMarketCell.xib */,
+				49831CB4222F6C4A00240BD0 /* THJGMonitorCell.swift */,
+				49831CB5222F6C4A00240BD0 /* THJGMonitorCell.xib */,
+				493D5875221BA09700ED62A8 /* THJGProDetialImgCell.swift */,
+				493D5876221BA09700ED62A8 /* THJGProDetialImgCell.xib */,
+				494C0BA0221D035F00F56A17 /* THJGProPlanCell.swift */,
+				494C0BA1221D035F00F56A17 /* THJGProPlanCell.xib */,
+				49E8521B221D7324008FF1DA /* THJGProjectTimesCell.swift */,
+				49E8521C221D7324008FF1DA /* THJGProjectTimesCell.xib */,
+				495E99A3221FCDAC00095C17 /* THJGProDevCostTopView.swift */,
+				49C9A265221F84830012B439 /* THJGProDevCostBigTypeHeaderView.swift */,
+				492F4005221FBC3400497153 /* THJGProDevCostBigTypeHeaderView.xib */,
+				492F4007221FBE7900497153 /* THJGProDevCostSmallTypeHeaderView.swift */,
+				492F4009221FBECE00497153 /* THJGProDevCostSmallTypeHeaderView.xib */,
+				49C9A269221F8E900012B439 /* THJGProjectDevCostDetailCell.swift */,
+				49C9A26A221F8E900012B439 /* THJGProjectDevCostDetailCell.xib */,
+				4965C26322252E8600DFD9A8 /* THJGFundInfoAccountView.swift */,
+				4965C269222536AB00DFD9A8 /* THJGFundInfoAccountCell.swift */,
+				4965C26A222536AB00DFD9A8 /* THJGFundInfoAccountCell.xib */,
+				4965C26522252F8C00DFD9A8 /* THJGFundInfoCheckView.swift */,
+				4922EEDA22262924001EB050 /* THJGProjectFundCheckCell.swift */,
+				4922EEDB22262924001EB050 /* THJGProjectFundCheckCell.xib */,
+				4965C2672225303E00DFD9A8 /* THJGFundInfoContractView.swift */,
+				4923A3E422268B26007FBECC /* THJGProjectContractHeaderView.swift */,
+				4923A3E622268B58007FBECC /* THJGProjectContractHeaderView.xib */,
+				497196DD223BA27C0057FEAE /* THJGConDetailAppointInfoCell.swift */,
+				497196DE223BA27C0057FEAE /* THJGConDetailAppointInfoCell.xib */,
+				497196E1223BA4480057FEAE /* THJGConDetailActualInfoCell.swift */,
+				497196E2223BA4480057FEAE /* THJGConDetailActualInfoCell.xib */,
+				498D4D3E2228D95300793A81 /* THJGProSellInfoDetailView.swift */,
+				498D4D442228E0C900793A81 /* THJGProSellInfoDetailHeaderView.swift */,
+				49C8A4C72228FB3500B949B4 /* THJGProjectSellInfoDetailSectionHeaderView.swift */,
+				49C8A4C92228FCA900B949B4 /* THJGProjectSellInfoDetailSectionHeaderView.xib */,
+				49C8A4CB22290D0600B949B4 /* THJGProjectSellDetailBlockCell.swift */,
+				49C8A4CC22290D0600B949B4 /* THJGProjectSellDetailBlockCell.xib */,
+				49C8A4D72229169F00B949B4 /* THJGProjectRoomDetailTypeOneCell.swift */,
+				49C8A4D82229169F00B949B4 /* THJGProjectRoomDetailTypeOneCell.xib */,
+				49C8A4DB2229185A00B949B4 /* THJGProjectRoomDetailTypeTwoCell.swift */,
+				49C8A4DC2229185A00B949B4 /* THJGProjectRoomDetailTypeTwoCell.xib */,
+				498D4D402228D98D00793A81 /* THJGProSellInfoPlanView.swift */,
+				49867FA7222CBEE4000E049E /* THJGProjectSellPlanCell.swift */,
+				49867FA8222CBEE4000E049E /* THJGProjectSellPlanCell.xib */,
+				498D4D422228D9B700793A81 /* THJGProSellInfoCompeteView.swift */,
+				494AC9B52230E11D00F988F7 /* THJGProjectCompetionView.swift */,
+				49D42A1622313BAF0043C999 /* THJGProjectCompetionDetailView.swift */,
+				49D42A1822313DFD0043C999 /* THJGProjectCompetionDetailCell.swift */,
+				49D42A1922313DFD0043C999 /* THJGProjectCompetionDetailCell.xib */,
+				49844062222D5C5800C21B82 /* THJGProjectCachetCell.swift */,
+				49844063222D5C5800C21B82 /* THJGProjectCachetCell.xib */,
+				4971EDAF22967E93008717EB /* THJGProMarketInfoCell.swift */,
+				4971EDB022967E93008717EB /* THJGProMarketInfoCell.xib */,
+				4971EDB322968281008717EB /* THJGProCompanyCell.swift */,
+				4971EDB422968281008717EB /* THJGProCompanyCell.xib */,
+				4971EDB722969065008717EB /* THJGProDZYCell.swift */,
+				4971EDB822969065008717EB /* THJGProDZYCell.xib */,
+				4971EDBB2296967B008717EB /* THJGProOperatorCell.swift */,
+				4971EDBC2296967B008717EB /* THJGProOperatorCell.xib */,
+				49CA56172297B59C005CAEAA /* THJGProCompanyBaseInfoView.swift */,
+				49CA56192297C089005CAEAA /* THJGProCompanyPdfCell.swift */,
+				49CA561A2297C089005CAEAA /* THJGProCompanyPdfCell.xib */,
+				49CA561D2297C76C005CAEAA /* THJGProCompanyRiskInfoView.swift */,
+				49CA561F2297CD09005CAEAA /* THJGProCompanyPdfBigCell.swift */,
+				49CA56202297CD09005CAEAA /* THJGProCompanyPdfBigCell.xib */,
+				49CA56232297CF05005CAEAA /* THJGProCompanyFinanceInfoView.swift */,
+				49CA56252297D08B005CAEAA /* THJGProCompanyFinanceCell.swift */,
+				49CA56262297D08B005CAEAA /* THJGProCompanyFinanceCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A391B2F9916AD47089207EC4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FE411A92E853C07D08ABE892 /* Pods-THJG.debug.xcconfig */,
+				5E5F86E53BEBB13B3B029FB6 /* Pods-THJG.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D2D501BE68576BB4A1D3A185 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				494AC9AE2230B0AF00F988F7 /* libcrypto.a */,
+				494AC9AD2230B0AF00F988F7 /* libssl.a */,
+				9C203E424AC68E16D245155E /* Pods_THJG.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		49C086AF22129B9000E13C99 /* THJG */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49C086C222129B9100E13C99 /* Build configuration list for PBXNativeTarget "THJG" */;
+			buildPhases = (
+				01A33E172483DF93B5C0673B /* [CP] Check Pods Manifest.lock */,
+				49C086AC22129B9000E13C99 /* Sources */,
+				49C086AD22129B9000E13C99 /* Frameworks */,
+				49C086AE22129B9000E13C99 /* Resources */,
+				025AB68F6821E2C1991B23D0 /* [CP] Embed Pods Frameworks */,
+				6D261C67FA513A3499560429 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = THJG;
+			productName = THJG;
+			productReference = 49C086B022129B9000E13C99 /* THJG.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		49C086A822129B9000E13C99 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = THJG;
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "中南金融";
+				TargetAttributes = {
+					49C086AF22129B9000E13C99 = {
+						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 49C086AB22129B9000E13C99 /* Build configuration list for PBXProject "THJG" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 49C086A722129B9000E13C99;
+			productRefGroup = 49C086B122129B9000E13C99 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				49C086AF22129B9000E13C99 /* THJG */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		49C086AE22129B9000E13C99 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49A1D6CE2218039F009DB272 /* THJGProjectCell.xib in Resources */,
+				49BA8E022236780C0014E97A /* THJGImgShowCell.xib in Resources */,
+				49CF866A2249BFDE0014BAAA /* THJGEmergentMsgView.xib in Resources */,
+				4971EDB622968281008717EB /* THJGProCompanyCell.xib in Resources */,
+				4908A9CE22549E3200F775A2 /* THJGGuideController.xib in Resources */,
+				49831CB7222F6C4A00240BD0 /* THJGMonitorCell.xib in Resources */,
+				49BA8DFD223673FE0014E97A /* THJGImageShowView.xib in Resources */,
+				498E09E222B249CD00EDAFD3 /* THJGProDaylyManageVideoCell.xib in Resources */,
+				49550AC3222E6026000C6847 /* THJGModifyPhoneController.xib in Resources */,
+				49B3D35022446CA500ED29DE /* THJGSettingGuesurePwdController.xib in Resources */,
+				49259B0922F2814100212D19 /* THJGTProjectFeeTypeCell.xib in Resources */,
+				497196DA223B88E80057FEAE /* THJGProjectContractDetailController.xib in Resources */,
+				49867FAA222CBEE4000E049E /* THJGProjectSellPlanCell.xib in Resources */,
+				49259B0522F27E4900212D19 /* THJGProjectFeeTypeView.xib in Resources */,
+				492F4006221FBC3400497153 /* THJGProDevCostBigTypeHeaderView.xib in Resources */,
+				4971EDA6229663AB008717EB /* THJGProCompetionController.xib in Resources */,
+				498FCE10228D3B260010C29B /* THJGNewsCell.xib in Resources */,
+				49B3D35A2244CCE900ED29DE /* THJGValidateGuestureController.xib in Resources */,
+				49D5B89D2221329000CD9CCE /* THJGProjectFundInfoController.xib in Resources */,
+				49CA562C2297E442005CAEAA /* THJGProDZYController.xib in Resources */,
+				49C086DE2212A33100E13C99 /* THJGMyController.xib in Resources */,
+				4971EDAA2296785C008717EB /* THJGProMarketInfoController.xib in Resources */,
+				49A1D6D2221807EC009DB272 /* THJGHomePageBannerCell.xib in Resources */,
+				496B484C223CE7310097E52E /* THJGPwdSettingCell.xib in Resources */,
+				498B5786228D08D5005F9867 /* THJGNewsController.xib in Resources */,
+				490FF3E4224104B3004D42B2 /* THJGVideoFullScreenView.xib in Resources */,
+				49D42A1B22313DFD0043C999 /* THJGProjectCompetionDetailCell.xib in Resources */,
+				493D5878221BA09700ED62A8 /* THJGProDetialImgCell.xib in Resources */,
+				4912924922F910BC004FEC55 /* THJGBigImgShowView.xib in Resources */,
+				49CF86722249CC860014BAAA /* THJGContactUsView.xib in Resources */,
+				4927B5F3221AE5FB002897E3 /* THJGProjectDetailController.xib in Resources */,
+				49148DBB2212B3C2003F4368 /* rsa_public_key.der in Resources */,
+				49CF86662249A9B20014BAAA /* THJGVersionUpdateView.xib in Resources */,
+				49CA56282297D08B005CAEAA /* THJGProCompanyFinanceCell.xib in Resources */,
+				491227DB221684380064E1AD /* THJGForgetPwdController.xib in Resources */,
+				49D3C85C228E61D0003D654F /* THJGNewsDetailController.xib in Resources */,
+				49CA561C2297C089005CAEAA /* THJGProCompanyPdfCell.xib in Resources */,
+				494A757122373B9600649516 /* THJGBriefImgShowView.xib in Resources */,
+				493D5870221B9D5200ED62A8 /* THJGProVideoCell.xib in Resources */,
+				49F4514022280D960069B8B7 /* THJGProjectSellInfoController.xib in Resources */,
+				49E2CF82222FC8C400735718 /* THJGPlatformNoticeCell.xib in Resources */,
+				4950222A2249EE0D00A2F15D /* THJGPushMsgView.xib in Resources */,
+				492F400A221FBECE00497153 /* THJGProDevCostSmallTypeHeaderView.xib in Resources */,
+				49C8A4DE2229185A00B949B4 /* THJGProjectRoomDetailTypeTwoCell.xib in Resources */,
+				49C086BE22129B9100E13C99 /* LaunchScreen.storyboard in Resources */,
+				4947EA8D2213C123008D93C5 /* THJGLoginController.xib in Resources */,
+				49D136D422964D1400330E91 /* THJGProSellMarketCell.xib in Resources */,
+				4971EDBE2296967B008717EB /* THJGProOperatorCell.xib in Resources */,
+				49B3D35E2244E1F100ED29DE /* THJGValidateModifyGuestueController.xib in Resources */,
+				497196E4223BA4480057FEAE /* THJGConDetailActualInfoCell.xib in Resources */,
+				4915CE892241CCBA00CD0B2C /* THJGLocalVideoFullScreenView.xib in Resources */,
+				49121F63222FAF5000D45EC1 /* THJGInnerMsgDetailController.xib in Resources */,
+				4923A3E722268B58007FBECC /* THJGProjectContractHeaderView.xib in Resources */,
+				491F70332238903300190419 /* THJGProgressView.xib in Resources */,
+				4984405F222D50CE00C21B82 /* THJGProjectCachetController.xib in Resources */,
+				494A75752237401C00649516 /* THJGBriefImgShowCell.xib in Resources */,
+				49EBE90D2217E7580012FE39 /* THJGHomePageController.xib in Resources */,
+				49A1D6D62218089F009DB272 /* THJGHomePageBullteinCell.xib in Resources */,
+				496B4844223C9C080097E52E /* THJGMyCenterCell.xib in Resources */,
+				49E85216221D537A008FF1DA /* THJGProjectTimesController.xib in Resources */,
+				49C8A4CA2228FCA900B949B4 /* THJGProjectSellInfoDetailSectionHeaderView.xib in Resources */,
+				496A1A1722377DAB0048454B /* THJGEZOpenVideoCell.xib in Resources */,
+				494C0BA3221D035F00F56A17 /* THJGProPlanCell.xib in Resources */,
+				49E33E8D221E90B400178DE7 /* THJGProjectDevCostController.xib in Resources */,
+				49E2CF8C222FDB5500735718 /* THJGPlatformNoticeDetailController.xib in Resources */,
+				49C8A4CE22290D0600B949B4 /* THJGProjectSellDetailBlockCell.xib in Resources */,
+				49CA56122297849D005CAEAA /* THJGProCompanyController.xib in Resources */,
+				49121F57222F9EC800D45EC1 /* THJGInnerMsgController.xib in Resources */,
+				49C9A26C221F8E900012B439 /* THJGProjectDevCostDetailCell.xib in Resources */,
+				49E8521E221D7324008FF1DA /* THJGProjectTimesCell.xib in Resources */,
+				49259B0122F27E2200212D19 /* THJGDatePickerView.xib in Resources */,
+				49C8A4D62229148D00B949B4 /* THJGProjectRoomSellDetailController.xib in Resources */,
+				49CF866E2249C5C70014BAAA /* THJGTouchIDToastView.xib in Resources */,
+				497196E0223BA27C0057FEAE /* THJGConDetailAppointInfoCell.xib in Resources */,
+				49D136D022963A0700330E91 /* THJGProMonitorCell.xib in Resources */,
+				4911E2F62240C32B00D4678B /* THJGVideoRecView.xib in Resources */,
+				49B3D3562244CA0900ED29DE /* THJGModifyGuesturePwdController.xib in Resources */,
+				496C2FB4221CDB5400C9B7B0 /* THJGProjectPlanController.xib in Resources */,
+				49CA56302297E9A8005CAEAA /* THJGAssets.xcassets in Resources */,
+				4971EDB222967E93008717EB /* THJGProMarketInfoCell.xib in Resources */,
+				49C8A4DA2229169F00B949B4 /* THJGProjectRoomDetailTypeOneCell.xib in Resources */,
+				49CA56222297CD09005CAEAA /* THJGProCompanyPdfBigCell.xib in Resources */,
+				49550ACA222E6C74000C6847 /* THJGModifyLoginPwdController.xib in Resources */,
+				4971EDBA22969065008717EB /* THJGProDZYCell.xib in Resources */,
+				49E2CF7E222FBC7200735718 /* THJGPlatformNoticeController.xib in Resources */,
+				4922EEDD22262924001EB050 /* THJGProjectFundCheckCell.xib in Resources */,
+				49121F5B222F9F9E00D45EC1 /* THJGInnerMsgCell.xib in Resources */,
+				49844065222D5C5800C21B82 /* THJGProjectCachetCell.xib in Resources */,
+				496B4848223CE4390097E52E /* THJGSettingPwdController.xib in Resources */,
+				4965C26C222536AB00DFD9A8 /* THJGFundInfoAccountCell.xib in Resources */,
+				49D420B622954B42005FC79B /* THJGProSituationCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		01A33E172483DF93B5C0673B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-THJG-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		025AB68F6821E2C1991B23D0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-THJG/Pods-THJG-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-THJG/Pods-THJG-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-THJG/Pods-THJG-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6D261C67FA513A3499560429 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-THJG/Pods-THJG-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-THJG/Pods-THJG-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-THJG/Pods-THJG-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		49C086AC22129B9000E13C99 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49844064222D5C5800C21B82 /* THJGProjectCachetCell.swift in Sources */,
+				4923A3E522268B26007FBECC /* THJGProjectContractHeaderView.swift in Sources */,
+				491F703122388FE800190419 /* THJGProgressView.swift in Sources */,
+				49A4F09922489FD0004448AB /* THJGValidateModifyGuestureViewModel.swift in Sources */,
+				491227E322168A300064E1AD /* THJGForgetPwdViewModel.swift in Sources */,
+				49EBE90C2217E7580012FE39 /* THJGHomePageController.swift in Sources */,
+				494A756F22373B6A00649516 /* THJGBriefImgShowView.swift in Sources */,
+				49E2CF88222FCD0700735718 /* THJGPlatformNoticeDetailBean.swift in Sources */,
+				49E2CF8E222FDBC500735718 /* THJGPlatformNoticeDetailViewModel.swift in Sources */,
+				49CF86682249BFC40014BAAA /* THJGEmergentMsgView.swift in Sources */,
+				49A33AEB223F6F1100FBD509 /* DQSUtils_OC.m in Sources */,
+				49148DAF2212B218003F4368 /* DQSDataZipHelper.m in Sources */,
+				492CC8E0229CD44D00DD2E7E /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
+				49A1D6D52218089F009DB272 /* THJGHomePageBullteinCell.swift in Sources */,
+				49550AC9222E6C74000C6847 /* THJGModifyLoginPwdController.swift in Sources */,
+				49BA8E012236780C0014E97A /* THJGImgShowCell.swift in Sources */,
+				49B2AA982214173900C47780 /* DQSStorageManager.swift in Sources */,
+				4965C26622252F8C00DFD9A8 /* THJGFundInfoCheckView.swift in Sources */,
+				49D5B89F2221335800CD9CCE /* THJGProjectFundInfoViewModel.swift in Sources */,
+				496B4847223CE4390097E52E /* THJGSettingPwdController.swift in Sources */,
+				49148DB22212B218003F4368 /* NSData+KKSignVerify.m in Sources */,
+				49550AC2222E6026000C6847 /* THJGModifyPhoneController.swift in Sources */,
+				4928605522240F730053DDE8 /* THJGProjectFundCheckBean.swift in Sources */,
+				4971EDB922969065008717EB /* THJGProDZYCell.swift in Sources */,
+				496B4843223C9C080097E52E /* THJGMyCenterCell.swift in Sources */,
+				4949EFE2221A97520031FFEF /* THJGEZPlayerController.swift in Sources */,
+				49CF866C2249C5A40014BAAA /* THJGTouchIDToastView.swift in Sources */,
+				49B2AA922213EB8100C47780 /* THJGBaseBean.swift in Sources */,
+				49148DB32212B218003F4368 /* DQSRSAHelper.m in Sources */,
+				498D4D3D2228BFCA00793A81 /* THJGProjectSellDetailBean.swift in Sources */,
+				4971EDB122967E93008717EB /* THJGProMarketInfoCell.swift in Sources */,
+				49B3D34F22446CA500ED29DE /* THJGSettingGuesurePwdController.swift in Sources */,
+				49D5B8A122213BB100CD9CCE /* THJGProjectFundAccountBean.swift in Sources */,
+				49B3D3522244A82700ED29DE /* DQSGuestureTipView.swift in Sources */,
+				49A71E53221D26A5007CC7CD /* THJGProjectPlanBean.swift in Sources */,
+				49E2CF81222FC8C400735718 /* THJGPlatformNoticeCell.swift in Sources */,
+				491227DA221684380064E1AD /* THJGForgetPwdController.swift in Sources */,
+				49867FA6222CB4F9000E049E /* THJGProjectSellPlanBean.swift in Sources */,
+				494BB5362243B01000FC0B7D /* DQSGuestureView.swift in Sources */,
+				49F4514222280DEF0069B8B7 /* THJGProjectSellInfoViewModel.swift in Sources */,
+				496910CD221B8EA200DC7040 /* THJGProjectDetailBean.swift in Sources */,
+				4971EDAE229679D3008717EB /* THJGProMarketInfoBean.swift in Sources */,
+				49A1D6BE2217EBF8009DB272 /* THJGHomePageBean.swift in Sources */,
+				4984405B222D506D00C21B82 /* THJGProjectCachetViewModel.swift in Sources */,
+				49148DC22212C65E003F4368 /* THJGConstants.swift in Sources */,
+				49C9A26B221F8E900012B439 /* THJGProjectDevCostDetailCell.swift in Sources */,
+				4971EDA92296785C008717EB /* THJGProMarketInfoController.swift in Sources */,
+				49D42A1722313BAF0043C999 /* THJGProjectCompetionDetailView.swift in Sources */,
+				497196E3223BA4480057FEAE /* THJGConDetailActualInfoCell.swift in Sources */,
+				49554CCF2239FAC700BAD726 /* THJGPointAnnotation.swift in Sources */,
+				497196D9223B88E80057FEAE /* THJGProjectContractDetailController.swift in Sources */,
+				49CA562B2297E442005CAEAA /* THJGProDZYController.swift in Sources */,
+				497196DC223B8C400057FEAE /* THJGProjectContractDetailViewModel.swift in Sources */,
+				49E33E8F221E90F400178DE7 /* THJGProjectDevCostViewModel.swift in Sources */,
+				49E33E8C221E90B400178DE7 /* THJGProjectDevCostController.swift in Sources */,
+				498B5785228D08D5005F9867 /* THJGNewsController.swift in Sources */,
+				492F4008221FBE7900497153 /* THJGProDevCostSmallTypeHeaderView.swift in Sources */,
+				49BA8DFB223673ED0014E97A /* THJGImageShowView.swift in Sources */,
+				49867FA9222CBEE4000E049E /* THJGProjectSellPlanCell.swift in Sources */,
+				496B484B223CE7310097E52E /* THJGPwdSettingCell.swift in Sources */,
+				4984405E222D50CE00C21B82 /* THJGProjectCachetController.swift in Sources */,
+				498FCE0C228D39250010C29B /* THJGNewsInfoBean.swift in Sources */,
+				4911E2F42240C30800D4678B /* THJGVideoRecView.swift in Sources */,
+				49D42A1A22313DFD0043C999 /* THJGProjectCompetionDetailCell.swift in Sources */,
+				49831CB6222F6C4A00240BD0 /* THJGMonitorCell.swift in Sources */,
+				49CA56242297CF05005CAEAA /* THJGProCompanyFinanceInfoView.swift in Sources */,
+				49CA56182297B59C005CAEAA /* THJGProCompanyBaseInfoView.swift in Sources */,
+				49E2CF92222FF69800735718 /* THJGEZOpenViewModel.swift in Sources */,
+				4949EFDF221A909A0031FFEF /* THJGEZOPENManager.swift in Sources */,
+				49D5B89C2221329000CD9CCE /* THJGProjectFundInfoController.swift in Sources */,
+				49121F5A222F9F9E00D45EC1 /* THJGInnerMsgCell.swift in Sources */,
+				49259B0022F27E2200212D19 /* THJGDatePickerView.swift in Sources */,
+				49121F5F222FA16000D45EC1 /* THJGInnerMsgBean.swift in Sources */,
+				49148DB52212B218003F4368 /* NSData+KKHASH.m in Sources */,
+				497196DF223BA27C0057FEAE /* THJGConDetailAppointInfoCell.swift in Sources */,
+				49D136D322964D1400330E91 /* THJGProSellMarketCell.swift in Sources */,
+				49B3D35D2244E1F100ED29DE /* THJGValidateModifyGuestueController.swift in Sources */,
+				49C086CC2212A26C00E13C99 /* THJGTabBarController.swift in Sources */,
+				49C9A266221F84830012B439 /* THJGProDevCostBigTypeHeaderView.swift in Sources */,
+				496A1A1622377DAB0048454B /* THJGEZOpenVideoCell.swift in Sources */,
+				4965C26B222536AB00DFD9A8 /* THJGFundInfoAccountCell.swift in Sources */,
+				49B2AA9A2214197B00C47780 /* THJGStorageManager.swift in Sources */,
+				49259B0322F27E3F00212D19 /* THJGProjectFeeTypeView.swift in Sources */,
+				4971EDAC22967911008717EB /* THJGProMarketInfoViewModel.swift in Sources */,
+				49C086DD2212A33100E13C99 /* THJGMyController.swift in Sources */,
+				49E2CF8B222FDB5500735718 /* THJGPlatformNoticeDetailController.swift in Sources */,
+				49C8A4CD22290D0600B949B4 /* THJGProjectSellDetailBlockCell.swift in Sources */,
+				49CF86702249CC5F0014BAAA /* THJGContactUsView.swift in Sources */,
+				4965C2682225303E00DFD9A8 /* THJGFundInfoContractView.swift in Sources */,
+				4971EDA5229663AB008717EB /* THJGProCompetionController.swift in Sources */,
+				49A1D6CD2218039F009DB272 /* THJGProjectCell.swift in Sources */,
+				494A75742237401C00649516 /* THJGBriefImgShowCell.swift in Sources */,
+				49B2AA9C2214238900C47780 /* DQSArchivable.swift in Sources */,
+				49A1D6C42217F343009DB272 /* TZBTimeButton.m in Sources */,
+				49148DB42212B218003F4368 /* GTMBase64.m in Sources */,
+				49B2AA902213EB5C00C47780 /* THJGLoginViewModel.swift in Sources */,
+				49CA56112297849D005CAEAA /* THJGProCompanyController.swift in Sources */,
+				49B3D3592244CCE900ED29DE /* THJGValidateGuestureController.swift in Sources */,
+				498D4D432228D9B700793A81 /* THJGProSellInfoCompeteView.swift in Sources */,
+				4915CE872241CCAC00CD0B2C /* THJGLocalVideoFullScreenView.swift in Sources */,
+				49E8521A221D5571008FF1DA /* THJGProjectTimesBean.swift in Sources */,
+				49CF19FC2216697C008A0CBC /* DQSTextField.swift in Sources */,
+				49D07995222CF795009F7B9B /* THJGProjectSellCompetionBean.swift in Sources */,
+				490FF3E2224104A4004D42B2 /* THJGVideoFullScreenView.swift in Sources */,
+				49844061222D530500C21B82 /* THJGProjectCachetBean.swift in Sources */,
+				4965C26422252E8600DFD9A8 /* THJGFundInfoAccountView.swift in Sources */,
+				49A1D6CA2217F356009DB272 /* FTDLoopView.swift in Sources */,
+				4908A9CD22549E3200F775A2 /* THJGGuideController.swift in Sources */,
+				49E8521D221D7324008FF1DA /* THJGProjectTimesCell.swift in Sources */,
+				498D4D412228D98D00793A81 /* THJGProSellInfoPlanView.swift in Sources */,
+				49C8A4DD2229185A00B949B4 /* THJGProjectRoomDetailTypeTwoCell.swift in Sources */,
+				49F4513F22280D960069B8B7 /* THJGProjectSellInfoController.swift in Sources */,
+				49D42A152231005D0043C999 /* THJGTipAnnotation.swift in Sources */,
+				498FCE0F228D3B260010C29B /* THJGNewsCell.swift in Sources */,
+				49D136CC2296390800330E91 /* THJGProDetailTapButton.swift in Sources */,
+				49A1D6C52217F343009DB272 /* NSTimer+TZBTimer.m in Sources */,
+				49C8A4C82228FB3500B949B4 /* THJGProjectSellInfoDetailSectionHeaderView.swift in Sources */,
+				49E2CF7D222FBC7200735718 /* THJGPlatformNoticeController.swift in Sources */,
+				49A1D6D1221807EC009DB272 /* THJGHomePageBannerCell.swift in Sources */,
+				49CA56272297D08B005CAEAA /* THJGProCompanyFinanceCell.swift in Sources */,
+				498E09E122B249CD00EDAFD3 /* THJGProDaylyManageVideoCell.swift in Sources */,
+				4912924722F9106B004FEC55 /* THJGBigImgShowView.swift in Sources */,
+				4927B5F2221AE5FB002897E3 /* THJGProjectDetailController.swift in Sources */,
+				49831CB1222F610000240BD0 /* THJGMonitorViewModel.swift in Sources */,
+				49B2AA9F22142A0800C47780 /* KeychainWrapper.m in Sources */,
+				498D4D3F2228D95300793A81 /* THJGProSellInfoDetailView.swift in Sources */,
+				49CF86642249A9930014BAAA /* THJGVersionUpdateView.swift in Sources */,
+				49E85218221D5461008FF1DA /* THJGProjectTimesViewModel.swift in Sources */,
+				49C086CE2212A28500E13C99 /* THJGNavigationController.swift in Sources */,
+				49E2CF84222FCA7000735718 /* THJGPlatformNoticeBean.swift in Sources */,
+				49B2AA952213EDB700C47780 /* DQSUtils.swift in Sources */,
+				493D5877221BA09700ED62A8 /* THJGProDetialImgCell.swift in Sources */,
+				494AC9B62230E11D00F988F7 /* THJGProjectCompetionView.swift in Sources */,
+				495E99A4221FCDAC00095C17 /* THJGProDevCostTopView.swift in Sources */,
+				49E2CF86222FCC5100735718 /* THJGPlatformNoticeViewModel.swift in Sources */,
+				49B3D3552244CA0900ED29DE /* THJGModifyGuesturePwdController.swift in Sources */,
+				49148DB12212B218003F4368 /* RSA.m in Sources */,
+				49259B0822F2814100212D19 /* THJGTProjectFeeTypeCell.swift in Sources */,
+				49E33E91221EC37900178DE7 /* THJGProjectDevCostBean.swift in Sources */,
+				4971EDBD2296967B008717EB /* THJGProOperatorCell.swift in Sources */,
+				49CA5616229786CA005CAEAA /* THJGProCompanyBean.swift in Sources */,
+				4965C262222510B600DFD9A8 /* THJGProjectContractBean.swift in Sources */,
+				495022282249EDF600A2F15D /* THJGPushMsgView.swift in Sources */,
+				4950222C224A3C3500A2F15D /* THJGPushViewModel.swift in Sources */,
+				496C2FB3221CDB5400C9B7B0 /* THJGProjectPlanController.swift in Sources */,
+				491227E522168AD80064E1AD /* THJGBaseViewModel.swift in Sources */,
+				49C086B422129B9000E13C99 /* THJGAppDelegate.swift in Sources */,
+				4971EDB522968281008717EB /* THJGProCompanyCell.swift in Sources */,
+				4942EBF52231F84E00E0FDE3 /* THJGBaiduMapManager.swift in Sources */,
+				49E2CF90222FF01100735718 /* THJGMyCenterBean.swift in Sources */,
+				49C086D02212A29500E13C99 /* THJGBaseController.swift in Sources */,
+				49D3C85E228E64DB003D654F /* THJGNewsDetailViewModel.swift in Sources */,
+				49550AC6222E60C9000C6847 /* THJGModifyPhoneViewModel.swift in Sources */,
+				49831CB3222F632700240BD0 /* THJGMonitorBean.swift in Sources */,
+				49A1D6C92217F356009DB272 /* FTDCollectionViewCell.swift in Sources */,
+				49121F62222FAF5000D45EC1 /* THJGInnerMsgDetailController.swift in Sources */,
+				49148DBE2212B445003F4368 /* DQSNetworkManager.swift in Sources */,
+				494C0BA5221D070800F56A17 /* THJGProjectPlanViewModel.swift in Sources */,
+				49121F5D222FA0CD00D45EC1 /* THJGInnerMsgViewModel.swift in Sources */,
+				4927B5F5221AE62D002897E3 /* THJGProjectDetailViewModel.swift in Sources */,
+				4922EEDC22262924001EB050 /* THJGProjectFundCheckCell.swift in Sources */,
+				49121F56222F9EC800D45EC1 /* THJGInnerMsgController.swift in Sources */,
+				49D13B5322325429001911B4 /* THJGJPushRegister.m in Sources */,
+				49CA56212297CD09005CAEAA /* THJGProCompanyPdfBigCell.swift in Sources */,
+				49550ACC222E6FB8000C6847 /* THJGModifyLoginPwdViewModel.swift in Sources */,
+				49CA56142297864B005CAEAA /* THJGProCompanyViewModel.swift in Sources */,
+				49C8A4D92229169F00B949B4 /* THJGProjectRoomDetailTypeOneCell.swift in Sources */,
+				498D4D452228E0C900793A81 /* THJGProSellInfoDetailHeaderView.swift in Sources */,
+				49900791222E804A0077CC95 /* THJGMyViewModel.swift in Sources */,
+				49E85215221D537A008FF1DA /* THJGProjectTimesController.swift in Sources */,
+				494BB5382243B35A00FC0B7D /* DQSGuestureButton.swift in Sources */,
+				49D420B522954B42005FC79B /* THJGProSituationCell.swift in Sources */,
+				49CA561E2297C76C005CAEAA /* THJGProCompanyRiskInfoView.swift in Sources */,
+				49EBE90B2217E7580012FE39 /* THJGHomePageViewModel.swift in Sources */,
+				4947EA8C2213C123008D93C5 /* THJGLoginController.swift in Sources */,
+				4941C3112294E88900B1571E /* THJGVerticalButton.swift in Sources */,
+				49CA561B2297C089005CAEAA /* THJGProCompanyPdfCell.swift in Sources */,
+				49D3C860228E66A7003D654F /* THJGNewsDetailBean.swift in Sources */,
+				493D586F221B9D5200ED62A8 /* THJGProVideoCell.swift in Sources */,
+				498FCE0A228D37FC0010C29B /* THJGNewsViewModel.swift in Sources */,
+				49A4F09B2248CC4A004448AB /* THJGWebController.swift in Sources */,
+				49C8A4D52229148D00B949B4 /* THJGProjectRoomSellDetailController.swift in Sources */,
+				4947EA812213BE4F008D93C5 /* THJGUserBean.swift in Sources */,
+				49D3C85B228E61D0003D654F /* THJGNewsDetailController.swift in Sources */,
+				49121F65222FB01700D45EC1 /* THJGInnerMsgDetailViewModel.swift in Sources */,
+				494C0BA2221D035F00F56A17 /* THJGProPlanCell.swift in Sources */,
+				49D136CF22963A0700330E91 /* THJGProMonitorCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		49C086BC22129B9100E13C99 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				49C086BD22129B9100E13C99 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		49C086C022129B9100E13C99 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		49C086C122129B9100E13C99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		49C086C322129B9100E13C99 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE411A92E853C07D08ABE892 /* Pods-THJG.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = THJG/THJG.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BA2LZ89L4D;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = THJG/Resource/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/BaiduMapKit/BaiduMapKit/thirdlibs",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yunshow.thjg;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "THJG/Resource/THJG-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		49C086C422129B9100E13C99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E5F86E53BEBB13B3B029FB6 /* Pods-THJG.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = THJG/THJG.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BA2LZ89L4D;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = THJG/Resource/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/BaiduMapKit/BaiduMapKit/thirdlibs",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yunshow.thjg;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "THJG/Resource/THJG-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		49C086AB22129B9000E13C99 /* Build configuration list for PBXProject "THJG" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49C086C022129B9100E13C99 /* Debug */,
+				49C086C122129B9100E13C99 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		49C086C222129B9100E13C99 /* Build configuration list for PBXNativeTarget "THJG" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49C086C322129B9100E13C99 /* Debug */,
+				49C086C422129B9100E13C99 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 49C086A822129B9000E13C99 /* Project object */;
+}

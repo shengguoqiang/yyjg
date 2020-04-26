@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="THJGVideoRecView" customModule="THJG" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="移动侦测告警" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="doA-v1-aVO">
+                    <rect key="frame" x="135.5" y="50" width="104" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CWp-Em-icx">
+                    <rect key="frame" x="0.0" y="40.5" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="9FU-vh-mR4"/>
+                        <constraint firstAttribute="width" constant="40" id="APT-4D-3gf"/>
+                    </constraints>
+                    <state key="normal" image="common_cancel"/>
+                    <connections>
+                        <action selector="cancleDidClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="lMi-Xb-rbI"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vyg-Ss-CbE">
+                    <rect key="frame" x="40" y="131" width="295" height="185"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="185" id="cLx-RR-rTY"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w3z-no-UcW">
+                    <rect key="frame" x="295" y="131" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="22P-E3-X4T"/>
+                        <constraint firstAttribute="width" constant="40" id="tDa-41-uRl"/>
+                    </constraints>
+                    <state key="normal" image="common_fullScreen"/>
+                    <connections>
+                        <action selector="fullScreenDidClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="Vlt-7e-JOW"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.12941411137580872" green="0.12940755486488342" blue="0.12941199541091919" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstItem="vyg-Ss-CbE" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="40" id="4Zv-eJ-dj2"/>
+                <constraint firstItem="doA-v1-aVO" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="30" id="6xW-iK-4Gf"/>
+                <constraint firstItem="doA-v1-aVO" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="7e0-G8-vQD"/>
+                <constraint firstItem="vyg-Ss-CbE" firstAttribute="top" secondItem="doA-v1-aVO" secondAttribute="bottom" constant="60" id="a3Y-S0-Sfb"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="w3z-no-UcW" secondAttribute="trailing" constant="40" id="cIo-Gx-lpA"/>
+                <constraint firstItem="w3z-no-UcW" firstAttribute="top" secondItem="vyg-Ss-CbE" secondAttribute="top" id="e1S-bp-TYX"/>
+                <constraint firstItem="CWp-Em-icx" firstAttribute="centerY" secondItem="doA-v1-aVO" secondAttribute="centerY" id="vkE-S8-2tF"/>
+                <constraint firstItem="CWp-Em-icx" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="y9o-Z0-4XU"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="vyg-Ss-CbE" secondAttribute="trailing" constant="40" id="zG8-Yf-mTU"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="titleLabel" destination="doA-v1-aVO" id="wnS-36-nw8"/>
+                <outlet property="videoView" destination="vyg-Ss-CbE" id="ItL-7b-QXc"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="common_cancel" width="16" height="16"/>
+        <image name="common_fullScreen" width="24" height="23"/>
+    </resources>
+</document>

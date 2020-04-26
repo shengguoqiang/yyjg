@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="THJGNewsDetailController" customModule="THJG" customModuleProvider="target">
+            <connections>
+                <outlet property="newsDateLabel" destination="hKM-yl-3UK" id="f7O-ZX-jas"/>
+                <outlet property="newsSourceLabel" destination="QMw-o1-U2t" id="Hmx-IY-3ck"/>
+                <outlet property="newsTypeBtn" destination="bQ4-K4-nXV" id="4t3-Pk-fWK"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="资讯时间" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hKM-yl-3UK">
+                    <rect key="frame" x="15" y="35" width="57.5" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.58823529411764708" green="0.58823529411764708" blue="0.58823529411764708" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="资讯来源" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QMw-o1-U2t">
+                    <rect key="frame" x="87.5" y="35" width="272.5" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.58823529409999997" green="0.58823529409999997" blue="0.58823529409999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bQ4-K4-nXV">
+                    <rect key="frame" x="15" y="67" width="70" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="Ih0-2r-gtW"/>
+                        <constraint firstAttribute="width" constant="70" id="bdo-G6-ySZ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="资讯类型">
+                        <color key="titleColor" red="0.8643565178" green="0.4792178869" blue="0.4548870921" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderW">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderC">
+                            <color key="value" red="0.86435651779174805" green="0.47921788692474365" blue="0.45488709211349487" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerR">
+                            <real key="value" value="3"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="hKM-yl-3UK" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="15" id="3gg-W1-5N8"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="QMw-o1-U2t" secondAttribute="trailing" constant="15" id="Asx-nb-5pX"/>
+                <constraint firstItem="QMw-o1-U2t" firstAttribute="leading" secondItem="hKM-yl-3UK" secondAttribute="trailing" constant="15" id="bq8-UZ-6uX"/>
+                <constraint firstItem="bQ4-K4-nXV" firstAttribute="top" secondItem="hKM-yl-3UK" secondAttribute="bottom" constant="15" id="hAy-p3-HOy"/>
+                <constraint firstItem="bQ4-K4-nXV" firstAttribute="leading" secondItem="hKM-yl-3UK" secondAttribute="leading" id="qs1-EE-lqm"/>
+                <constraint firstItem="hKM-yl-3UK" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="15" id="vKa-WE-K5B"/>
+                <constraint firstItem="QMw-o1-U2t" firstAttribute="centerY" secondItem="hKM-yl-3UK" secondAttribute="centerY" id="xBL-3i-DJq"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+</document>
