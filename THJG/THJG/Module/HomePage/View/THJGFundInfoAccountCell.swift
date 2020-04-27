@@ -14,6 +14,10 @@ class THJGFundInfoAccountCell: UITableViewCell {
     @IBOutlet weak var balanceLabel: UILabel!
     @IBOutlet weak var shieldNameLabel: UILabel!
     @IBOutlet weak var seperator: UIView!
+    /**
+     * 更新时间
+     */
+    @IBOutlet weak var updateTimeLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -66,6 +70,8 @@ class THJGFundInfoAccountCell: UITableViewCell {
         bankNoLabel.text = bean.bankNo
         balanceLabel.text = "\(DQSUtils.showNumWithComma(num: DQSUtils.showDoubleNum(sourceDouble: bean.bankBalance, floatNum: 2, showStyle: .showStyleNoZero)))万元"
         shieldNameLabel.text = bean.bankShieldName
+        // 更新时间
+        updateTimeLabel.text = "\(bean.dataUptTime) 更新"
     }
     
 }

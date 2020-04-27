@@ -128,7 +128,7 @@ extension THJGProjectFundInfoViewModel {
         var handledBeans = [ProFundInfoAccountHandledBean]()
         let accountBeans = bean.accounts
         for account in accountBeans {
-            handledBeans.append(ProFundInfoAccountHandledBean(cellBean: account, cellHeight: 235))
+            handledBeans.append(ProFundInfoAccountHandledBean(cellBean: account, cellHeight: 255))
         }
         return handledBeans
     }

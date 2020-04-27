@@ -35,6 +35,10 @@ struct ProFundAccountBean: THJGBaseBean {
     var bankBalance: Double
     var bankShieldName: String
     var bankShieldCode: String
+    /**
+     * 更新时间
+     */
+    var dataUptTime: String
     
     static func parse(_ data: JSONTYPE) -> ProFundAccountBean {
         return ProFundAccountBean(bankLogo: data["bankLogo"].string ?? "",
@@ -44,6 +48,7 @@ struct ProFundAccountBean: THJGBaseBean {
                                   bankNo: data["bankNo"].string ?? "",
                                   bankBalance: data["bankBalance"].double ?? 0,
                                   bankShieldName: data["bankShieldName"].string ?? "",
-                                  bankShieldCode: data["bankShieldCode"].string ?? "")
+                                  bankShieldCode: data["bankShieldCode"].string ?? "",
+                                  dataUptTime: data["dataUptTime"].string ?? "")
     }
 }
