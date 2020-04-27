@@ -43,8 +43,8 @@ let baseUrl = "http://58.213.46.226:9090/core"
 //let baseUrl = "https://yyapp.yunshows.com/core"
 
 /* 环境 */
-//let ENVIRONMENT = "dev"
-let ENVIRONMENT = "prd"
+let ENVIRONMENT = "dev"
+//let ENVIRONMENT = "prd"
 
 /* 各种机型 */
 //屏幕宽度

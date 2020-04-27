@@ -20,6 +20,8 @@ class THJGProjectSellInfoController: THJGBaseController {
     //MARK: - Properties
     //projectId
     var projectId: String!
+    //DataCtl
+    fileprivate lazy var dataCtl = THJGProjectSellInfoDataController()
     //VM
     lazy var sellInfoVM = THJGProjectSellInfoViewModel()
     //tab相关
@@ -106,7 +108,34 @@ extension THJGProjectSellInfoController {
     //销售明细
     fileprivate func requestForSellDetailData() {
         DQSUtils.showLoading(view)
-        sellInfoVM.requestForProjectSellDetailData(param: ["projectId": projectId])
+        //sellInfoVM.requestForProjectSellDetailData(param: ["projectId": projectId])
+        dataCtl.requestForSellDetailData(["projectId": projectId], { [weak self] (_, _) in
+            guard self != nil else {
+                return
+            }
+            // 隐藏loading
+            DQSUtils.hideLoading(self!.view)
+            // 刷新UI
+            self!.setupUI()
+        }, nil)
+    }
+    
+    //MARK: 刷新UI
+    fileprivate func setupUI() {
+        // 项目名
+        projectNameLabel.text = dataCtl.detailBean.projectName
+        // 基本信息
+        if dataCtl.detailBean.projectSellDetails.isEmpty {
+            //添加默认占位图
+            DQSUtils.showPlaceholderImg(sellDetailView)
+        } else {
+            //删除默认占位图
+            DQSUtils.hidePlaceholderImg(sellDetailView)
+            //刷新列表
+            sellDetailHeaderView.bean = dataCtl.detailBean
+            sellDetailHeaderView.reloadWeekSellData(dataCtl.weekBean)
+            sellDetailBeans = sellInfoVM.handleSellDetailData(dataCtl.detailBean)
+        }
     }
     
     @objc override func requestSuccess(_ notification: Notification) {
