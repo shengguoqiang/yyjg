@@ -150,8 +150,6 @@
 		49844064222D5C5800C21B82 /* THJGProjectCachetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49844062222D5C5800C21B82 /* THJGProjectCachetCell.swift */; };
 		49844065222D5C5800C21B82 /* THJGProjectCachetCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49844063222D5C5800C21B82 /* THJGProjectCachetCell.xib */; };
 		49867FA6222CB4F9000E049E /* THJGProjectSellPlanBean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49867FA5222CB4F9000E049E /* THJGProjectSellPlanBean.swift */; };
-		49867FA9222CBEE4000E049E /* THJGProjectSellPlanCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49867FA7222CBEE4000E049E /* THJGProjectSellPlanCell.swift */; };
-		49867FAA222CBEE4000E049E /* THJGProjectSellPlanCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49867FA8222CBEE4000E049E /* THJGProjectSellPlanCell.xib */; };
 		498B5785228D08D5005F9867 /* THJGNewsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498B5783228D08D5005F9867 /* THJGNewsController.swift */; };
 		498B5786228D08D5005F9867 /* THJGNewsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 498B5784228D08D5005F9867 /* THJGNewsController.xib */; };
 		498D4D3D2228BFCA00793A81 /* THJGProjectSellDetailBean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498D4D3C2228BFCA00793A81 /* THJGProjectSellDetailBean.swift */; };
@@ -267,6 +265,8 @@
 		49D5B89D2221329000CD9CCE /* THJGProjectFundInfoController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49D5B89B2221329000CD9CCE /* THJGProjectFundInfoController.xib */; };
 		49D5B89F2221335800CD9CCE /* THJGProjectFundInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D5B89E2221335800CD9CCE /* THJGProjectFundInfoViewModel.swift */; };
 		49D5B8A122213BB100CD9CCE /* THJGProjectFundAccountBean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D5B8A022213BB100CD9CCE /* THJGProjectFundAccountBean.swift */; };
+		49E22ABA245917AF00F2C044 /* THJGProjectSellPlanSectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E22AB9245917AF00F2C044 /* THJGProjectSellPlanSectionHeaderView.swift */; };
+		49E22ABC245917DB00F2C044 /* THJGProjectSellPlanSectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49E22ABB245917DB00F2C044 /* THJGProjectSellPlanSectionHeaderView.xib */; };
 		49E2CF7D222FBC7200735718 /* THJGPlatformNoticeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E2CF7B222FBC7200735718 /* THJGPlatformNoticeController.swift */; };
 		49E2CF7E222FBC7200735718 /* THJGPlatformNoticeController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49E2CF7C222FBC7200735718 /* THJGPlatformNoticeController.xib */; };
 		49E2CF81222FC8C400735718 /* THJGPlatformNoticeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E2CF7F222FC8C400735718 /* THJGPlatformNoticeCell.swift */; };
@@ -283,6 +283,17 @@
 		49E33E8D221E90B400178DE7 /* THJGProjectDevCostController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49E33E8B221E90B400178DE7 /* THJGProjectDevCostController.xib */; };
 		49E33E8F221E90F400178DE7 /* THJGProjectDevCostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E33E8E221E90F400178DE7 /* THJGProjectDevCostViewModel.swift */; };
 		49E33E91221EC37900178DE7 /* THJGProjectDevCostBean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E33E90221EC37900178DE7 /* THJGProjectDevCostBean.swift */; };
+		49E79ACE2457FDC400CA996F /* THJGProjectSellDayDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E79ACC2457FDC400CA996F /* THJGProjectSellDayDetailController.swift */; };
+		49E79ACF2457FDC400CA996F /* THJGProjectSellDayDetailController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49E79ACD2457FDC400CA996F /* THJGProjectSellDayDetailController.xib */; };
+		49E79AD22457FF5800CA996F /* THJGProjectSellDayDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E79AD02457FF5800CA996F /* THJGProjectSellDayDetailCell.swift */; };
+		49E79AD32457FF5800CA996F /* THJGProjectSellDayDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49E79AD12457FF5800CA996F /* THJGProjectSellDayDetailCell.xib */; };
+		49E79AD5245801BE00CA996F /* THJGProjectSellDayDetailHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E79AD4245801BE00CA996F /* THJGProjectSellDayDetailHeaderView.swift */; };
+		49E79AD72458020300CA996F /* THJGProjectSellDayDetailHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49E79AD62458020300CA996F /* THJGProjectSellDayDetailHeaderView.xib */; };
+		49E79AD9245809B800CA996F /* THJGProjectSellDayDetailDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E79AD8245809B800CA996F /* THJGProjectSellDayDetailDataController.swift */; };
+		49E79ADB24580B2F00CA996F /* THJGProjectSellDayDetailBean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E79ADA24580B2F00CA996F /* THJGProjectSellDayDetailBean.swift */; };
+		49E79ADE2458370B00CA996F /* THJGProjectSellPlanViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E79ADD2458370B00CA996F /* THJGProjectSellPlanViewModel.swift */; };
+		49E79AE124583A1600CA996F /* THJGProjectSellPlanCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E79ADF24583A1600CA996F /* THJGProjectSellPlanCell.swift */; };
+		49E79AE224583A1600CA996F /* THJGProjectSellPlanCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49E79AE024583A1600CA996F /* THJGProjectSellPlanCell.xib */; };
 		49E85215221D537A008FF1DA /* THJGProjectTimesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E85213221D537A008FF1DA /* THJGProjectTimesController.swift */; };
 		49E85216221D537A008FF1DA /* THJGProjectTimesController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49E85214221D537A008FF1DA /* THJGProjectTimesController.xib */; };
 		49E85218221D5461008FF1DA /* THJGProjectTimesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E85217221D5461008FF1DA /* THJGProjectTimesViewModel.swift */; };
@@ -457,8 +468,6 @@
 		49844062222D5C5800C21B82 /* THJGProjectCachetCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGProjectCachetCell.swift; sourceTree = "<group>"; };
 		49844063222D5C5800C21B82 /* THJGProjectCachetCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = THJGProjectCachetCell.xib; sourceTree = "<group>"; };
 		49867FA5222CB4F9000E049E /* THJGProjectSellPlanBean.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGProjectSellPlanBean.swift; sourceTree = "<group>"; };
-		49867FA7222CBEE4000E049E /* THJGProjectSellPlanCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGProjectSellPlanCell.swift; sourceTree = "<group>"; };
-		49867FA8222CBEE4000E049E /* THJGProjectSellPlanCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = THJGProjectSellPlanCell.xib; sourceTree = "<group>"; };
 		498B5783228D08D5005F9867 /* THJGNewsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGNewsController.swift; sourceTree = "<group>"; };
 		498B5784228D08D5005F9867 /* THJGNewsController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = THJGNewsController.xib; sourceTree = "<group>"; };
 		498D4D3C2228BFCA00793A81 /* THJGProjectSellDetailBean.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGProjectSellDetailBean.swift; sourceTree = "<group>"; };
@@ -582,6 +591,8 @@
 		49D5B89B2221329000CD9CCE /* THJGProjectFundInfoController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = THJGProjectFundInfoController.xib; sourceTree = "<group>"; };
 		49D5B89E2221335800CD9CCE /* THJGProjectFundInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGProjectFundInfoViewModel.swift; sourceTree = "<group>"; };
 		49D5B8A022213BB100CD9CCE /* THJGProjectFundAccountBean.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGProjectFundAccountBean.swift; sourceTree = "<group>"; };
+		49E22AB9245917AF00F2C044 /* THJGProjectSellPlanSectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGProjectSellPlanSectionHeaderView.swift; sourceTree = "<group>"; };
+		49E22ABB245917DB00F2C044 /* THJGProjectSellPlanSectionHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = THJGProjectSellPlanSectionHeaderView.xib; sourceTree = "<group>"; };
 		49E2CF7B222FBC7200735718 /* THJGPlatformNoticeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGPlatformNoticeController.swift; sourceTree = "<group>"; };
 		49E2CF7C222FBC7200735718 /* THJGPlatformNoticeController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = THJGPlatformNoticeController.xib; sourceTree = "<group>"; };
 		49E2CF7F222FC8C400735718 /* THJGPlatformNoticeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGPlatformNoticeCell.swift; sourceTree = "<group>"; };
@@ -598,6 +609,17 @@
 		49E33E8B221E90B400178DE7 /* THJGProjectDevCostController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = THJGProjectDevCostController.xib; sourceTree = "<group>"; };
 		49E33E8E221E90F400178DE7 /* THJGProjectDevCostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGProjectDevCostViewModel.swift; sourceTree = "<group>"; };
 		49E33E90221EC37900178DE7 /* THJGProjectDevCostBean.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGProjectDevCostBean.swift; sourceTree = "<group>"; };
+		49E79ACC2457FDC400CA996F /* THJGProjectSellDayDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGProjectSellDayDetailController.swift; sourceTree = "<group>"; };
+		49E79ACD2457FDC400CA996F /* THJGProjectSellDayDetailController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = THJGProjectSellDayDetailController.xib; sourceTree = "<group>"; };
+		49E79AD02457FF5800CA996F /* THJGProjectSellDayDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGProjectSellDayDetailCell.swift; sourceTree = "<group>"; };
+		49E79AD12457FF5800CA996F /* THJGProjectSellDayDetailCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = THJGProjectSellDayDetailCell.xib; sourceTree = "<group>"; };
+		49E79AD4245801BE00CA996F /* THJGProjectSellDayDetailHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGProjectSellDayDetailHeaderView.swift; sourceTree = "<group>"; };
+		49E79AD62458020300CA996F /* THJGProjectSellDayDetailHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = THJGProjectSellDayDetailHeaderView.xib; sourceTree = "<group>"; };
+		49E79AD8245809B800CA996F /* THJGProjectSellDayDetailDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGProjectSellDayDetailDataController.swift; sourceTree = "<group>"; };
+		49E79ADA24580B2F00CA996F /* THJGProjectSellDayDetailBean.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGProjectSellDayDetailBean.swift; sourceTree = "<group>"; };
+		49E79ADD2458370B00CA996F /* THJGProjectSellPlanViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGProjectSellPlanViewModel.swift; sourceTree = "<group>"; };
+		49E79ADF24583A1600CA996F /* THJGProjectSellPlanCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGProjectSellPlanCell.swift; sourceTree = "<group>"; };
+		49E79AE024583A1600CA996F /* THJGProjectSellPlanCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = THJGProjectSellPlanCell.xib; sourceTree = "<group>"; };
 		49E85213221D537A008FF1DA /* THJGProjectTimesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGProjectTimesController.swift; sourceTree = "<group>"; };
 		49E85214221D537A008FF1DA /* THJGProjectTimesController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = THJGProjectTimesController.xib; sourceTree = "<group>"; };
 		49E85217221D5461008FF1DA /* THJGProjectTimesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THJGProjectTimesViewModel.swift; sourceTree = "<group>"; };
@@ -642,6 +664,7 @@
 			isa = PBXGroup;
 			children = (
 				490AF1402456E6D900F27D69 /* THJGProjectSellInfoDataController.swift */,
+				49E79AD8245809B800CA996F /* THJGProjectSellDayDetailDataController.swift */,
 			);
 			path = DataController;
 			sourceTree = "<group>";
@@ -1154,6 +1177,7 @@
 				4984405A222D506D00C21B82 /* THJGProjectCachetViewModel.swift */,
 				4971EDAB22967911008717EB /* THJGProMarketInfoViewModel.swift */,
 				49CA56132297864B005CAEAA /* THJGProCompanyViewModel.swift */,
+				49E79ADD2458370B00CA996F /* THJGProjectSellPlanViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -1177,6 +1201,8 @@
 				497196D8223B88E80057FEAE /* THJGProjectContractDetailController.xib */,
 				49F4513D22280D960069B8B7 /* THJGProjectSellInfoController.swift */,
 				49F4513E22280D960069B8B7 /* THJGProjectSellInfoController.xib */,
+				49E79ACC2457FDC400CA996F /* THJGProjectSellDayDetailController.swift */,
+				49E79ACD2457FDC400CA996F /* THJGProjectSellDayDetailController.xib */,
 				4971EDA3229663AB008717EB /* THJGProCompetionController.swift */,
 				4971EDA4229663AB008717EB /* THJGProCompetionController.xib */,
 				4971EDA72296785C008717EB /* THJGProMarketInfoController.swift */,
@@ -1212,6 +1238,7 @@
 				49844060222D530500C21B82 /* THJGProjectCachetBean.swift */,
 				4971EDAD229679D3008717EB /* THJGProMarketInfoBean.swift */,
 				49CA5615229786CA005CAEAA /* THJGProCompanyBean.swift */,
+				49E79ADA24580B2F00CA996F /* THJGProjectSellDayDetailBean.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1276,8 +1303,6 @@
 				49C8A4DB2229185A00B949B4 /* THJGProjectRoomDetailTypeTwoCell.swift */,
 				49C8A4DC2229185A00B949B4 /* THJGProjectRoomDetailTypeTwoCell.xib */,
 				498D4D402228D98D00793A81 /* THJGProSellInfoPlanView.swift */,
-				49867FA7222CBEE4000E049E /* THJGProjectSellPlanCell.swift */,
-				49867FA8222CBEE4000E049E /* THJGProjectSellPlanCell.xib */,
 				498D4D422228D9B700793A81 /* THJGProSellInfoCompeteView.swift */,
 				494AC9B52230E11D00F988F7 /* THJGProjectCompetionView.swift */,
 				49D42A1622313BAF0043C999 /* THJGProjectCompetionDetailView.swift */,
@@ -1302,6 +1327,14 @@
 				49CA56232297CF05005CAEAA /* THJGProCompanyFinanceInfoView.swift */,
 				49CA56252297D08B005CAEAA /* THJGProCompanyFinanceCell.swift */,
 				49CA56262297D08B005CAEAA /* THJGProCompanyFinanceCell.xib */,
+				49E79AD02457FF5800CA996F /* THJGProjectSellDayDetailCell.swift */,
+				49E79AD12457FF5800CA996F /* THJGProjectSellDayDetailCell.xib */,
+				49E79AD4245801BE00CA996F /* THJGProjectSellDayDetailHeaderView.swift */,
+				49E79AD62458020300CA996F /* THJGProjectSellDayDetailHeaderView.xib */,
+				49E79ADF24583A1600CA996F /* THJGProjectSellPlanCell.swift */,
+				49E79AE024583A1600CA996F /* THJGProjectSellPlanCell.xib */,
+				49E22AB9245917AF00F2C044 /* THJGProjectSellPlanSectionHeaderView.swift */,
+				49E22ABB245917DB00F2C044 /* THJGProjectSellPlanSectionHeaderView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1392,6 +1425,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49E79AD72458020300CA996F /* THJGProjectSellDayDetailHeaderView.xib in Resources */,
 				49A1D6CE2218039F009DB272 /* THJGProjectCell.xib in Resources */,
 				49BA8E022236780C0014E97A /* THJGImgShowCell.xib in Resources */,
 				49CF866A2249BFDE0014BAAA /* THJGEmergentMsgView.xib in Resources */,
@@ -1402,9 +1436,10 @@
 				498E09E222B249CD00EDAFD3 /* THJGProDaylyManageVideoCell.xib in Resources */,
 				49550AC3222E6026000C6847 /* THJGModifyPhoneController.xib in Resources */,
 				49B3D35022446CA500ED29DE /* THJGSettingGuesurePwdController.xib in Resources */,
+				49E79AE224583A1600CA996F /* THJGProjectSellPlanCell.xib in Resources */,
 				49259B0922F2814100212D19 /* THJGTProjectFeeTypeCell.xib in Resources */,
 				497196DA223B88E80057FEAE /* THJGProjectContractDetailController.xib in Resources */,
-				49867FAA222CBEE4000E049E /* THJGProjectSellPlanCell.xib in Resources */,
+				49E79AD32457FF5800CA996F /* THJGProjectSellDayDetailCell.xib in Resources */,
 				49259B0522F27E4900212D19 /* THJGProjectFeeTypeView.xib in Resources */,
 				492F4006221FBC3400497153 /* THJGProDevCostBigTypeHeaderView.xib in Resources */,
 				4971EDA6229663AB008717EB /* THJGProCompetionController.xib in Resources */,
@@ -1439,11 +1474,13 @@
 				49C086BE22129B9100E13C99 /* LaunchScreen.storyboard in Resources */,
 				4947EA8D2213C123008D93C5 /* THJGLoginController.xib in Resources */,
 				49D136D422964D1400330E91 /* THJGProSellMarketCell.xib in Resources */,
+				49E22ABC245917DB00F2C044 /* THJGProjectSellPlanSectionHeaderView.xib in Resources */,
 				4971EDBE2296967B008717EB /* THJGProOperatorCell.xib in Resources */,
 				49B3D35E2244E1F100ED29DE /* THJGValidateModifyGuestueController.xib in Resources */,
 				497196E4223BA4480057FEAE /* THJGConDetailActualInfoCell.xib in Resources */,
 				4915CE892241CCBA00CD0B2C /* THJGLocalVideoFullScreenView.xib in Resources */,
 				49121F63222FAF5000D45EC1 /* THJGInnerMsgDetailController.xib in Resources */,
+				49E79ACF2457FDC400CA996F /* THJGProjectSellDayDetailController.xib in Resources */,
 				4923A3E722268B58007FBECC /* THJGProjectContractHeaderView.xib in Resources */,
 				491F70332238903300190419 /* THJGProgressView.xib in Resources */,
 				4984405F222D50CE00C21B82 /* THJGProjectCachetController.xib in Resources */,
@@ -1562,6 +1599,7 @@
 				49E2CF88222FCD0700735718 /* THJGPlatformNoticeDetailBean.swift in Sources */,
 				49E2CF8E222FDBC500735718 /* THJGPlatformNoticeDetailViewModel.swift in Sources */,
 				49CF86682249BFC40014BAAA /* THJGEmergentMsgView.swift in Sources */,
+				49E79AD22457FF5800CA996F /* THJGProjectSellDayDetailCell.swift in Sources */,
 				49A33AEB223F6F1100FBD509 /* DQSUtils_OC.m in Sources */,
 				49148DAF2212B218003F4368 /* DQSDataZipHelper.m in Sources */,
 				492CC8E0229CD44D00DD2E7E /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
@@ -1588,6 +1626,7 @@
 				49D5B8A122213BB100CD9CCE /* THJGProjectFundAccountBean.swift in Sources */,
 				49B3D3522244A82700ED29DE /* DQSGuestureTipView.swift in Sources */,
 				49A71E53221D26A5007CC7CD /* THJGProjectPlanBean.swift in Sources */,
+				49E79ACE2457FDC400CA996F /* THJGProjectSellDayDetailController.swift in Sources */,
 				49E2CF81222FC8C400735718 /* THJGPlatformNoticeCell.swift in Sources */,
 				490AF1412456E6D900F27D69 /* THJGProjectSellInfoDataController.swift in Sources */,
 				491227DA221684380064E1AD /* THJGForgetPwdController.swift in Sources */,
@@ -1611,9 +1650,9 @@
 				49E33E8F221E90F400178DE7 /* THJGProjectDevCostViewModel.swift in Sources */,
 				49E33E8C221E90B400178DE7 /* THJGProjectDevCostController.swift in Sources */,
 				498B5785228D08D5005F9867 /* THJGNewsController.swift in Sources */,
+				49E79AE124583A1600CA996F /* THJGProjectSellPlanCell.swift in Sources */,
 				492F4008221FBE7900497153 /* THJGProDevCostSmallTypeHeaderView.swift in Sources */,
 				49BA8DFB223673ED0014E97A /* THJGImageShowView.swift in Sources */,
-				49867FA9222CBEE4000E049E /* THJGProjectSellPlanCell.swift in Sources */,
 				490AF1502456F31E00F27D69 /* YKLineDataObject.m in Sources */,
 				496B484B223CE7310097E52E /* THJGPwdSettingCell.swift in Sources */,
 				4984405E222D50CE00C21B82 /* THJGProjectCachetController.swift in Sources */,
@@ -1630,10 +1669,12 @@
 				49121F5A222F9F9E00D45EC1 /* THJGInnerMsgCell.swift in Sources */,
 				49259B0022F27E2200212D19 /* THJGDatePickerView.swift in Sources */,
 				49121F5F222FA16000D45EC1 /* THJGInnerMsgBean.swift in Sources */,
+				49E79ADB24580B2F00CA996F /* THJGProjectSellDayDetailBean.swift in Sources */,
 				49148DB52212B218003F4368 /* NSData+KKHASH.m in Sources */,
 				497196DF223BA27C0057FEAE /* THJGConDetailAppointInfoCell.swift in Sources */,
 				49D136D322964D1400330E91 /* THJGProSellMarketCell.swift in Sources */,
 				49B3D35D2244E1F100ED29DE /* THJGValidateModifyGuestueController.swift in Sources */,
+				49E79AD5245801BE00CA996F /* THJGProjectSellDayDetailHeaderView.swift in Sources */,
 				49C086CC2212A26C00E13C99 /* THJGTabBarController.swift in Sources */,
 				49C9A266221F84830012B439 /* THJGProDevCostBigTypeHeaderView.swift in Sources */,
 				496A1A1622377DAB0048454B /* THJGEZOpenVideoCell.swift in Sources */,
@@ -1661,6 +1702,7 @@
 				4915CE872241CCAC00CD0B2C /* THJGLocalVideoFullScreenView.swift in Sources */,
 				49E8521A221D5571008FF1DA /* THJGProjectTimesBean.swift in Sources */,
 				49CF19FC2216697C008A0CBC /* DQSTextField.swift in Sources */,
+				49E79ADE2458370B00CA996F /* THJGProjectSellPlanViewModel.swift in Sources */,
 				49D07995222CF795009F7B9B /* THJGProjectSellCompetionBean.swift in Sources */,
 				490FF3E2224104A4004D42B2 /* THJGVideoFullScreenView.swift in Sources */,
 				49844061222D530500C21B82 /* THJGProjectCachetBean.swift in Sources */,
@@ -1706,6 +1748,7 @@
 				4950222C224A3C3500A2F15D /* THJGPushViewModel.swift in Sources */,
 				496C2FB3221CDB5400C9B7B0 /* THJGProjectPlanController.swift in Sources */,
 				491227E522168AD80064E1AD /* THJGBaseViewModel.swift in Sources */,
+				49E22ABA245917AF00F2C044 /* THJGProjectSellPlanSectionHeaderView.swift in Sources */,
 				49C086B422129B9000E13C99 /* THJGAppDelegate.swift in Sources */,
 				4971EDB522968281008717EB /* THJGProCompanyCell.swift in Sources */,
 				4942EBF52231F84E00E0FDE3 /* THJGBaiduMapManager.swift in Sources */,
@@ -1734,6 +1777,7 @@
 				49D420B522954B42005FC79B /* THJGProSituationCell.swift in Sources */,
 				49CA561E2297C76C005CAEAA /* THJGProCompanyRiskInfoView.swift in Sources */,
 				49EBE90B2217E7580012FE39 /* THJGHomePageViewModel.swift in Sources */,
+				49E79AD9245809B800CA996F /* THJGProjectSellDayDetailDataController.swift in Sources */,
 				4947EA8C2213C123008D93C5 /* THJGLoginController.swift in Sources */,
 				4941C3112294E88900B1571E /* THJGVerticalButton.swift in Sources */,
 				49CA561B2297C089005CAEAA /* THJGProCompanyPdfCell.swift in Sources */,

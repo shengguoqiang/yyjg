@@ -13,6 +13,10 @@ class THJGProjectSellInfoDataController {
      * 七日销售明细
      */
     var weekBean: THJGProjectSellWeekDetailsBean!
+    /**
+     * 销售进度
+     */
+    var planBean: THJGProjectSellPlanBean!
 }
 
 //MARK: - 请求相关
@@ -65,6 +69,22 @@ extension THJGProjectSellInfoDataController {
         _ = DQSNetworkManager.sharedInstance.requestForData(methodName: "projectSellWeekTotalAndDetail", bussinessParam: param, success: { (response) in
             let weekBean = THJGProjectSellWeekDetailsBean.parse(response)
             self.weekBean = weekBean
+            successBlock(nil, nil)
+        }) { (code, message) in
+            NotificationCenter.default.post(name: NSNotification.Name(rawValue: THJG_NOTIFICATION_NETWORK_FAILURE), object: THJGFailureBean(errorCode: code, msg: message))
+        }
+    }
+    
+    /**
+     * 获取销售进度
+     * @param param   业务参数
+     */
+    func requestForProjectSellPlanData(_ param: PARAMETERTYPE?,
+                                                     _ successBlock: @escaping SuccessBlock,
+                                                     _ failureBlock: FailureBlock?) {
+        _ = DQSNetworkManager.sharedInstance.requestForData(methodName: "projectSellPlan", bussinessParam: param, success: { (response) in
+            let planBean = THJGProjectSellPlanBean.parse(response)
+            self.planBean = planBean
             successBlock(nil, nil)
         }) { (code, message) in
             NotificationCenter.default.post(name: NSNotification.Name(rawValue: THJG_NOTIFICATION_NETWORK_FAILURE), object: THJGFailureBean(errorCode: code, msg: message))

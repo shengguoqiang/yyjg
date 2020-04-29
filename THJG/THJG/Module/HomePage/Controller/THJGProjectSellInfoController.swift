@@ -101,6 +101,15 @@ extension THJGProjectSellInfoController {
         
         //销售明细滚动视图的顶部视图
         sellDetailView.tableView.tableHeaderView = sellDetailHeaderView
+        sellDetailHeaderView.moreAction = { [weak self] in
+            guard self != nil else {
+                return
+            }
+            let moreVC = THJGProjectSellDayDetailController()
+            moreVC.projectId = self!.projectId
+            moreVC.projectName = self!.dataCtl.detailBean.projectName
+            self?.navigationController?.pushViewController(moreVC, animated: true)
+        }
         sellDetailView.detailViewDelegate = self
     }
     
@@ -138,6 +147,7 @@ extension THJGProjectSellInfoController {
         }
     }
     
+    //MARK: 废弃！！！
     @objc override func requestSuccess(_ notification: Notification) {
         super.requestSuccess(notification)
         //获取数据
@@ -159,9 +169,28 @@ extension THJGProjectSellInfoController {
     //计划与进度
     fileprivate func requestForSellPlanData() {
         DQSUtils.showLoading(view)
-        sellInfoVM.requestForProjectPlanData(param: ["projectId": projectId])
+        //sellInfoVM.requestForProjectPlanData(param: ["projectId": projectId])
+        dataCtl.requestForProjectSellPlanData(["projectId": projectId], { [weak self] (_, _) in
+            guard self != nil else {
+                return
+            }
+            // 隐藏loading
+            DQSUtils.hideLoading(self!.view)
+            // 刷新UI
+            let vm = THJGProjectSellPlanViewModel.viewWithData(self!.dataCtl.planBean)
+            if vm.plans.isEmpty {
+                //添加默认占位图
+                DQSUtils.showPlaceholderImg(self!.planView)
+            } else {
+                //删除默认占位图
+                DQSUtils.hidePlaceholderImg(self!.planView)
+                // 刷新列表
+                self!.planView.reloadData(vm)
+            }
+        }, nil)
     }
     
+    //MARK: 废弃！！！
     @objc func requestPlanSuccess(_ notification: Notification) {
         DQSUtils.hideLoading(view)
         //获取数据
@@ -174,7 +203,7 @@ extension THJGProjectSellInfoController {
             //删除默认占位图
             DQSUtils.hidePlaceholderImg(planView)
             //刷新列表
-            planView.beans = sellInfoVM.handleSellPlanData(planBean)
+            //planView.beans = sellInfoVM.handleSellPlanData(planBean)
         }
     }
     

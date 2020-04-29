@@ -20,7 +20,7 @@
             tempMax = [number integerValue];
         }
     }
-    _max = tempMax;
+    _max = tempMax + 5;
     return _max;
 }
 

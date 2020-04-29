@@ -46,7 +46,7 @@ struct ProjectSellCompetionBean: THJGBaseBean {
     var competionName: String
     var competionLocation: String
     var competionSellDate: Int64
-    var competionRoom: Double
+    var competionRoom: String
     var competionUnitPrice: Double
     var competionAll: Int
     var competionSellRate: String
@@ -58,7 +58,7 @@ struct ProjectSellCompetionBean: THJGBaseBean {
         return ProjectSellCompetionBean(competionName: data["competionName"].string ?? "",
                                         competionLocation: data["competionLocation"].string ?? "",
                                         competionSellDate: data["competionSellDate"].int64 ?? 0,
-                                        competionRoom: data["competionRoom"].double ?? 0,
+                                        competionRoom: data["competionRoom"].string ?? "",
                                         competionUnitPrice: data["competionUnitPrice"].double ?? 0,
                                         competionAll: data["competionAll"].int ?? 0,
                                         competionSellRate: data["competionSellRate"].string ?? "",

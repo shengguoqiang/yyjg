@@ -254,8 +254,8 @@ extension THJGProSellInfoCompeteView {
             if bean.competionSellDate != 0 {
                 handledBeans.append(ProjectSellCompetionDetailBean(title: "开盘时间", content: DQSUtils.showTime(interval: TimeInterval(bean.competionSellDate/1000), timeFormate: "yyyy-MM-dd"), cellHeight: 45))
             }
-            if bean.competionRoom != 0 {
-                handledBeans.append(ProjectSellCompetionDetailBean(title: "主力户型", content: "\(DQSUtils.showDoubleNum(sourceDouble: bean.competionRoom, floatNum: 2, showStyle: .showStyleNoZero))㎡", cellHeight: 45))
+            if DQSUtils.isNotBlank(bean.competionRoom) {
+                handledBeans.append(ProjectSellCompetionDetailBean(title: "主力户型", content: bean.competionRoom, cellHeight: 45))
             }
             if bean.competionUnitPrice != 0 {
                 handledBeans.append(ProjectSellCompetionDetailBean(title: "销售均价", content: "\(DQSUtils.showDoubleNum(sourceDouble: bean.competionUnitPrice/10000, floatNum: 2, showStyle: .showStyleNoZero))万元/㎡", cellHeight: 45))

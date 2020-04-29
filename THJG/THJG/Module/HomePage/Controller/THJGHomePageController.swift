@@ -74,8 +74,11 @@ extension THJGHomePageController {
         projectView.register(UINib(nibName: "THJGProjectCell", bundle: nil), forCellReuseIdentifier: kProjectCellIdentifier)
         
         //添加下拉刷新
-        containerView.mj_header = MJRefreshNormalHeader(refreshingBlock: {[unowned self] in
-            self.requestForData()
+        containerView.mj_header = MJRefreshNormalHeader(refreshingBlock: {[weak self] in
+            guard self != nil else {
+                return
+            }
+            self!.requestForData()
         })
         containerView.mj_header.beginRefreshing()
         

@@ -18,24 +18,6 @@ struct ProjectSellDetailHandledBean {
     var isSelected: (Bool, [ProjectBlockSellDetailBean]?)
 }
 
-//计划与进度
-enum ProjectSellPlanCellPostion {
-    case left
-    case right
-}
-enum ProjectSellPlanCellStatus {
-    case ahead
-    case normal
-    case delay
-    case unFinished
-}
-struct ProjectSellPlanHandledBean {
-    var cellBean: ProjectSellPlanBean
-    var cellHeight: CGFloat
-    var cellPosition: ProjectSellPlanCellPostion
-    var cellStatus: ProjectSellPlanCellStatus
-}
-
 class THJGProjectSellInfoViewModel: THJGBaseViewModel {
 
     /**
@@ -123,36 +105,5 @@ extension THJGProjectSellInfoViewModel {
             handledDetails.append(ProjectSellDetailHandledBean(headerBean: detail, isSelected: (false, nil)))
         }
         return handledDetails
-    }
-    
-    //处理计划与进度数据
-     func handleSellPlanData(_ bean: THJGProjectSellPlanBean) -> [ProjectSellPlanHandledBean] {
-        var handledBeans = [ProjectSellPlanHandledBean]()
-        let plans = bean.plans
-        for (index, plan) in plans.enumerated() {
-            //计算行高
-            var cellHeight: CGFloat = 90
-            if DQSUtils.isNotBlank(plan.planRemark) {
-               let textHeight = DQSUtils.heightForText(text: plan.planRemark, fixedWidth: SCREEN_WIDTH/2-35, fixedFont: UIFont.systemFont(ofSize: 14)) + 20
-                cellHeight += textHeight
-            }
-            //计算位置
-            let position: ProjectSellPlanCellPostion = (index % 2 == 0) ?  .right : .left
-            //计算状态
-            var status: ProjectSellPlanCellStatus = .normal
-            if DQSUtils.isNotBlank(plan.planActual) {//超前
-                if (Double(plan.planExpect) ?? 0) < (Double(plan.planActual) ?? 0) {
-                    status = .ahead
-                } else if (Double(plan.planExpect) ?? 0) == (Double(plan.planActual) ?? 0) {//正常
-                    status = .normal
-                } else {//延迟
-                    status = .delay
-                }
-            } else {//待完成
-                status = .unFinished
-            }
-            handledBeans.append(ProjectSellPlanHandledBean(cellBean: plan, cellHeight: cellHeight, cellPosition: position, cellStatus: status))
-        }
-        return handledBeans
     }
 }

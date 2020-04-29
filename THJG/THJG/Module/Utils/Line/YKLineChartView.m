@@ -271,13 +271,13 @@
     //    configuration.menuRowHeight = 80;
     configuration.textColor = [UIColor whiteColor];
     configuration.textFont = [UIFont systemFontOfSize:12];
-    configuration.tintColor = [UIColor orangeColor];
+    configuration.tintColor = [UIColor colorWithRed:161.0/255.0 green:46/255.0 blue:54/255.0 alpha:1.0];
     configuration.textAlignment = NSTextAlignmentCenter;
-    configuration.borderColor = [UIColor orangeColor];
+    configuration.borderColor = [UIColor colorWithRed:161.0/255.0 green:46/255.0 blue:54/255.0 alpha:1.0];
     configuration.menuRowHeight = 20;
     configuration.menuWidth = [self contentLength:content];
     configuration.selectedTextColor = UIColor.whiteColor;
-    configuration.selectedCellBackgroundColor = UIColor.orangeColor;
+    configuration.selectedCellBackgroundColor = [UIColor colorWithRed:161.0/255.0 green:46/255.0 blue:54/255.0 alpha:1.0];
     configuration.showDirection =  FTPopOverMenuArrowDirectionDown;
     configuration.showCustomDirection = true;
     configuration.enableUserInteraction = false;

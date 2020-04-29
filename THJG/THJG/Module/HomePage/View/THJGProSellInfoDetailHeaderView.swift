@@ -25,6 +25,12 @@ class THJGProSellInfoDetailHeaderView: UIView {
      */
     @IBOutlet weak var weekSellLineView: UIView!
     
+    //MARK: 数据属性
+    /**
+     * 七日销售更多事件回调
+     */
+    var moreAction: (()->Void)?
+    
     var bean: THJGProjectSellDetailBean! {
         didSet {
             //进度条
@@ -55,45 +61,48 @@ class THJGProSellInfoDetailHeaderView: UIView {
         // 七日销售信息
         weekSellInfoLabel.text = "\(DQSUtils.showNumWithComma(num: DQSUtils.showDoubleNum(sourceDouble: bean.projectDfinalAmount/10000, floatNum: 2, showStyle: .showStyleNoZero)))万元" + " / \(bean.projectIsold)套"
         // 七日折线图
-        createChartView()
+        createChartView(bean)
     }
     
     //MARK: 创建折线图
-    fileprivate func createChartView() {
+    fileprivate func createChartView(_ bean: THJGProjectSellWeekDetailsBean) {
         guard chartView == nil else {
             return
         }
         // 创建
         chartView = YKLineChartView()
-        chartView.frame = CGRect(x: 0, y: 0, width: SCREEN_WIDTH - 30, height: 140)
+        chartView.frame = CGRect(x: 0, y: 0, width: SCREEN_WIDTH - 30, height: 150)
         weekSellLineView.addSubview(chartView)
-//        chartView.snp.makeConstraints { (make) in
-//            make.edges.equalToSuperview()
-//        }
         // 配置
         let config = YKUIConfig()
         // y轴
         config.yDescFront = UIFont.init(name: "PingFang-SC-Medium", size: 10.0)
-        config.yDescColor = UIColor(red: 204.0/255.0, green: 204.0/255.0, blue: 204.0/255.0, alpha: 1.0)
+        config.yDescColor = UIColor(red: 161.0/255.0, green: 161.0/255.0, blue: 161.0/255.0, alpha: 1.0)
         config.ylineColor = UIColor(red: 204.0/255.0, green: 204.0/255.0, blue: 204.0/255.0, alpha: 0.3)
         // x轴
         config.xDescFront = UIFont.init(name: "PingFang-SC-Medium", size: 10.0)
-        config.xDescColor = UIColor(red: 204.0/255.0, green: 204.0/255.0, blue: 204.0/255.0, alpha: 1.0)
+        config.xDescColor = UIColor(red: 161.0/255.0, green: 161.0/255.0, blue: 161.0/255.0, alpha: 1.0)
         // 线
-        config.lineWidth = 2
-        config.lineColor = .orange
-        config.circleWidth = 3
+        config.lineWidth = 1
+        config.lineColor = UIColor(red: 161.0/255.0, green: 46/255.0, blue: 54/255.0, alpha: 1.0)
+        config.circleWidth = 2
         // 赋值
         let dataObj = YKLineDataObject()
         dataObj.ySuffix = ""
-        dataObj.xDescriptionDataSource = ["4-1", "4-2", "4-3", "4-4", "4-5", "4-6", "4-7"]
-        dataObj.showNumbers = [1, 20, 4, 2, 5, 12, 8]
+        var timeArr = [String]()
+        var sellArr = [Int]()
+        for item in bean.projectSellWeekDetails {
+            timeArr.append(item.proSellDate)
+            sellArr.append(item.proSold)
+        }
+        dataObj.xDescriptionDataSource = timeArr
+        dataObj.showNumbers = sellArr
         chartView.setupDataSource(dataObj, withUIConfgi: config)
     }
     
     //MARK: 七日销售详情查看事件监听
     @IBAction fileprivate func moreBtnDidClicked() {
-        DQSUtils.log("查看更多...")
+        moreAction?()
     }
 
 }

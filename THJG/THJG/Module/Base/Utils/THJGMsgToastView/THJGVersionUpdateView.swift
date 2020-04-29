@@ -3,14 +3,29 @@
  */
 
 import UIKit
+import WebKit
 
 class THJGVersionUpdateView: UIView {
 
     @IBOutlet weak var versionLabel: UILabel!
-    @IBOutlet weak var webView: UIWebView!
+    @IBOutlet weak var webContainerView: UIView!
+    fileprivate var webView: WKWebView!
     @IBOutlet weak var ignoreBtn: UIButton!
     @IBOutlet weak var updateBtn: UIButton!
     @IBOutlet weak var forceUpdateBtn: UIButton!
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        webView = WKWebView(frame: .zero, configuration: WKWebViewConfiguration())
+        webContainerView.addSubview(webView)
+    }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        webView.snp.makeConstraints { (make) in
+            make.edges.equalToSuperview()
+        }
+    }
     
     var bean: AppUpgradeBean! {
         didSet {
