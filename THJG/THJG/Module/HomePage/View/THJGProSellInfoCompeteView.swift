@@ -20,9 +20,9 @@ class THJGProSellInfoCompeteView: UIView {
         //展示当前项目annotation
         if DQSUtils.isNotBlank(curProject.curProCoordinate), curProject.curProCoordinate.contains(","), curProject.curProCoordinate.split(separator: ",").count == 2 {//直接根据项目经纬度标注
             //经度
-            let longitude = Double(curProject.curProCoordinate.split(separator: ",")[0])!
+            let longitude = Double(curProject.curProCoordinate.split(separator: ",")[0].trimmingCharacters(in: .whitespacesAndNewlines)) ?? 0.0
             //纬度
-            let latitude = Double(curProject.curProCoordinate.split(separator: ",")[1])!
+            let latitude = Double(curProject.curProCoordinate.split(separator: ",")[1].trimmingCharacters(in: .whitespacesAndNewlines)) ?? 0.0
             let coor2d = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
             
             //地图定位到当前项目位置
