@@ -44,6 +44,8 @@ class THJGProjectRoomDetailTypeOneCell: UITableViewCell {
                 infoContentLabel.text = "\(DQSUtils.showNumWithComma(num: DQSUtils.showDoubleNum(sourceDouble: (bean.infoContent as! Double), floatNum: 2, showStyle: .showStyleNoZero)))㎡"
             } else if bean.infoTitle == "单价" {
                 infoContentLabel.text = "\(DQSUtils.showNumWithComma(num: DQSUtils.showDoubleNum(sourceDouble: (bean.infoContent as! Double), floatNum: 2, showStyle: .showStyleNoZero)))元/㎡"
+            } else if bean.infoTitle == "销售日期" {
+                infoContentLabel.text = (bean.infoContent as! String)
             } else {
                 infoContentLabel.text = "\(DQSUtils.showNumWithComma(num: DQSUtils.showDoubleNum(sourceDouble: (bean.infoContent as! Double), floatNum: 2, showStyle: .showStyleNoZero)))元"
             }

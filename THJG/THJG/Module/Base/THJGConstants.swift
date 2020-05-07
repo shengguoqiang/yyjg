@@ -38,15 +38,15 @@ let RSA_PUBLICK_KEY = "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDYldTRQgmZP/Bcj+qn0
 //15测试
 //let baseUrl = "http://192.168.0.15:7112/core"
 //新测试-打包
-let baseUrl = "http://192.168.0.15:7112/core"
+//let baseUrl = "http://192.168.0.15:7112/core"
 //新测试-开发
 //let baseUrl = "http://58.213.46.226:9090/core"
 //正式环境
-//let baseUrl = "https://yyapp.yunshows.com/core"
+let baseUrl = "https://yyapp.yunshows.com/core"
 
 /* 环境 */
-let ENVIRONMENT = "dev"
-//let ENVIRONMENT = "prd"
+//let ENVIRONMENT = "dev"
+let ENVIRONMENT = "prd"
 
 /* 各种机型 */
 //屏幕宽度
