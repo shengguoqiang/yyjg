@@ -142,12 +142,17 @@ extension THJGProjectDetailController {
             fullView.frame = UIScreen.main.bounds
             view.window?.addSubview(fullView)
             fullView.url = specBean
+        } else if specBean.contains("lechengVideo_") { // 大华视频
+            let fullView = THJGLeChengVideoFullScreenView.showFullScreen()
+            fullView.frame = UIScreen.main.bounds
+            view.window?.addSubview(fullView)
+            fullView.startRtspVideo(specBean.components(separatedBy: "_")[1])
         } else {//萤石视频
             let fullView = THJGVideoFullScreenView.showFullScreen()
             fullView.frame = UIScreen.main.bounds
             view.window?.addSubview(fullView)
             fullView.url = specBean
-        }
+        } 
     }
     
     @objc func requestForSmallScreen() {

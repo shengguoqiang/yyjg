@@ -8,12 +8,13 @@ import AVKit
 
 enum ImgShowType {
     case ezopenLiveVideo  //萤石实时视频
-    case imgAndLocalVideo //图片和本地视频
+    case imgAndLocalVideo //图片和本地视频和大华视频
 }
 
 //顶部cell 标识
 fileprivate let kImgShowCellIdentifier = "imgShowCellIdentifier"
 fileprivate let kVideoShowCellIdentifier = "videoShowCellIdentifier"
+fileprivate let kTHJGLeChengVideoCellIdentifier = "THJGLeChengVideoCell"
 
 //告警cell 标识
 fileprivate let kMonitorCellIdentifier = "monitorCellIdentifier"
@@ -31,7 +32,7 @@ class THJGImageShowView: UIView {
    
     @IBOutlet weak var playBtn: UIButton!
     
-    
+    // 底部告警相关
     @IBOutlet weak var deviceWarnContainerView: UIView!
     @IBOutlet weak var tableView: UITableView!
     
@@ -40,6 +41,7 @@ class THJGImageShowView: UIView {
         //注册顶部cell
         collectionView.register(UINib(nibName: "THJGImgShowCell", bundle: nil), forCellWithReuseIdentifier: kImgShowCellIdentifier)
         collectionView.register(UINib(nibName: "THJGEZOpenVideoCell", bundle: nil), forCellWithReuseIdentifier: kVideoShowCellIdentifier)
+        collectionView.register(UINib(nibName: "THJGLeChengVideoCell", bundle: nil), forCellWithReuseIdentifier: kTHJGLeChengVideoCellIdentifier)
         //底部告警列表
         warning_setup()
         //适配视频播放器
@@ -70,7 +72,7 @@ class THJGImageShowView: UIView {
             let curBean = beans[curIndex]
             if curBean.isVideo, curBean.videoType! == 10 {//萤石视频
                 showType = .ezopenLiveVideo
-            } else {//图片或本地视频
+            } else {//图片或本地视频或大华视频
                 showType = .imgAndLocalVideo
             }
         }
@@ -124,6 +126,7 @@ extension THJGImageShowView {
         tableView.reloadData()
     }
     
+    //MARK: 全屏事件监听
     @IBAction func fullScreenDidClicked(_ sender: UIButton) {
         let bean = beans[curIndex]
         guard bean.isVideo else {
@@ -137,13 +140,20 @@ extension THJGImageShowView {
         } else if bean.videoType == 20 {//本地视频
             let cell = collectionView.cellForItem(at: IndexPath(item: curIndex, section: 0)) as! THJGImgShowCell
             cell.avPlayerVC?.player?.pause()
+        } else if bean.videoType == 13 { // 大华视频
+            let cell = collectionView.cellForItem(at: IndexPath(item: curIndex, section: 0)) as! THJGLeChengVideoCell
+            cell.stopRtspVideo()
         }
         
         //显示播放图标
         playBtn.isHidden = false
         
         //发送全屏通知
-        NotificationCenter.default.post(name: NSNotification.Name(NOTIFICATION_VIDEO_REC_FULLSCREEN), object: bean.videoUrl)
+        if bean.videoType == 13 {
+            NotificationCenter.default.post(name: NSNotification.Name(NOTIFICATION_VIDEO_REC_FULLSCREEN), object: "lechengVideo_\(bean.videoSerial ?? "")")
+        } else {
+            NotificationCenter.default.post(name: NSNotification.Name(NOTIFICATION_VIDEO_REC_FULLSCREEN), object: bean.videoUrl)
+        }
     }
     
     @IBAction func cancleDidClicked(_ sender: UIButton) {
@@ -167,13 +177,20 @@ extension THJGImageShowView {
     //MARK: 播放本地视频
     @objc func playLocalVideo() {
         let bean = beans[curIndex]
-        if bean.videoType == 20 {
+        if bean.videoType == 20 { // 本地视频
             //隐藏播放图标
             playBtn.isHidden = true
             //播放视频
             let indexPath = IndexPath(item: curIndex, section: 0)
             let cell = collectionView.cellForItem(at: indexPath) as! THJGImgShowCell
             cell.avPlayerVC?.player?.play()
+        } else if bean.videoType == 13 { // 大华视频
+            //隐藏播放图标
+            playBtn.isHidden = true
+            //播放视频
+            let indexPath = IndexPath(item: curIndex, section: 0)
+            let cell = collectionView.cellForItem(at: indexPath) as! THJGLeChengVideoCell
+            cell.startRtspVideo()
         }
     }
 }
@@ -194,6 +211,10 @@ extension THJGImageShowView: UICollectionViewDelegate, UICollectionViewDataSourc
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: kVideoShowCellIdentifier, for: indexPath) as! THJGEZOpenVideoCell
             cell.bean = bean
             return cell
+        } else if bean.isVideo, bean.videoType == 13 { //大华视频
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: kTHJGLeChengVideoCellIdentifier, for: indexPath) as! THJGLeChengVideoCell
+            cell.bean = bean
+            return cell
         } else {//图片或本地视频
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: kImgShowCellIdentifier, for: indexPath) as! THJGImgShowCell
             cell.bean = beans[indexPath.item]
@@ -209,6 +230,9 @@ extension THJGImageShowView: UICollectionViewDelegate, UICollectionViewDataSourc
             let cell = collectionView.cellForItem(at: indexPath) as! THJGEZOpenVideoCell
             cell.addSubview(cell.mplayer!.previewView)
             cell.mplayer!.startPlay()
+        } else if bean.isVideo, bean.videoType == 13 { // 大华视频
+            let cell = collectionView.cellForItem(at: indexPath) as! THJGLeChengVideoCell
+            cell.startRtspVideo()
         } else {//图片或本地视频
             if bean.videoType == 20 {//本地视频
                 let cell = collectionView.cellForItem(at: indexPath) as! THJGImgShowCell
@@ -224,6 +248,9 @@ extension THJGImageShowView: UICollectionViewDelegate, UICollectionViewDataSourc
             let ezCell = cell as! THJGEZOpenVideoCell
             ezCell.mplayer?.previewView.removeFromSuperview()
             ezCell.mplayer = nil
+        } else if cell.isMember(of: THJGLeChengVideoCell.self) { // 大华视频
+            let lcCell = cell as! THJGLeChengVideoCell
+            lcCell.stopRtspVideo()
         } else if cell.isMember(of: THJGImgShowCell.self) {//本地视频
             let localVideoCell = cell as! THJGImgShowCell
             localVideoCell.avPlayerVC?.player = nil
@@ -235,8 +262,11 @@ extension THJGImageShowView: UICollectionViewDelegate, UICollectionViewDataSourc
         
         let bean = beans[indexPath.item]
         //播放器
-        if bean.isVideo, bean.videoType != nil, DQSUtils.isNotBlank(bean.videoUrl) {
+        if bean.isVideo, bean.videoType != nil {
             if bean.videoType == 10 {//萤石视频
+                guard DQSUtils.isNotBlank(bean.videoUrl) else {
+                    return
+                }
                 let ezCell = cell as! THJGEZOpenVideoCell
                 ezCell.mplayer = EZUIPlayer.createPlayer(withUrl: bean.videoUrl!)
                 ezCell.mplayer!.previewView.frame = ezCell.bounds
@@ -244,6 +274,9 @@ extension THJGImageShowView: UICollectionViewDelegate, UICollectionViewDataSourc
                 //播放按钮
                 playBtn.isUserInteractionEnabled = false
             } else if bean.videoType! == 20 {//本地视频
+                guard DQSUtils.isNotBlank(bean.videoUrl) else {
+                    return
+                }
                 let localVideoCell = cell as! THJGImgShowCell
                 let avPlayer = AVPlayer(url: URL(string: bean.videoUrl!)!)
                 localVideoCell.avPlayerVC = AVPlayerViewController()
@@ -253,6 +286,8 @@ extension THJGImageShowView: UICollectionViewDelegate, UICollectionViewDataSourc
                 localVideoCell.addSubview(localVideoCell.avPlayerVC!.view)
                 //播放按钮
                 playBtn.isUserInteractionEnabled = true
+            } else if bean.videoType == 13 { // 大华视频
+                // 暂不设置！！！
             }
         }
     }

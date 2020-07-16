@@ -30,7 +30,7 @@ struct THJGImgShowBean {
     var imgUrl: String
     var imgName: String
     var isVideo: Bool
-    var videoType: Int?      //10.萤石视频 20.本地视频
+    var videoType: Int?      //10.萤石视频 20.本地视频 13.大华视频
     var videoStatus: Int?
     var videoSerial: String?
     var videoUrl: String?

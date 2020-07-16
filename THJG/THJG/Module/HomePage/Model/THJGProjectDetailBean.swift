@@ -36,6 +36,8 @@ struct THJGProjectDetailBean: THJGBaseBean {
             for video in videoArray {
                 proVideos.append(THJGProVideoBean.parse(video))
             }
+            // TODO:测试专用，后期删除！！！
+            proVideos.append(THJGProVideoBean(proVideoStatus: 1, proVideoType: 13, proVideoPic: "https://statics.ys7.com/device/assets/imgs/public/homeDevice.jpeg", proVideoName: "新楚", proVideoUrl: "", proVideoDeviceSerial: "6D07CC7PANED259"))
         }
         
         let proDeveloper = THJGProDevBean.parse(data["proDeveloper"])
@@ -119,7 +121,7 @@ struct THJGProImgBean: THJGBaseBean {
 struct THJGProVideoBean: THJGBaseBean {
     
     var proVideoStatus: Int //0.不在线，1.在线，-1.设备未上报
-    var proVideoType: Int  //10.实时视频 20.录制视频
+    var proVideoType: Int  //10.萤石实时视频 20.本地录制视频 13.大华实时视频
     var proVideoPic: String
     var proVideoName: String
     var proVideoUrl: String

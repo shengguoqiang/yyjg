@@ -1,0 +1,485 @@
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/svn/MobileMonitor/!svn/ver/139169/Components/LCOpenSDK/Branches/P_2019.02.20_LCOpenSDK_V3.X/Demo/Ios/LCOpenSDKDemo/Depend/LCOpenSDKDynamic.framework/Headers
+END
+ShareDeviceList.h
+K 25
+svn:wc:ra_dav:version-url
+V 175
+/svn/MobileMonitor/!svn/ver/139169/Components/LCOpenSDK/Branches/P_2019.02.20_LCOpenSDK_V3.X/Demo/Ios/LCOpenSDKDemo/Depend/LCOpenSDKDynamic.framework/Headers/ShareDeviceList.h
+END
+GetRecordByLinkageId.h
+K 25
+svn:wc:ra_dav:version-url
+V 180
+/svn/MobileMonitor/!svn/ver/139169/Components/LCOpenSDK/Branches/P_2019.02.20_LCOpenSDK_V3.X/Demo/Ios/LCOpenSDKDemo/Depend/LCOpenSDKDynamic.framework/Headers/GetRecordByLinkageId.h
+END
+LCOpenSDK_NetsdkLogin.h
+K 25
+svn:wc:ra_dav:version-url
+V 181
+/svn/MobileMonitor/!svn/ver/139169/Components/LCOpenSDK/Branches/P_2019.02.20_LCOpenSDK_V3.X/Demo/Ios/LCOpenSDKDemo/Depend/LCOpenSDKDynamic.framework/Headers/LCOpenSDK_NetsdkLogin.h
+END
+DeleteRole.h
+K 25
+svn:wc:ra_dav:version-url
+V 170
+/svn/MobileMonitor/!svn/ver/139169/Components/LCOpenSDK/Branches/P_2019.02.20_LCOpenSDK_V3.X/Demo/Ios/LCOpenSDKDemo/Depend/LCOpenSDKDynamic.framework/Headers/DeleteRole.h
+END
+LCOpenSDK_DeviceInit.h
+K 25
+svn:wc:ra_dav:version-url
+V 180
+/svn/MobileMonitor/!svn/ver/139169/Components/LCOpenSDK/Branches/P_2019.02.20_LCOpenSDK_V3.X/Demo/Ios/LCOpenSDKDemo/Depend/LCOpenSDKDynamic.framework/Headers/LCOpenSDK_DeviceInit.h
+END
+LCOpenApiDefine.h
+K 25
+svn:wc:ra_dav:version-url
+V 175
+/svn/MobileMonitor/!svn/ver/139169/Components/LCOpenSDK/Branches/P_2019.02.20_LCOpenSDK_V3.X/Demo/Ios/LCOpenSDKDemo/Depend/LCOpenSDKDynamic.framework/Headers/LCOpenApiDefine.h
+END
+OpenCloudRecord.h
+K 25
+svn:wc:ra_dav:version-url
+V 175
+/svn/MobileMonitor/!svn/ver/139169/Components/LCOpenSDK/Branches/P_2019.02.20_LCOpenSDK_V3.X/Demo/Ios/LCOpenSDKDemo/Depend/LCOpenSDKDynamic.framework/Headers/OpenCloudRecord.h
+END
+DeviceList.h
+K 25
+svn:wc:ra_dav:version-url
+V 170
+/svn/MobileMonitor/!svn/ver/139169/Components/LCOpenSDK/Branches/P_2019.02.20_LCOpenSDK_V3.X/Demo/Ios/LCOpenSDKDemo/Depend/LCOpenSDKDynamic.framework/Headers/DeviceList.h
+END
+BindDevice.h
+K 25
+svn:wc:ra_dav:version-url
+V 170
+/svn/MobileMonitor/!svn/ver/139169/Components/LCOpenSDK/Branches/P_2019.02.20_LCOpenSDK_V3.X/Demo/Ios/LCOpenSDKDemo/Depend/LCOpenSDKDynamic.framework/Headers/BindDevice.h
+END
+SetUserAuthTager.h
+K 25
+svn:wc:ra_dav:version-url
+V 176
+/svn/MobileMonitor/!svn/ver/139169/Components/LCOpenSDK/Branches/P_2019.02.20_LCOpenSDK_V3.X/Demo/Ios/LCOpenSDKDemo/Depend/LCOpenSDKDynamic.framework/Headers/SetUserAuthTager.h
+END
+LCOpenSDK_Utils.h
+K 25
+svn:wc:ra_dav:version-url
+V 175
+/svn/MobileMonitor/!svn/ver/139169/Components/LCOpenSDK/Branches/P_2019.02.20_LCOpenSDK_V3.X/Demo/Ios/LCOpenSDKDemo/Depend/LCOpenSDKDynamic.framework/Headers/LCOpenSDK_Utils.h
+END
+LCOpenApiClient.h
+K 25
+svn:wc:ra_dav:version-url
+V 175
+/svn/MobileMonitor/!svn/ver/139169/Components/LCOpenSDK/Branches/P_2019.02.20_LCOpenSDK_V3.X/Demo/Ios/LCOpenSDKDemo/Depend/LCOpenSDKDynamic.framework/Headers/LCOpenApiClient.h
+END
+UnBindDeviceInfo.h
+K 25
+svn:wc:ra_dav:version-url
+V 176
+/svn/MobileMonitor/!svn/ver/139169/Components/LCOpenSDK/Branches/P_2019.02.20_LCOpenSDK_V3.X/Demo/Ios/LCOpenSDKDemo/Depend/LCOpenSDKDynamic.framework/Headers/UnBindDeviceInfo.h
+END
+ControlPTZ.h
+K 25
+svn:wc:ra_dav:version-url
+V 170
+/svn/MobileMonitor/!svn/ver/139169/Components/LCOpenSDK/Branches/P_2019.02.20_LCOpenSDK_V3.X/Demo/Ios/LCOpenSDKDemo/Depend/LCOpenSDKDynamic.framework/Headers/ControlPTZ.h
+END
+PassengerFlow.h
+K 25
+svn:wc:ra_dav:version-url
+V 173
+/svn/MobileMonitor/!svn/ver/139169/Components/LCOpenSDK/Branches/P_2019.02.20_LCOpenSDK_V3.X/Demo/Ios/LCOpenSDKDemo/Depend/LCOpenSDKDynamic.framework/Headers/PassengerFlow.h
+END
+ControlDeviceWifi.h
+K 25
+svn:wc:ra_dav:version-url
+V 177
+/svn/MobileMonitor/!svn/ver/139169/Components/LCOpenSDK/Branches/P_2019.02.20_LCOpenSDK_V3.X/Demo/Ios/LCOpenSDKDemo/Depend/LCOpenSDKDynamic.framework/Headers/ControlDeviceWifi.h
+END
+ModifyDevicePwd.h
+K 25
+svn:wc:ra_dav:version-url
+V 175
+/svn/MobileMonitor/!svn/ver/139169/Components/LCOpenSDK/Branches/P_2019.02.20_LCOpenSDK_V3.X/Demo/Ios/LCOpenSDKDemo/Depend/LCOpenSDKDynamic.framework/Headers/ModifyDevicePwd.h
+END
+DeleteAlarmMessage.h
+K 25
+svn:wc:ra_dav:version-url
+V 178
+/svn/MobileMonitor/!svn/ver/139169/Components/LCOpenSDK/Branches/P_2019.02.20_LCOpenSDK_V3.X/Demo/Ios/LCOpenSDKDemo/Depend/LCOpenSDKDynamic.framework/Headers/DeleteAlarmMessage.h
+END
+BeAuthDeviceList.h
+K 25
+svn:wc:ra_dav:version-url
+V 176
+/svn/MobileMonitor/!svn/ver/139169/Components/LCOpenSDK/Branches/P_2019.02.20_LCOpenSDK_V3.X/Demo/Ios/LCOpenSDKDemo/Depend/LCOpenSDKDynamic.framework/Headers/BeAuthDeviceList.h
+END
+RecoverSDCard.h
+K 25
+svn:wc:ra_dav:version-url
+V 173
+/svn/MobileMonitor/!svn/ver/139169/Components/LCOpenSDK/Branches/P_2019.02.20_LCOpenSDK_V3.X/Demo/Ios/LCOpenSDKDemo/Depend/LCOpenSDKDynamic.framework/Headers/RecoverSDCard.h
+END
+ModifyDeviceAlarmStatus.h
+K 25
+svn:wc:ra_dav:version-url
+V 183
+/svn/MobileMonitor/!svn/ver/139169/Components/LCOpenSDK/Branches/P_2019.02.20_LCOpenSDK_V3.X/Demo/Ios/LCOpenSDKDemo/Depend/LCOpenSDKDynamic.framework/Headers/ModifyDeviceAlarmStatus.h
+END
+LCOpenSDK_EventListener.h
+K 25
+svn:wc:ra_dav:version-url
+V 183
+/svn/MobileMonitor/!svn/ver/139169/Components/LCOpenSDK/Branches/P_2019.02.20_LCOpenSDK_V3.X/Demo/Ios/LCOpenSDKDemo/Depend/LCOpenSDKDynamic.framework/Headers/LCOpenSDK_EventListener.h
+END
+LCOpenSDK_TalkerListener.h
+K 25
+svn:wc:ra_dav:version-url
+V 184
+/svn/MobileMonitor/!svn/ver/139169/Components/LCOpenSDK/Branches/P_2019.02.20_LCOpenSDK_V3.X/Demo/Ios/LCOpenSDKDemo/Depend/LCOpenSDKDynamic.framework/Headers/LCOpenSDK_TalkerListener.h
+END
+GetAuthFunctions.h
+K 25
+svn:wc:ra_dav:version-url
+V 176
+/svn/MobileMonitor/!svn/ver/139169/Components/LCOpenSDK/Branches/P_2019.02.20_LCOpenSDK_V3.X/Demo/Ios/LCOpenSDKDemo/Depend/LCOpenSDKDynamic.framework/Headers/GetAuthFunctions.h
+END
+UserAuthList.h
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/svn/MobileMonitor/!svn/ver/139169/Components/LCOpenSDK/Branches/P_2019.02.20_LCOpenSDK_V3.X/Demo/Ios/LCOpenSDKDemo/Depend/LCOpenSDKDynamic.framework/Headers/UserAuthList.h
+END
+DeviceAuthInfo.h
+K 25
+svn:wc:ra_dav:version-url
+V 174
+/svn/MobileMonitor/!svn/ver/139169/Components/LCOpenSDK/Branches/P_2019.02.20_LCOpenSDK_V3.X/Demo/Ios/LCOpenSDKDemo/Depend/LCOpenSDKDynamic.framework/Headers/DeviceAuthInfo.h
+END
+SetDeviceSnap.h
+K 25
+svn:wc:ra_dav:version-url
+V 173
+/svn/MobileMonitor/!svn/ver/139169/Components/LCOpenSDK/Branches/P_2019.02.20_LCOpenSDK_V3.X/Demo/Ios/LCOpenSDKDemo/Depend/LCOpenSDKDynamic.framework/Headers/SetDeviceSnap.h
+END
+AddGroup.h
+K 25
+svn:wc:ra_dav:version-url
+V 168
+/svn/MobileMonitor/!svn/ver/139169/Components/LCOpenSDK/Branches/P_2019.02.20_LCOpenSDK_V3.X/Demo/Ios/LCOpenSDKDemo/Depend/LCOpenSDKDynamic.framework/Headers/AddGroup.h
+END
+DeleteUserAuthTager.h
+K 25
+svn:wc:ra_dav:version-url
+V 179
+/svn/MobileMonitor/!svn/ver/139169/Components/LCOpenSDK/Branches/P_2019.02.20_LCOpenSDK_V3.X/Demo/Ios/LCOpenSDKDemo/Depend/LCOpenSDKDynamic.framework/Headers/DeleteUserAuthTager.h
+END
+UpgradeProcessDevice.h
+K 25
+svn:wc:ra_dav:version-url
+V 180
+/svn/MobileMonitor/!svn/ver/139169/Components/LCOpenSDK/Branches/P_2019.02.20_LCOpenSDK_V3.X/Demo/Ios/LCOpenSDKDemo/Depend/LCOpenSDKDynamic.framework/Headers/UpgradeProcessDevice.h
+END
+WifiAround.h
+K 25
+svn:wc:ra_dav:version-url
+V 170
+/svn/MobileMonitor/!svn/ver/139169/Components/LCOpenSDK/Branches/P_2019.02.20_LCOpenSDK_V3.X/Demo/Ios/LCOpenSDKDemo/Depend/LCOpenSDKDynamic.framework/Headers/WifiAround.h
+END
+ModifyDeviceName.h
+K 25
+svn:wc:ra_dav:version-url
+V 176
+/svn/MobileMonitor/!svn/ver/139169/Components/LCOpenSDK/Branches/P_2019.02.20_LCOpenSDK_V3.X/Demo/Ios/LCOpenSDKDemo/Depend/LCOpenSDKDynamic.framework/Headers/ModifyDeviceName.h
+END
+BindDeviceInfo.h
+K 25
+svn:wc:ra_dav:version-url
+V 174
+/svn/MobileMonitor/!svn/ver/139169/Components/LCOpenSDK/Branches/P_2019.02.20_LCOpenSDK_V3.X/Demo/Ios/LCOpenSDKDemo/Depend/LCOpenSDKDynamic.framework/Headers/BindDeviceInfo.h
+END
+GroupDeviceList.h
+K 25
+svn:wc:ra_dav:version-url
+V 175
+/svn/MobileMonitor/!svn/ver/139169/Components/LCOpenSDK/Branches/P_2019.02.20_LCOpenSDK_V3.X/Demo/Ios/LCOpenSDKDemo/Depend/LCOpenSDKDynamic.framework/Headers/GroupDeviceList.h
+END
+AddRole.h
+K 25
+svn:wc:ra_dav:version-url
+V 167
+/svn/MobileMonitor/!svn/ver/139169/Components/LCOpenSDK/Branches/P_2019.02.20_LCOpenSDK_V3.X/Demo/Ios/LCOpenSDKDemo/Depend/LCOpenSDKDynamic.framework/Headers/AddRole.h
+END
+DeleteCloudRecords.h
+K 25
+svn:wc:ra_dav:version-url
+V 178
+/svn/MobileMonitor/!svn/ver/139169/Components/LCOpenSDK/Branches/P_2019.02.20_LCOpenSDK_V3.X/Demo/Ios/LCOpenSDKDemo/Depend/LCOpenSDKDynamic.framework/Headers/DeleteCloudRecords.h
+END
+CheckDeviceBindOrNot.h
+K 25
+svn:wc:ra_dav:version-url
+V 180
+/svn/MobileMonitor/!svn/ver/139169/Components/LCOpenSDK/Branches/P_2019.02.20_LCOpenSDK_V3.X/Demo/Ios/LCOpenSDKDemo/Depend/LCOpenSDKDynamic.framework/Headers/CheckDeviceBindOrNot.h
+END
+LCOpenSDK_AudioTalk.h
+K 25
+svn:wc:ra_dav:version-url
+V 179
+/svn/MobileMonitor/!svn/ver/139169/Components/LCOpenSDK/Branches/P_2019.02.20_LCOpenSDK_V3.X/Demo/Ios/LCOpenSDKDemo/Depend/LCOpenSDKDynamic.framework/Headers/LCOpenSDK_AudioTalk.h
+END
+DeleteGroup.h
+K 25
+svn:wc:ra_dav:version-url
+V 171
+/svn/MobileMonitor/!svn/ver/139169/Components/LCOpenSDK/Branches/P_2019.02.20_LCOpenSDK_V3.X/Demo/Ios/LCOpenSDKDemo/Depend/LCOpenSDKDynamic.framework/Headers/DeleteGroup.h
+END
+CurrentDeviceWifi.h
+K 25
+svn:wc:ra_dav:version-url
+V 177
+/svn/MobileMonitor/!svn/ver/139169/Components/LCOpenSDK/Branches/P_2019.02.20_LCOpenSDK_V3.X/Demo/Ios/LCOpenSDKDemo/Depend/LCOpenSDKDynamic.framework/Headers/CurrentDeviceWifi.h
+END
+QueryCloudPlanRecordNum.h
+K 25
+svn:wc:ra_dav:version-url
+V 183
+/svn/MobileMonitor/!svn/ver/139169/Components/LCOpenSDK/Branches/P_2019.02.20_LCOpenSDK_V3.X/Demo/Ios/LCOpenSDKDemo/Depend/LCOpenSDKDynamic.framework/Headers/QueryCloudPlanRecordNum.h
+END
+LCOpenSDK_ConfigWifi.h
+K 25
+svn:wc:ra_dav:version-url
+V 180
+/svn/MobileMonitor/!svn/ver/139169/Components/LCOpenSDK/Branches/P_2019.02.20_LCOpenSDK_V3.X/Demo/Ios/LCOpenSDKDemo/Depend/LCOpenSDKDynamic.framework/Headers/LCOpenSDK_ConfigWifi.h
+END
+DeleteCloudPlanRecords.h
+K 25
+svn:wc:ra_dav:version-url
+V 182
+/svn/MobileMonitor/!svn/ver/139169/Components/LCOpenSDK/Branches/P_2019.02.20_LCOpenSDK_V3.X/Demo/Ios/LCOpenSDKDemo/Depend/LCOpenSDKDynamic.framework/Headers/DeleteCloudPlanRecords.h
+END
+LCOpenSDKDynamic.h
+K 25
+svn:wc:ra_dav:version-url
+V 176
+/svn/MobileMonitor/!svn/ver/139169/Components/LCOpenSDK/Branches/P_2019.02.20_LCOpenSDK_V3.X/Demo/Ios/LCOpenSDKDemo/Depend/LCOpenSDKDynamic.framework/Headers/LCOpenSDKDynamic.h
+END
+GroupList.h
+K 25
+svn:wc:ra_dav:version-url
+V 169
+/svn/MobileMonitor/!svn/ver/139169/Components/LCOpenSDK/Branches/P_2019.02.20_LCOpenSDK_V3.X/Demo/Ios/LCOpenSDKDemo/Depend/LCOpenSDKDynamic.framework/Headers/GroupList.h
+END
+BreathingLightStatus.h
+K 25
+svn:wc:ra_dav:version-url
+V 180
+/svn/MobileMonitor/!svn/ver/139169/Components/LCOpenSDK/Branches/P_2019.02.20_LCOpenSDK_V3.X/Demo/Ios/LCOpenSDKDemo/Depend/LCOpenSDKDynamic.framework/Headers/BreathingLightStatus.h
+END
+GetAlarmMessage.h
+K 25
+svn:wc:ra_dav:version-url
+V 175
+/svn/MobileMonitor/!svn/ver/139169/Components/LCOpenSDK/Branches/P_2019.02.20_LCOpenSDK_V3.X/Demo/Ios/LCOpenSDKDemo/Depend/LCOpenSDKDynamic.framework/Headers/GetAlarmMessage.h
+END
+QueryCloudPlanRecordBitmap.h
+K 25
+svn:wc:ra_dav:version-url
+V 186
+/svn/MobileMonitor/!svn/ver/139169/Components/LCOpenSDK/Branches/P_2019.02.20_LCOpenSDK_V3.X/Demo/Ios/LCOpenSDKDemo/Depend/LCOpenSDKDynamic.framework/Headers/QueryCloudPlanRecordBitmap.h
+END
+DeviceOnline.h
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/svn/MobileMonitor/!svn/ver/139169/Components/LCOpenSDK/Branches/P_2019.02.20_LCOpenSDK_V3.X/Demo/Ios/LCOpenSDKDemo/Depend/LCOpenSDKDynamic.framework/Headers/DeviceOnline.h
+END
+QueryCloudRecordCallNum.h
+K 25
+svn:wc:ra_dav:version-url
+V 183
+/svn/MobileMonitor/!svn/ver/139169/Components/LCOpenSDK/Branches/P_2019.02.20_LCOpenSDK_V3.X/Demo/Ios/LCOpenSDKDemo/Depend/LCOpenSDKDynamic.framework/Headers/QueryCloudRecordCallNum.h
+END
+UpgradeDevice.h
+K 25
+svn:wc:ra_dav:version-url
+V 173
+/svn/MobileMonitor/!svn/ver/139169/Components/LCOpenSDK/Branches/P_2019.02.20_LCOpenSDK_V3.X/Demo/Ios/LCOpenSDKDemo/Depend/LCOpenSDKDynamic.framework/Headers/UpgradeDevice.h
+END
+GetStrategies.h
+K 25
+svn:wc:ra_dav:version-url
+V 173
+/svn/MobileMonitor/!svn/ver/139169/Components/LCOpenSDK/Branches/P_2019.02.20_LCOpenSDK_V3.X/Demo/Ios/LCOpenSDKDemo/Depend/LCOpenSDKDynamic.framework/Headers/GetStrategies.h
+END
+LCOpenSDK_Api.h
+K 25
+svn:wc:ra_dav:version-url
+V 173
+/svn/MobileMonitor/!svn/ver/139169/Components/LCOpenSDK/Branches/P_2019.02.20_LCOpenSDK_V3.X/Demo/Ios/LCOpenSDKDemo/Depend/LCOpenSDKDynamic.framework/Headers/LCOpenSDK_Api.h
+END
+QueryCloudRecords.h
+K 25
+svn:wc:ra_dav:version-url
+V 177
+/svn/MobileMonitor/!svn/ver/139169/Components/LCOpenSDK/Branches/P_2019.02.20_LCOpenSDK_V3.X/Demo/Ios/LCOpenSDKDemo/Depend/LCOpenSDKDynamic.framework/Headers/QueryCloudRecords.h
+END
+LCOpenSDK_DownloadListener.h
+K 25
+svn:wc:ra_dav:version-url
+V 186
+/svn/MobileMonitor/!svn/ver/139169/Components/LCOpenSDK/Branches/P_2019.02.20_LCOpenSDK_V3.X/Demo/Ios/LCOpenSDKDemo/Depend/LCOpenSDKDynamic.framework/Headers/LCOpenSDK_DownloadListener.h
+END
+LCOpenApiRequest.h
+K 25
+svn:wc:ra_dav:version-url
+V 176
+/svn/MobileMonitor/!svn/ver/139169/Components/LCOpenSDK/Branches/P_2019.02.20_LCOpenSDK_V3.X/Demo/Ios/LCOpenSDKDemo/Depend/LCOpenSDKDynamic.framework/Headers/LCOpenApiRequest.h
+END
+AddGroupDevice.h
+K 25
+svn:wc:ra_dav:version-url
+V 174
+/svn/MobileMonitor/!svn/ver/139169/Components/LCOpenSDK/Branches/P_2019.02.20_LCOpenSDK_V3.X/Demo/Ios/LCOpenSDKDemo/Depend/LCOpenSDKDynamic.framework/Headers/AddGroupDevice.h
+END
+DeviceAlarmPlan.h
+K 25
+svn:wc:ra_dav:version-url
+V 175
+/svn/MobileMonitor/!svn/ver/139169/Components/LCOpenSDK/Branches/P_2019.02.20_LCOpenSDK_V3.X/Demo/Ios/LCOpenSDKDemo/Depend/LCOpenSDKDynamic.framework/Headers/DeviceAlarmPlan.h
+END
+GetStorageStrategy.h
+K 25
+svn:wc:ra_dav:version-url
+V 178
+/svn/MobileMonitor/!svn/ver/139169/Components/LCOpenSDK/Branches/P_2019.02.20_LCOpenSDK_V3.X/Demo/Ios/LCOpenSDKDemo/Depend/LCOpenSDKDynamic.framework/Headers/GetStorageStrategy.h
+END
+QueryCloudRecordBitmap.h
+K 25
+svn:wc:ra_dav:version-url
+V 182
+/svn/MobileMonitor/!svn/ver/139169/Components/LCOpenSDK/Branches/P_2019.02.20_LCOpenSDK_V3.X/Demo/Ios/LCOpenSDKDemo/Depend/LCOpenSDKDynamic.framework/Headers/QueryCloudRecordBitmap.h
+END
+ModifyCloudRecordPlan.h
+K 25
+svn:wc:ra_dav:version-url
+V 181
+/svn/MobileMonitor/!svn/ver/139169/Components/LCOpenSDK/Branches/P_2019.02.20_LCOpenSDK_V3.X/Demo/Ios/LCOpenSDKDemo/Depend/LCOpenSDKDynamic.framework/Headers/ModifyCloudRecordPlan.h
+END
+GetCloudRecords.h
+K 25
+svn:wc:ra_dav:version-url
+V 175
+/svn/MobileMonitor/!svn/ver/139169/Components/LCOpenSDK/Branches/P_2019.02.20_LCOpenSDK_V3.X/Demo/Ios/LCOpenSDKDemo/Depend/LCOpenSDKDynamic.framework/Headers/GetCloudRecords.h
+END
+netsdk.h
+K 25
+svn:wc:ra_dav:version-url
+V 166
+/svn/MobileMonitor/!svn/ver/139169/Components/LCOpenSDK/Branches/P_2019.02.20_LCOpenSDK_V3.X/Demo/Ios/LCOpenSDKDemo/Depend/LCOpenSDKDynamic.framework/Headers/netsdk.h
+END
+QueryCloudPlanRecords.h
+K 25
+svn:wc:ra_dav:version-url
+V 181
+/svn/MobileMonitor/!svn/ver/139169/Components/LCOpenSDK/Branches/P_2019.02.20_LCOpenSDK_V3.X/Demo/Ios/LCOpenSDKDemo/Depend/LCOpenSDKDynamic.framework/Headers/QueryCloudPlanRecords.h
+END
+LCOpenApiResponse.h
+K 25
+svn:wc:ra_dav:version-url
+V 177
+/svn/MobileMonitor/!svn/ver/139169/Components/LCOpenSDK/Branches/P_2019.02.20_LCOpenSDK_V3.X/Demo/Ios/LCOpenSDKDemo/Depend/LCOpenSDKDynamic.framework/Headers/LCOpenApiResponse.h
+END
+FrameReverseStatus.h
+K 25
+svn:wc:ra_dav:version-url
+V 178
+/svn/MobileMonitor/!svn/ver/139169/Components/LCOpenSDK/Branches/P_2019.02.20_LCOpenSDK_V3.X/Demo/Ios/LCOpenSDKDemo/Depend/LCOpenSDKDynamic.framework/Headers/FrameReverseStatus.h
+END
+ChildGroupList.h
+K 25
+svn:wc:ra_dav:version-url
+V 174
+/svn/MobileMonitor/!svn/ver/139169/Components/LCOpenSDK/Branches/P_2019.02.20_LCOpenSDK_V3.X/Demo/Ios/LCOpenSDKDemo/Depend/LCOpenSDKDynamic.framework/Headers/ChildGroupList.h
+END
+SetAllStorageStrategy.h
+K 25
+svn:wc:ra_dav:version-url
+V 181
+/svn/MobileMonitor/!svn/ver/139169/Components/LCOpenSDK/Branches/P_2019.02.20_LCOpenSDK_V3.X/Demo/Ios/LCOpenSDKDemo/Depend/LCOpenSDKDynamic.framework/Headers/SetAllStorageStrategy.h
+END
+RoleList.h
+K 25
+svn:wc:ra_dav:version-url
+V 168
+/svn/MobileMonitor/!svn/ver/139169/Components/LCOpenSDK/Branches/P_2019.02.20_LCOpenSDK_V3.X/Demo/Ios/LCOpenSDKDemo/Depend/LCOpenSDKDynamic.framework/Headers/RoleList.h
+END
+ModifyDeviceAlarmPlan.h
+K 25
+svn:wc:ra_dav:version-url
+V 181
+/svn/MobileMonitor/!svn/ver/139169/Components/LCOpenSDK/Branches/P_2019.02.20_LCOpenSDK_V3.X/Demo/Ios/LCOpenSDKDemo/Depend/LCOpenSDKDynamic.framework/Headers/ModifyDeviceAlarmPlan.h
+END
+LCOpenSDK_PlayWindow.h
+K 25
+svn:wc:ra_dav:version-url
+V 180
+/svn/MobileMonitor/!svn/ver/139169/Components/LCOpenSDK/Branches/P_2019.02.20_LCOpenSDK_V3.X/Demo/Ios/LCOpenSDKDemo/Depend/LCOpenSDKDynamic.framework/Headers/LCOpenSDK_PlayWindow.h
+END
+DeleteGroupDevice.h
+K 25
+svn:wc:ra_dav:version-url
+V 177
+/svn/MobileMonitor/!svn/ver/139169/Components/LCOpenSDK/Branches/P_2019.02.20_LCOpenSDK_V3.X/Demo/Ios/LCOpenSDKDemo/Depend/LCOpenSDKDynamic.framework/Headers/DeleteGroupDevice.h
+END
+UnBindDevice.h
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/svn/MobileMonitor/!svn/ver/139169/Components/LCOpenSDK/Branches/P_2019.02.20_LCOpenSDK_V3.X/Demo/Ios/LCOpenSDKDemo/Depend/LCOpenSDKDynamic.framework/Headers/UnBindDevice.h
+END
+ModifyFrameReverseStatus.h
+K 25
+svn:wc:ra_dav:version-url
+V 184
+/svn/MobileMonitor/!svn/ver/139169/Components/LCOpenSDK/Branches/P_2019.02.20_LCOpenSDK_V3.X/Demo/Ios/LCOpenSDKDemo/Depend/LCOpenSDKDynamic.framework/Headers/ModifyFrameReverseStatus.h
+END
+ModifyBreathingLight.h
+K 25
+svn:wc:ra_dav:version-url
+V 180
+/svn/MobileMonitor/!svn/ver/139169/Components/LCOpenSDK/Branches/P_2019.02.20_LCOpenSDK_V3.X/Demo/Ios/LCOpenSDKDemo/Depend/LCOpenSDKDynamic.framework/Headers/ModifyBreathingLight.h
+END
+SetStorageStrategy.h
+K 25
+svn:wc:ra_dav:version-url
+V 178
+/svn/MobileMonitor/!svn/ver/139169/Components/LCOpenSDK/Branches/P_2019.02.20_LCOpenSDK_V3.X/Demo/Ios/LCOpenSDKDemo/Depend/LCOpenSDKDynamic.framework/Headers/SetStorageStrategy.h
+END
+LCOpenSDK_LoginManager.h
+K 25
+svn:wc:ra_dav:version-url
+V 182
+/svn/MobileMonitor/!svn/ver/139169/Components/LCOpenSDK/Branches/P_2019.02.20_LCOpenSDK_V3.X/Demo/Ios/LCOpenSDKDemo/Depend/LCOpenSDKDynamic.framework/Headers/LCOpenSDK_LoginManager.h
+END
+LCOpenSDK_Download.h
+K 25
+svn:wc:ra_dav:version-url
+V 178
+/svn/MobileMonitor/!svn/ver/139169/Components/LCOpenSDK/Branches/P_2019.02.20_LCOpenSDK_V3.X/Demo/Ios/LCOpenSDKDemo/Depend/LCOpenSDKDynamic.framework/Headers/LCOpenSDK_Download.h
+END
+QueryCloudRecordNum.h
+K 25
+svn:wc:ra_dav:version-url
+V 179
+/svn/MobileMonitor/!svn/ver/139169/Components/LCOpenSDK/Branches/P_2019.02.20_LCOpenSDK_V3.X/Demo/Ios/LCOpenSDKDemo/Depend/LCOpenSDKDynamic.framework/Headers/QueryCloudRecordNum.h
+END
+UnGroupDeviceList.h
+K 25
+svn:wc:ra_dav:version-url
+V 177
+/svn/MobileMonitor/!svn/ver/139169/Components/LCOpenSDK/Branches/P_2019.02.20_LCOpenSDK_V3.X/Demo/Ios/LCOpenSDKDemo/Depend/LCOpenSDKDynamic.framework/Headers/UnGroupDeviceList.h
+END

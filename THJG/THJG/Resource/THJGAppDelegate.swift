@@ -7,8 +7,13 @@ import UIKit
 @UIApplicationMain
 class THJGAppDelegate: UIResponder, UIApplicationDelegate {
 
+    //MARK: 乐橙视频组件
+    var m_hc: LCOpenSDK_Api!
+    var m_restApiService: RestApiService!
+    lazy var lcDataCtl = THJGProjectVideoDataController()
+    
+    //MARK: 主keyWindow
     var window: UIWindow?
-
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
@@ -46,6 +51,9 @@ class THJGAppDelegate: UIResponder, UIApplicationDelegate {
         }
         
         window?.makeKeyAndVisible()
+        
+        // 乐橙视频初始化
+        setupLeChengVideo()
         
         return true
     }
@@ -97,6 +105,26 @@ class THJGAppDelegate: UIResponder, UIApplicationDelegate {
 
 //MARK: - METHODS
 extension THJGAppDelegate {
+    // 乐橙视频初始化
+    func setupLeChengVideo() {
+        // 初始化SDK_API
+        m_hc = LCOpenSDK_Api(openApi: ProcotolType.PROCOTOL_TYPE_HTTPS, addr: "openapi.lechange.cn", port: 443, ca_PATH: "")
+        
+        // 获取token
+        lcDataCtl.requestForLeChengTokenData(nil, { [weak self] (bean, _) in
+            guard self != nil else {
+                return
+            }
+            let tokenBean = bean as! THJGLeChengResultBean
+            guard self!.m_hc != nil, DQSUtils.isNotBlank(tokenBean.accessToken) else {
+                return
+            }
+            // 初始化RestApiService
+            self!.m_restApiService = RestApiService.shareMyInstance()
+            self!.m_restApiService.initComponent(self!.m_hc, token: tokenBean.accessToken)
+        }, nil)
+    }
+    
     //JPush初始化
     func setupJPush(launchOps: [UIApplication.LaunchOptionsKey: Any]?) {
         //初始化APNs

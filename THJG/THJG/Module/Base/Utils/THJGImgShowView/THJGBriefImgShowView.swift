@@ -83,7 +83,7 @@ class THJGBriefImgShowView: UIView {
             } else {
                 single_imgView.kf.setImage(with: URL(string: beans.last!.imgUrl), placeholder: UIImage(named: "common_bg_placeholder_nodata"), options: nil, progressBlock: nil, completionHandler: nil)
             }
-            liveView.isHidden = !(beans.last!.isVideo && beans.last!.videoType! == 10)
+            liveView.isHidden = !(beans.last!.isVideo && beans.last!.videoType! != 20)
             single_playView.isHidden = !beans.last!.isVideo
             single_nameLabel.text = beans.last!.imgName
         }
