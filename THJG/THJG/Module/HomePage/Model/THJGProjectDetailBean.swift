@@ -37,7 +37,7 @@ struct THJGProjectDetailBean: THJGBaseBean {
                 proVideos.append(THJGProVideoBean.parse(video))
             }
             // TODO:测试专用，后期删除！！！
-            //proVideos.append(THJGProVideoBean(proVideoStatus: 1, proVideoType: 13, proVideoPic: "https://statics.ys7.com/device/assets/imgs/public/homeDevice.jpeg", proVideoName: "丹阳工地", proVideoUrl: "", proVideoDeviceSerial: "5K06C62PAN07AF7"))
+            // proVideos.append(THJGProVideoBean(proVideoStatus: 0, proVideoType: 13, proVideoPic: "https://statics.ys7.com/device/assets/imgs/public/homeDevice.jpeg", proVideoName: "丹阳工地", proVideoUrl: "", proVideoDeviceSerial: "5K06C62PAN07AF7"))
         }
         
         let proDeveloper = THJGProDevBean.parse(data["proDeveloper"])

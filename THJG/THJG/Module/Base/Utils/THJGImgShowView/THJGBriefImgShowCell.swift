@@ -27,6 +27,11 @@ class THJGBriefImgShowCell: UICollectionViewCell {
                 imgView.kf.setImage(with: URL(string: bean.imgUrl), placeholder: UIImage(named: "common_bg_placeholder_nodata"), options: nil, progressBlock: nil, completionHandler: nil)
             }
             liveView.isHidden = !(bean.isVideo && bean.videoType! != 20)
+            if bean.videoType == 13 && bean.videoStatus != 1 { // 大华视频离线
+                liveView.text = "离线"
+            } else {
+                liveView.text = "实时"
+            }
             playView.isHidden = !bean.isVideo
             nameLabel.text = bean.imgName
         }

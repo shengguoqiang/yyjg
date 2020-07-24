@@ -84,6 +84,11 @@ class THJGBriefImgShowView: UIView {
                 single_imgView.kf.setImage(with: URL(string: beans.last!.imgUrl), placeholder: UIImage(named: "common_bg_placeholder_nodata"), options: nil, progressBlock: nil, completionHandler: nil)
             }
             liveView.isHidden = !(beans.last!.isVideo && beans.last!.videoType! != 20)
+            if bean.videoType == 13 && bean.videoStatus != 1 { // 大华视频离线
+                liveView.text = "离线"
+            } else {
+                liveView.text = "实时"
+            }
             single_playView.isHidden = !beans.last!.isVideo
             single_nameLabel.text = beans.last!.imgName
         }

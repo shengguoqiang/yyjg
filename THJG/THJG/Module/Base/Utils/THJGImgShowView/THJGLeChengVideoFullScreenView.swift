@@ -89,12 +89,14 @@ extension THJGLeChengVideoFullScreenView {
     
 }
 
+//MARK: - 摄像头事件监听
 extension THJGLeChengVideoFullScreenView: LCOpenSDK_EventListener {
     
     func onPlayerResult(_ code: String!, type: Int, index: Int) {
         DQSUtils.log("code:\(code ?? ""), type:\(type), index:\(index)")
     }
     
+    //MARK: 调整摄像头方向
     func onSlipBegin(_ dir: Direction, dx: CGFloat, dy: CGFloat, index: Int) {
         var iH: Double = 0.0
         var iV: Double = 0.0
@@ -102,29 +104,29 @@ extension THJGLeChengVideoFullScreenView: LCOpenSDK_EventListener {
         let iDuration: Int = 100
         switch dir {
         case .Left:
-            iH = -5
+            iH = 5
             iV = 0
         case .Right:
-            iH = 5
+            iH = -5
             iV = 0
         case .Up:
             iH = 0
-            iV = 5
+            iV = -5
         case .Down:
             iH = 0
-            iV = -5
+            iV = 5
         case .Left_up:
-            iH = -5
-            iV = 5
+            iH = 5
+            iV = -5
         case .Left_down:
-            iH = -5
-            iV = -5
-        case .Right_up:
             iH = 5
             iV = 5
-        case .Right_down:
-            iH = 5
+        case .Right_up:
+            iH = -5
             iV = -5
+        case .Right_down:
+            iH = -5
+            iV = 5
         default:
             break
         }
@@ -144,6 +146,35 @@ extension THJGLeChengVideoFullScreenView: LCOpenSDK_EventListener {
     
     func onSlipEnd(_ dir: Direction, dx: CGFloat, dy: CGFloat, index: Int) {
         DQSUtils.log("onSlipEnd...")
+    }
+    
+    //MARK: 屏幕缩放
+    func onZooming(_ scale: CGFloat, index: Int) {
+        DQSUtils.log("onZooming...")
+    }
+    
+    func onZoomEnd(_ zoom: ZoomType, index: Int) {
+        let iH: Double = 0.0
+        let iV: Double = 0.0
+        var iZ: Double = 0.0
+        let iDuration: Int = 200
+        switch zoom {
+        case .in:
+            iZ = 0.1
+        case .out:
+            iZ = 10
+        default:
+            break
+        }
+        let restApiService = (UIApplication.shared.delegate as! THJGAppDelegate).m_restApiService
+        guard restApiService != nil else {
+            return
+        }
+        DispatchQueue.global().async {
+            var errMsg: NSString?
+            restApiService!.controlPTZ(self.m_device, chnl: 0, operate: "move", horizon: iH, vertical: iV, zoom: iZ, duration: iDuration, msg: &errMsg)
+        }
+        
     }
     
 }
