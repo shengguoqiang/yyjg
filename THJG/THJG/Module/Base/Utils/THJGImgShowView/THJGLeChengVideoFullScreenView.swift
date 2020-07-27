@@ -150,7 +150,7 @@ extension THJGLeChengVideoFullScreenView: LCOpenSDK_EventListener {
     
     //MARK: 屏幕缩放
     func onZooming(_ scale: CGFloat, index: Int) {
-        DQSUtils.log("onZooming...")
+        m_play.doScale(scale)
     }
     
     func onZoomEnd(_ zoom: ZoomType, index: Int) {
