@@ -101,7 +101,7 @@ extension THJGLeChengVideoFullScreenView: LCOpenSDK_EventListener {
         var iH: Double = 0.0
         var iV: Double = 0.0
         let iZ: Double = 1.0
-        let iDuration: Int = 100
+        let iDuration: Int = 400
         switch dir {
         case .Left:
             iH = 5
